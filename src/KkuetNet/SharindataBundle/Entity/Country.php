@@ -97,7 +97,31 @@ class Country
      */
     private $addressFormat;
 
-
+    /**
+     * @ORM\OneToMany(targetEntity="CountryHasCurrency", mappedBy="country", cascade={"remove", "persist"})
+     */
+    private $countryHasCurrencies;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="CountryHasLanguage", mappedBy="country", cascade={"remove", "persist"})
+     */
+    private $countryHasLanguages;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Tax", mappedBy="country", cascade={"remove", "persist"})
+     */
+    private $taxes;
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->countryHasCurrencies = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->countryHasLanguages = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->taxes = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -129,29 +153,6 @@ class Country
     public function getIso()
     {
         return $this->iso;
-    }
-
-    /**
-     * Set zone
-     *
-     * @param string $zone
-     * @return Country
-     */
-    public function setZone($zone)
-    {
-        $this->zone = $zone;
-    
-        return $this;
-    }
-
-    /**
-     * Get zone
-     *
-     * @return string 
-     */
-    public function getZone()
-    {
-        return $this->zone;
     }
 
     /**
@@ -316,12 +317,35 @@ class Country
     }
 
     /**
+     * Set zone
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\Zone $zone
+     * @return Country
+     */
+    public function setZone(\KkuetNet\SharindataBundle\Entity\Zone $zone)
+    {
+        $this->zone = $zone;
+    
+        return $this;
+    }
+
+    /**
+     * Get zone
+     *
+     * @return \KkuetNet\SharindataBundle\Entity\Zone 
+     */
+    public function getZone()
+    {
+        return $this->zone;
+    }
+
+    /**
      * Set timezone
      *
      * @param \KkuetNet\SharindataBundle\Entity\Timezone $timezone
      * @return Country
      */
-    public function setTimezone(\KkuetNet\SharindataBundle\Entity\Timezone $timezone)
+    public function setTimezone(\KkuetNet\SharindataBundle\Entity\Timezone $timezone = null)
     {
         $this->timezone = $timezone;
     
@@ -336,5 +360,104 @@ class Country
     public function getTimezone()
     {
         return $this->timezone;
+    }
+
+    /**
+     * Add countryHasCurrencies
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasCurrency $countryHasCurrencies
+     * @return Country
+     */
+    public function addCountryHasCurrencie(\KkuetNet\SharindataBundle\Entity\CountryHasCurrency $countryHasCurrencies)
+    {
+        $this->countryHasCurrencies[] = $countryHasCurrencies;
+    
+        return $this;
+    }
+
+    /**
+     * Remove countryHasCurrencies
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasCurrency $countryHasCurrencies
+     */
+    public function removeCountryHasCurrencie(\KkuetNet\SharindataBundle\Entity\CountryHasCurrency $countryHasCurrencies)
+    {
+        $this->countryHasCurrencies->removeElement($countryHasCurrencies);
+    }
+
+    /**
+     * Get countryHasCurrencies
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCountryHasCurrencies()
+    {
+        return $this->countryHasCurrencies;
+    }
+
+    /**
+     * Add countryHasLanguages
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages
+     * @return Country
+     */
+    public function addCountryHasLanguage(\KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages)
+    {
+        $this->countryHasLanguages[] = $countryHasLanguages;
+    
+        return $this;
+    }
+
+    /**
+     * Remove countryHasLanguages
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages
+     */
+    public function removeCountryHasLanguage(\KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages)
+    {
+        $this->countryHasLanguages->removeElement($countryHasLanguages);
+    }
+
+    /**
+     * Get countryHasLanguages
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCountryHasLanguages()
+    {
+        return $this->countryHasLanguages;
+    }
+
+    /**
+     * Add taxes
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\Tax $taxes
+     * @return Country
+     */
+    public function addTaxe(\KkuetNet\SharindataBundle\Entity\Tax $taxes)
+    {
+        $this->taxes[] = $taxes;
+    
+        return $this;
+    }
+
+    /**
+     * Remove taxes
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\Tax $taxes
+     */
+    public function removeTaxe(\KkuetNet\SharindataBundle\Entity\Tax $taxes)
+    {
+        $this->taxes->removeElement($taxes);
+    }
+
+    /**
+     * Get taxes
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTaxes()
+    {
+        return $this->taxes;
     }
 }

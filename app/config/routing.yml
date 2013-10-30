@@ -26,10 +26,10 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
-#liste_rest:
-#    resource: Activpik\WebserviceBundle\Controller\ListeController
-#    prefix: /api
-#    type: rest
+default_rest:
+    resource: KkuetNet\SharindataBundle\Controller\DefaultController
+    prefix: /api
+    type: rest
     
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"

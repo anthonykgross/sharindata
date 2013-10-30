@@ -8,8 +8,8 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
 {
     public function load(ObjectManager $manager) {
-         if(($handle = fopen(__DIR__."/XML/country.xml", "r")) !== FALSE){
-            $xml = simplexml_load_file(__DIR__."/XML/country.xml");
+         if(($handle = fopen(__DIR__."/../../XML/country.xml", "r")) !== FALSE){
+            $xml = simplexml_load_file(__DIR__."/../../XML/country.xml");
             foreach($xml->entities->children() as $e){
                 $zone = $manager->getRepository("KkuetNetSharindataBundle:Zone")->findOneBy(array(
                     'code' => (string)$e['id_zone']
@@ -28,8 +28,8 @@ class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
             $manager->flush();
         }
         
-        if(($handle = fopen(__DIR__."/XML/iso_to_timezone.xml", "r")) !== FALSE){
-            $xml = simplexml_load_file(__DIR__."/XML/iso_to_timezone.xml");
+        if(($handle = fopen(__DIR__."/../../XML/iso_to_timezone.xml", "r")) !== FALSE){
+            $xml = simplexml_load_file(__DIR__."/../../XML/iso_to_timezone.xml");
             foreach($xml->children() as $e){
                 $country = $manager->getRepository("KkuetNetSharindataBundle:Country")->findOneBy(array(
                     'iso' => (string)$e['iso']
@@ -43,8 +43,8 @@ class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
             $manager->flush();
         }
         
-        if(($handle = fopen(__DIR__."/XML/address_format.xml", "r")) !== FALSE){
-            $xml = simplexml_load_file(__DIR__."/XML/address_format.xml");
+        if(($handle = fopen(__DIR__."/../../XML/address_format.xml", "r")) !== FALSE){
+            $xml = simplexml_load_file(__DIR__."/../../XML/address_format.xml");
             foreach($xml->entities->children() as $e){
                 $country = $manager->getRepository("KkuetNetSharindataBundle:Country")->findOneBy(array(
                     'iso' => (string)$e['id_country']

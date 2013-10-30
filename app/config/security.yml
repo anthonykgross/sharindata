@@ -17,7 +17,8 @@ security:
     firewalls:
         wsse_secured:
 #           Pas de restrinctions si on souhaite aller aur la doc ou creer/supprimer le token
-            pattern:   ^/api/(?!(docs|token)).*
+#            pattern:   ^/api/(?!(docs|token)).*
+            pattern:   ^/api/(?!(.*))
             wsse:      { nonce_dir: "%kernel.cache_dir%", lifetime: 300, realm: "Secured API", profile: "UsernameToken"}
         main:
 #           La session principal n'est pas valable dans la partie API

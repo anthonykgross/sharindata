@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity_language>
+  <entities>
+    <language iso-1="aa" iso-2="aar" iso-3="aar"  name-fr="Afar"  name-en="Afar" natural-name="Afaraf" />
+    <language iso-1="ab" iso-2="abk" iso-3="abk"  name-fr="Abkhaze"  name-en="Abkhazian" natural-name="Аҧсуа" />
+    <language iso-1="ae" iso-2="ave" iso-3="ave"  name-fr="Avestique"  name-en="Avestan" natural-name="Avesta" />
+    <language iso-1="af" iso-2="afr" iso-3="afr"  name-fr="Afrikaans"  name-en="Afrikaans" natural-name="Afrikaans" />
+    <language iso-1="ak" iso-2="aka" iso-3="aka"  name-fr="Akan"  name-en="Akan" natural-name="Akan" />
+    <language iso-1="am" iso-2="amh" iso-3="amh"  name-fr="Amharique"  name-en="Amharic" natural-name="አማርኛ" />
+    <language iso-1="an" iso-2="arg" iso-3="arg"  name-fr="Aragonais"  name-en="Aragonese" natural-name="Aragonés" />
+    <language iso-1="ar" iso-2="ara" iso-3="ara"  name-fr="Arabe"  name-en="Arabic" natural-name="‫العربية" />
+    <language iso-1="as" iso-2="asm" iso-3="asm"  name-fr="Assamais"  name-en="Assamese" natural-name="অসমীয়া" />
+    <language iso-1="av" iso-2="ava" iso-3="ava"  name-fr="Avar"  name-en="Avaric" natural-name="авар мацӀ ; магӀарул мацӀ" />
+    <language iso-1="ay" iso-2="aym" iso-3="aym"  name-fr="Aymara"  name-en="Aymara" natural-name="Aymar aru" />
+    <language iso-1="az" iso-2="aze" iso-3="aze"  name-fr="Azéri"  name-en="Azerbaijani" natural-name="Azərbaycan dili" />
+    <language iso-1="ba" iso-2="bak" iso-3="bak"  name-fr="Bachkir"  name-en="Bashkir" natural-name="башҡорт теле" />
+    <language iso-1="be" iso-2="bel" iso-3="bel"  name-fr="Biélorusse"  name-en="Belarusian" natural-name="Беларуская" />
+    <language iso-1="bg" iso-2="bul" iso-3="bul"  name-fr="Bulgare"  name-en="Bulgarian" natural-name="български език" />
+    <language iso-1="bh" iso-2="bih" iso-3="--"  name-fr="Bihari"  name-en="Bihari" natural-name="भोजपुरी" />
+    <language iso-1="bi" iso-2="bis" iso-3="bis"  name-fr="Bichelamar"  name-en="Bislama" natural-name="Bislama" />
+    <language iso-1="bm" iso-2="bam" iso-3="bam"  name-fr="Bambara"  name-en="Bambara" natural-name="Bamanankan" />
+    <language iso-1="bn" iso-2="ben" iso-3="ben"  name-fr="Bengalî"  name-en="Bengali" natural-name="বাংলা" />
+    <language iso-1="bo" iso-2="tib/bod" iso-3="bod"  name-fr="Tibétain"  name-en="Tibetan" natural-name="བོད་ཡིག" />
+    <language iso-1="br" iso-2="bre" iso-3="bre"  name-fr="Breton"  name-en="Breton" natural-name="Brezhoneg" />
+    <language iso-1="bs" iso-2="bos" iso-3="bos"  name-fr="Bosnien"  name-en="Bosnian" natural-name="Bosanski jezik" />
+    <language iso-1="ca" iso-2="cat" iso-3="cat"  name-fr="Catalan"  name-en="Catalan" natural-name="Català" />
+    <language iso-1="ce" iso-2="che" iso-3="che"  name-fr="Tchétchène"  name-en="Chechen" natural-name="нохчийн мотт" />
+    <language iso-1="ch" iso-2="cha" iso-3="cha"  name-fr="Chamorro"  name-en="Chamorro" natural-name="Chamoru" />
+    <language iso-1="co" iso-2="cos" iso-3="cos"  name-fr="Corse"  name-en="Corsican" natural-name="Corsu ; lingua corsa" />
+    <language iso-1="cr" iso-2="cre" iso-3="cre"  name-fr="Cri"  name-en="Cree" natural-name="ᓀᐦᐃᔭᐍᐏᐣ" />
+    <language iso-1="cs" iso-2="cze/ces" iso-3="ces"  name-fr="Tchèque"  name-en="Czech" natural-name="Česky ; čeština" />
+    <language iso-1="cu" iso-2="chu" iso-3="chu"  name-fr="Vieux slave"  name-en="Old Church Slavonic" natural-name="Словѣньскъ" />
+    <language iso-1="cv" iso-2="chv" iso-3="chv"  name-fr="Tchouvache"  name-en="Chuvash" natural-name="чӑваш чӗлхи" />
+    <language iso-1="cy" iso-2="wel/cym" iso-3="cym"  name-fr="Gallois"  name-en="Welsh" natural-name="Cymraeg" />
+    <language iso-1="da" iso-2="dan" iso-3="dan"  name-fr="Danois"  name-en="Danish" natural-name="Dansk" />
+    <language iso-1="de" iso-2="ger/deu" iso-3="deu"  name-fr="Allemand"  name-en="German" natural-name="Deutsch" />
+    <language iso-1="dv" iso-2="div" iso-3="div"  name-fr="Dhivehi"  name-en="Divehi" natural-name="‫ދިވެހި" />
+    <language iso-1="dz" iso-2="dzo" iso-3="dzo"  name-fr="Dzongkha"  name-en="Dzongkha" natural-name="རྫོང་ཁ" />
+    <language iso-1="ee" iso-2="ewe" iso-3="ewe"  name-fr="Ewe"  name-en="Ewe" natural-name="Ɛʋɛgbɛ" />
+    <language iso-1="el" iso-2="gre/ell" iso-3="ell"  name-fr="Grec moderne"  name-en="Greek" natural-name="Ελληνικά" />
+    <language iso-1="en" iso-2="eng" iso-3="eng"  name-fr="Anglais"  name-en="English" natural-name="English" />
+    <language iso-1="eo" iso-2="epo" iso-3="epo"  name-fr="Espéranto"  name-en="Esperanto" natural-name="Esperanto" />
+    <language iso-1="es" iso-2="spa" iso-3="spa"  name-fr="Espagnol"  name-en="Spanish" natural-name="Español; castellano" />
+    <language iso-1="et" iso-2="est" iso-3="est"  name-fr="Estonien"  name-en="Estonian" natural-name="Eesti keel" />
+    <language iso-1="eu" iso-2="baq/eus" iso-3="eus"  name-fr="Basque"  name-en="Basque" natural-name="Euskara" />
+    <language iso-1="fa" iso-2="per/fas" iso-3="fas"  name-fr="Persan"  name-en="Persian" natural-name="‫فارسی" />
+    <language iso-1="ff" iso-2="ful" iso-3="ful"  name-fr="Peul"  name-en="Fulah" natural-name="Fulfulde" />
+    <language iso-1="fi" iso-2="fin" iso-3="fin"  name-fr="Finnois"  name-en="Finnish" natural-name="Suomen kieli" />
+    <language iso-1="fj" iso-2="fij" iso-3="fij"  name-fr="Fidjien"  name-en="Fijian" natural-name="Vosa Vakaviti" />
+    <language iso-1="fo" iso-2="fao" iso-3="fao"  name-fr="Féringien"  name-en="Faroese" natural-name="Føroyskt" />
+    <language iso-1="fr" iso-2="fre/fra" iso-3="fra"  name-fr="Français"  name-en="French" natural-name="Français ; langue française" />
+    <language iso-1="fy" iso-2="fry" iso-3="fry"  name-fr="Frison"  name-en="Western Frisian" natural-name="Frysk" />
+    <language iso-1="ga" iso-2="gle" iso-3="gle"  name-fr="Irlandais"  name-en="Irish" natural-name="Gaeilge" />
+    <language iso-1="gd" iso-2="gla" iso-3="gla"  name-fr="Écossais"  name-en="Scottish Gaelic" natural-name="Gàidhlig" />
+    <language iso-1="gl" iso-2="glg" iso-3="glg"  name-fr="Galicien"  name-en="Galician" natural-name="Galego" />
+    <language iso-1="gn" iso-2="grn" iso-3="grn"  name-fr="Guarani"  name-en="Guarani" natural-name="Avañe'ẽ" />
+    <language iso-1="gu" iso-2="guj" iso-3="guj"  name-fr="Gujarâtî"  name-en="Gujarati" natural-name="ગુજરાતી" />
+    <language iso-1="gv" iso-2="glv" iso-3="glv"  name-fr="Mannois"  name-en="Manx" natural-name="Ghaelg" />
+    <language iso-1="ha" iso-2="hau" iso-3="hau"  name-fr="Haoussa"  name-en="Hausa" natural-name="‫هَوُسَ" />
+    <language iso-1="he" iso-2="heb" iso-3="heb"  name-fr="Hébreu"  name-en="Hebrew" natural-name="‫עברית" />
+    <language iso-1="hi" iso-2="hin" iso-3="hin"  name-fr="Hindî"  name-en="Hindi" natural-name="हिन्दी ; हिंदी" />
+    <language iso-1="ho" iso-2="hmo" iso-3="hmo"  name-fr="Hiri motu"  name-en="Hiri Motu" natural-name="Hiri Motu" />
+    <language iso-1="hr" iso-2="scr/hrv" iso-3="hrv"  name-fr="Croate"  name-en="Croatian" natural-name="Hrvatski" />
+    <language iso-1="ht" iso-2="hat" iso-3="hat"  name-fr="Créole haïtien"  name-en="Haitian" natural-name="Kreyòl ayisyen" />
+    <language iso-1="hu" iso-2="hun" iso-3="hun"  name-fr="Hongrois"  name-en="Hungarian" natural-name="magyar" />
+    <language iso-1="hy" iso-2="arm/hye" iso-3="hye"  name-fr="Arménien"  name-en="Armenian" natural-name="Հայերեն" />
+    <language iso-1="hz" iso-2="her" iso-3="her"  name-fr="Herero"  name-en="Herero" natural-name="Otjiherero" />
+    <language iso-1="ia" iso-2="ina" iso-3="ina"  name-fr="Interlingua"  name-en="Interlingua" natural-name="Interlingua" />
+    <language iso-1="id" iso-2="ind" iso-3="ind"  name-fr="Indonésien"  name-en="Indonesian" natural-name="Bahasa Indonesia" />
+    <language iso-1="ie" iso-2="ile" iso-3="ile"  name-fr="Occidental"  name-en="Interlingue" natural-name="Interlingue" />
+    <language iso-1="ig" iso-2="ibo" iso-3="ibo"  name-fr="Igbo"  name-en="Igbo" natural-name="Igbo" />
+    <language iso-1="ii" iso-2="iii" iso-3="iii"  name-fr="Yi"  name-en="Sichuan Yi" natural-name="ꆇꉙ" />
+    <language iso-1="ik" iso-2="ipk" iso-3="ipk"  name-fr="Inupiaq"  name-en="Inupiaq" natural-name="Iñupiaq ; Iñupiatun" />
+    <language iso-1="io" iso-2="ido" iso-3="ido"  name-fr="Ido"  name-en="Ido" natural-name="Ido" />
+    <language iso-1="is" iso-2="ice/isl" iso-3="isl"  name-fr="Islandais"  name-en="Icelandic" natural-name="Íslenska" />
+    <language iso-1="it" iso-2="ita" iso-3="ita"  name-fr="Italien"  name-en="Italian" natural-name="Italiano" />
+    <language iso-1="iu" iso-2="iku" iso-3="iku"  name-fr="Inuktitut"  name-en="Inuktitut" natural-name="ᐃᓄᒃᑎᑐᑦ" />
+    <language iso-1="ja" iso-2="jpn" iso-3="jpn"  name-fr="Japonais"  name-en="Japanese" natural-name="日本語 (にほんご)" />
+    <language iso-1="jv" iso-2="jav" iso-3="jav"  name-fr="Javanais"  name-en="Javanese" natural-name="Basa Jawa" />
+    <language iso-1="ka" iso-2="geo/kat" iso-3="kat"  name-fr="Géorgien"  name-en="Georgian" natural-name="ქართული" />
+    <language iso-1="kg" iso-2="kon" iso-3="kon"  name-fr="Kikongo"  name-en="Kongo" natural-name="KiKongo" />
+    <language iso-1="ki" iso-2="kik" iso-3="kik"  name-fr="Kikuyu"  name-en="Kikuyu" natural-name="Gĩkũyũ" />
+    <language iso-1="kj" iso-2="kua" iso-3="kua"  name-fr="Kuanyama"  name-en="Kwanyama" natural-name="Kuanyama" />
+    <language iso-1="kk" iso-2="kaz" iso-3="kaz"  name-fr="Kazakh"  name-en="Kazakh" natural-name="Қазақ тілі" />
+    <language iso-1="kl" iso-2="kal" iso-3="kal"  name-fr="Kalaallisut"  name-en="Kalaallisut" natural-name="Kalaallisut ; kalaallit oqaasii" />
+    <language iso-1="km" iso-2="khm" iso-3="khm"  name-fr="Khmer"  name-en="Khmer" natural-name="ភាសាខ្មែរ" />
+    <language iso-1="kn" iso-2="kan" iso-3="kan"  name-fr="Kannara"  name-en="Kannada" natural-name="ಕನ್ನಡ" />
+    <language iso-1="ko" iso-2="kor" iso-3="kor"  name-fr="Coréen"  name-en="Korean" natural-name="한국어 (韓國語) ; 조선말 (朝鮮語)" />
+    <language iso-1="kr" iso-2="kau" iso-3="kau"  name-fr="Kanouri"  name-en="Kanuri" natural-name="Kanuri" />
+    <language iso-1="ks" iso-2="kas" iso-3="kas"  name-fr="Kashmiri"  name-en="Kashmiri" natural-name="कश्मीरी ; كشميري" />
+    <language iso-1="ku" iso-2="kur" iso-3="kur"  name-fr="Kurde"  name-en="Kurdish" natural-name="Kurdî ; كوردی" />
+    <language iso-1="kv" iso-2="kom" iso-3="kom"  name-fr="Komi"  name-en="Komi" natural-name="коми кыв" />
+    <language iso-1="kw" iso-2="cor" iso-3="cor"  name-fr="Cornique"  name-en="Cornish" natural-name="Kernewek" />
+    <language iso-1="ky" iso-2="kir" iso-3="kir"  name-fr="Kirghiz"  name-en="Kirghiz" natural-name="кыргыз тили" />
+    <language iso-1="la" iso-2="lat" iso-3="lat"  name-fr="Latin"  name-en="Latin" natural-name="Latine ; lingua latina" />
+    <language iso-1="lb" iso-2="ltz" iso-3="ltz"  name-fr="Luxembourgeois"  name-en="Luxembourgish" natural-name="Lëtzebuergesch" />
+    <language iso-1="lg" iso-2="lug" iso-3="lug"  name-fr="Ganda"  name-en="Ganda" natural-name="Luganda" />
+    <language iso-1="li" iso-2="lim" iso-3="lim"  name-fr="Limbourgeois"  name-en="Limburgish" natural-name="Limburgs" />
+    <language iso-1="ln" iso-2="lin" iso-3="lin"  name-fr="Lingala"  name-en="Lingala" natural-name="Lingála" />
+    <language iso-1="lo" iso-2="lao" iso-3="lao"  name-fr="Lao"  name-en="Lao" natural-name="ພາສາລາວ" />
+    <language iso-1="lt" iso-2="lit" iso-3="lit"  name-fr="Lituanien"  name-en="Lithuanian" natural-name="Lietuvių kalba" />
+    <language iso-1="lu" iso-2="lub" iso-3="lub"  name-fr="Luba-katanga"  name-en="Luba-Katanga" natural-name="kiluba" />
+    <language iso-1="lv" iso-2="lav" iso-3="lav"  name-fr="Letton"  name-en="Latvian" natural-name="Latviešu valoda" />
+    <language iso-1="mg" iso-2="mlg" iso-3="mlg"  name-fr="Malgache"  name-en="Malagasy" natural-name="Fiteny malagasy" />
+    <language iso-1="mh" iso-2="mah" iso-3="mah"  name-fr="Marshallais"  name-en="Marshallese" natural-name="Kajin M̧ajeļ" />
+    <language iso-1="mi" iso-2="mao/mri" iso-3="mri"  name-fr="Māori de Nouvelle-Zélande"  name-en="Māori" natural-name="Te reo Māori" />
+    <language iso-1="mk" iso-2="mac/mkd" iso-3="mkd"  name-fr="Macédonien"  name-en="Macedonian" natural-name="македонски јазик" />
+    <language iso-1="ml" iso-2="mal" iso-3="mal"  name-fr="Malayalam"  name-en="Malayalam" natural-name="മലയാളം" />
+    <language iso-1="mn" iso-2="mon" iso-3="mon"  name-fr="Mongol"  name-en="Mongolian" natural-name="Монгол" />
+    <language iso-1="mo" iso-2="mol" iso-3="mol"  name-fr="Moldave"  name-en="Moldavian" natural-name="лимба молдовеняскэ" />
+    <language iso-1="mr" iso-2="mar" iso-3="mar"  name-fr="Marâthî"  name-en="Marathi" natural-name="मराठी" />
+    <language iso-1="ms" iso-2="may/msa" iso-3="msa"  name-fr="Malais"  name-en="Malay" natural-name="Bahasa Melayu ; بهاس ملايو" />
+    <language iso-1="mt" iso-2="mlt" iso-3="mlt"  name-fr="Maltais"  name-en="Maltese" natural-name="Malti" />
+    <language iso-1="my" iso-2="bur/mya" iso-3="mya"  name-fr="Birman"  name-en="Burmese" natural-name="ဗမာစာ" />
+    <language iso-1="na" iso-2="nau" iso-3="nau"  name-fr="Nauruan"  name-en="Nauru" natural-name="Ekakairũ Naoero" />
+    <language iso-1="nb" iso-2="nob" iso-3="nob"  name-fr="Norvégien Bokmål"  name-en="Norwegian Bokmål" natural-name="Norsk bokmål" />
+    <language iso-1="nd" iso-2="nde" iso-3="nde"  name-fr="Ndébélé du Nord"  name-en="North Ndebele" natural-name="isiNdebele" />
+    <language iso-1="ne" iso-2="nep" iso-3="nep"  name-fr="Népalais"  name-en="Nepali" natural-name="नेपाली" />
+    <language iso-1="ng" iso-2="ndo" iso-3="ndo"  name-fr="Ndonga"  name-en="Ndonga" natural-name="Owambo" />
+    <language iso-1="nl" iso-2="dut/nld" iso-3="nld"  name-fr="Néerlandais"  name-en="Dutch" natural-name="Nederlands" />
+    <language iso-1="nn" iso-2="nno" iso-3="nno"  name-fr="Norvégien Nynorsk"  name-en="Norwegian Nynorsk" natural-name="Norsk nynorsk" />
+    <language iso-1="no" iso-2="nor" iso-3="nor"  name-fr="Norvégien"  name-en="Norwegian" natural-name="Norsk" />
+    <language iso-1="nr" iso-2="nbl" iso-3="nbl"  name-fr="Ndébélé du Sud"  name-en="South Ndebele" natural-name="Ndébélé" />
+    <language iso-1="nv" iso-2="nav" iso-3="nav"  name-fr="Navajo"  name-en="Navajo" natural-name="Diné bizaad ; Dinékʼehǰí" />
+    <language iso-1="ny" iso-2="nya" iso-3="nya"  name-fr="Chichewa"  name-en="Chichewa" natural-name="ChiCheŵa ; chinyanja" />
+    <language iso-1="oc" iso-2="oci" iso-3="oci"  name-fr="Occitan"  name-en="Occitan" natural-name="Occitan" />
+    <language iso-1="oj" iso-2="oji" iso-3="oji"  name-fr="Ojibwé"  name-en="Ojibwa" natural-name="ᐊᓂᔑᓈᐯᒧᐎᓐ" />
+    <language iso-1="om" iso-2="orm" iso-3="orm"  name-fr="Oromo"  name-en="Oromo" natural-name="Afaan Oromoo" />
+    <language iso-1="or" iso-2="ori" iso-3="ori"  name-fr="Oriya"  name-en="Oriya" natural-name="ଓଡ଼ିଆ" />
+    <language iso-1="os" iso-2="oss" iso-3="oss"  name-fr="Ossète"  name-en="Ossetian" natural-name="Ирон æвзаг" />
+    <language iso-1="pa" iso-2="pan" iso-3="pan"  name-fr="Panjâbî"  name-en="Panjabi" natural-name="ਪੰਜਾਬੀ ; پنجابی" />
+    <language iso-1="pi" iso-2="pli" iso-3="pli"  name-fr="Pâli"  name-en="Pāli" natural-name="पािऴ" />
+    <language iso-1="pl" iso-2="pol" iso-3="pol"  name-fr="Polonais"  name-en="Polish" natural-name="Polski" />
+    <language iso-1="ps" iso-2="pus" iso-3="pus"  name-fr="Pachto"  name-en="Pashto" natural-name="‫پښتو" />
+    <language iso-1="pt" iso-2="por" iso-3="por"  name-fr="Portugais"  name-en="Portuguese" natural-name="Português" />
+    <language iso-1="qu" iso-2="que" iso-3="que"  name-fr="Quechua"  name-en="Quechua" natural-name="Runa Simi ; Kichwa" />
+    <language iso-1="rm" iso-2="roh" iso-3="roh"  name-fr="Romanche"  name-en="Romansh" natural-name="Rumantsch grischun" />
+    <language iso-1="rn" iso-2="run" iso-3="run"  name-fr="Kirundi"  name-en="Kirundi" natural-name="kiRundi" />
+    <language iso-1="ro" iso-2="rum/ron" iso-3="ron"  name-fr="Roumain"  name-en="Romanian" natural-name="Română" />
+    <language iso-1="ru" iso-2="rus" iso-3="rus"  name-fr="Russe"  name-en="Russian" natural-name="русский язык" />
+    <language iso-1="rw" iso-2="kin" iso-3="kin"  name-fr="Kinyarwanda"  name-en="Kinyarwanda" natural-name="Kinyarwanda" />
+    <language iso-1="sa" iso-2="san" iso-3="san"  name-fr="Sanskrit"  name-en="Sanskrit" natural-name="संस्कृतम्" />
+    <language iso-1="sc" iso-2="srd" iso-3="srd"  name-fr="Sarde"  name-en="Sardinian" natural-name="sardu" />
+    <language iso-1="sd" iso-2="snd" iso-3="snd"  name-fr="Sindhi"  name-en="Sindhi" natural-name="सिन्धी ; ‫سنڌي، سندھی" />
+    <language iso-1="se" iso-2="sme" iso-3="sme"  name-fr="Same du Nord"  name-en="Northern Sami" natural-name="Davvisámegiella" />
+    <language iso-1="sg" iso-2="sag" iso-3="sag"  name-fr="Sango"  name-en="Sango" natural-name="Yângâ tî sängö" />
+    <language iso-1="si" iso-2="sin" iso-3="sin"  name-fr="Cingalais"  name-en="Sinhalese" natural-name="සිංහල" />
+    <language iso-1="sk" iso-2="slo/slk" iso-3="slk"  name-fr="Slovaque"  name-en="Slovak" natural-name="Slovenčina" />
+    <language iso-1="sl" iso-2="slv" iso-3="slv"  name-fr="Slovène"  name-en="Slovene" natural-name="Slovenščina" />
+    <language iso-1="sm" iso-2="smo" iso-3="smo"  name-fr="Samoan"  name-en="Samoan" natural-name="Gagana fa'a Samoa" />
+    <language iso-1="sn" iso-2="sna" iso-3="sna"  name-fr="Shona"  name-en="Shona" natural-name="chiShona" />
+    <language iso-1="so" iso-2="som" iso-3="som"  name-fr="Somali"  name-en="Somali" natural-name="Soomaaliga ; af Soomaali" />
+    <language iso-1="sq" iso-2="alb/sqi" iso-3="sqi"  name-fr="Albanais"  name-en="Albanian" natural-name="Shqip" />
+    <language iso-1="sr" iso-2="scc/srp" iso-3="srp"  name-fr="Serbe"  name-en="Serbian" natural-name="српски језик" />
+    <language iso-1="ss" iso-2="ssw" iso-3="ssw"  name-fr="Siswati"  name-en="Swati" natural-name="SiSwati" />
+    <language iso-1="st" iso-2="sot" iso-3="sot"  name-fr="Sotho du Sud"  name-en="Sotho" natural-name="seSotho" />
+    <language iso-1="su" iso-2="sun" iso-3="sun"  name-fr="Soundanais"  name-en="Sundanese" natural-name="Basa Sunda" />
+    <language iso-1="sv" iso-2="swe" iso-3="swe"  name-fr="Suédois"  name-en="Swedish" natural-name="Svenska" />
+    <language iso-1="sw" iso-2="swa" iso-3="swa"  name-fr="Swahili"  name-en="Swahili" natural-name="Kiswahili" />
+    <language iso-1="ta" iso-2="tam" iso-3="tam"  name-fr="Tamoul"  name-en="Tamil" natural-name="தமிழ்" />
+    <language iso-1="te" iso-2="tel" iso-3="tel"  name-fr="Télougou"  name-en="Telugu" natural-name="తెలుగు" />
+    <language iso-1="tg" iso-2="tgk" iso-3="tgk"  name-fr="Tadjik"  name-en="Tajik" natural-name="тоҷикӣ ; toğikī ; ‫تاجیکی" />
+    <language iso-1="th" iso-2="tha" iso-3="tha"  name-fr="Thaï"  name-en="Thai" natural-name="ไทย" />
+    <language iso-1="ti" iso-2="tir" iso-3="tir"  name-fr="Tigrinya"  name-en="Tigrinya" natural-name="ትግርኛ" />
+    <language iso-1="tk" iso-2="tuk" iso-3="tuk"  name-fr="Turkmène"  name-en="Turkmen" natural-name="Türkmen ; Түркмен" />
+    <language iso-1="tl" iso-2="tgl" iso-3="tgl"  name-fr="Tagalog"  name-en="Tagalog" natural-name="Tagalog" />
+    <language iso-1="tn" iso-2="tsn" iso-3="tsn"  name-fr="Tswana"  name-en="Tswana" natural-name="seTswana" />
+    <language iso-1="to" iso-2="ton" iso-3="ton"  name-fr="Tongien"  name-en="Tonga" natural-name="faka Tonga" />
+    <language iso-1="tr" iso-2="tur" iso-3="tur"  name-fr="Turc"  name-en="Turkish" natural-name="Türkçe" />
+    <language iso-1="ts" iso-2="tso" iso-3="tso"  name-fr="Tsonga"  name-en="Tsonga" natural-name="xiTsonga" />
+    <language iso-1="tt" iso-2="tat" iso-3="tat"  name-fr="Tatar"  name-en="Tatar" natural-name="татарча ; tatarça ; ‫تاتارچا" />
+    <language iso-1="tw" iso-2="twi" iso-3="twi"  name-fr="Twi"  name-en="Twi" natural-name="Twi" />
+    <language iso-1="ty" iso-2="tah" iso-3="tah"  name-fr="Tahitien"  name-en="Tahitian" natural-name="Reo Mā`ohi" />
+    <language iso-1="ug" iso-2="uig" iso-3="uig"  name-fr="Ouïghour"  name-en="Uighur" natural-name="Uyƣurqə ; ‫ئۇيغۇرچ" />
+    <language iso-1="uk" iso-2="ukr" iso-3="ukr"  name-fr="Ukrainien"  name-en="Ukrainian" natural-name="українська мова" />
+    <language iso-1="ur" iso-2="urd" iso-3="urd"  name-fr="Ourdou"  name-en="Urdu" natural-name="‫اردو" />
+    <language iso-1="uz" iso-2="uzb" iso-3="uzb"  name-fr="Ouzbek"  name-en="Uzbek" natural-name="O'zbek ; Ўзбек ; أۇزبېك" />
+    <language iso-1="ve" iso-2="ven" iso-3="ven"  name-fr="Venda"  name-en="Venda" natural-name="tshiVenḓa" />
+    <language iso-1="vi" iso-2="vie" iso-3="vie"  name-fr="Vietnamien"  name-en="Viêt Namese" natural-name="Tiếng Việt" />
+    <language iso-1="vo" iso-2="vol" iso-3="vol"  name-fr="Volapük"  name-en="Volapük" natural-name="Volapük" />
+    <language iso-1="wa" iso-2="wln" iso-3="wln"  name-fr="Wallon"  name-en="Walloon" natural-name="Walon" />
+    <language iso-1="wo" iso-2="wol" iso-3="wol"  name-fr="Wolof"  name-en="Wolof" natural-name="Wollof" />
+    <language iso-1="xh" iso-2="xho" iso-3="xho"  name-fr="Xhosa"  name-en="Xhosa" natural-name="isiXhosa" />
+    <language iso-1="yi" iso-2="yid" iso-3="yid"  name-fr="Yiddish"  name-en="Yiddish" natural-name="‫ייִדיש" />
+    <language iso-1="yo" iso-2="yor" iso-3="yor"  name-fr="Yoruba"  name-en="Yoruba" natural-name="Yorùbá" />
+    <language iso-1="za" iso-2="zha" iso-3="zha"  name-fr="Zhuang"  name-en="Zhuang" natural-name="Saɯ cueŋƅ ; Saw cuengh" />
+    <language iso-1="zh" iso-2="chi/zho" iso-3="zho"  name-fr="Chinois"  name-en="Chinese" natural-name="中文, 汉语, 漢語" />
+    <language iso-1="zu" iso-2="zul" iso-3="zul"  name-fr="Zoulou"  name-en="Zulu" natural-name="isiZulu" />
+  </entities>
+</entity_language>

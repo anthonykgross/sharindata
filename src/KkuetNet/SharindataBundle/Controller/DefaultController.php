@@ -3,17 +3,27 @@
 namespace KkuetNet\SharindataBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use FOS\RestBundle\Controller\Annotations\Route; 
+use FOS\RestBundle\Controller\Annotations\Post; 
+use FOS\RestBundle\Controller\Annotations\Get; 
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+
+use FOS\RestBundle\View\View;  
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
-     * @Template()
+     * Retourne tous les contents
+     * @ApiDoc()
      */
-    public function indexAction($name)
+    public function getTimezonesAction()
     {
-        return array('name' => $name);
+        $em         = $this->getDoctrine()->getManager();
+        $entities   = $em->getRepository('KkuetNetSharindataBundle:Country') ->findAll();
+        $view = View::create()  
+          ->setStatusCode(200)  
+          ->setData($entities);  
+  
+        return $this->get('fos_rest.view_handler')->handle($view);  
     }
 }
