@@ -26,9 +26,29 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
-default_rest:
-    resource: KkuetNet\SharindataBundle\Controller\DefaultController
-    prefix: /api
+currency_rest:
+    resource: KkuetNet\SharindataBundle\Controller\CurrencyController
+    prefix: /api/data
+    type: rest
+    
+country_rest:
+    resource: KkuetNet\SharindataBundle\Controller\CountryController
+    prefix: /api/data
+    type: rest
+
+language_rest:
+    resource: KkuetNet\SharindataBundle\Controller\LanguageController
+    prefix: /api/data
+    type: rest
+ 
+timezone_rest:
+    resource: KkuetNet\SharindataBundle\Controller\TimezoneController
+    prefix: /api/data
+    type: rest
+
+zone_rest:
+    resource: KkuetNet\SharindataBundle\Controller\ZoneController
+    prefix: /api/data
     type: rest
     
 NelmioApiDocBundle:

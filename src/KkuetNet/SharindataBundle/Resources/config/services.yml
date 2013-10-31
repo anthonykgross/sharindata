@@ -3,3 +3,5 @@ services:
     sharindata_updater:
         class: KkuetNet\SharindataBundle\Services\Updater
         arguments: [@service_container]
+    sharindata.decoder.xml:
+        class: KkuetNet\SharindataBundle\Decoder\XmlDecoder

@@ -78,20 +78,24 @@ nelmio_api_doc: ~
 
 fos_rest:
     param_fetcher_listener: true
+    body_listener: true
+    format_listener: true
+    routing_loader:
+        default_format:       json
+        include_format:       false
     view:
-        view_response_listener: false
-        failed_validation: HTTP_BAD_REQUEST
-        default_engine: php
+        view_response_listener: 'force'
         formats:
             json: true
-            xml: true
-    format_listener:
-        rules:
-            prefer_extension: true
-    body_listener:
-        decoders:
-            json: fos_rest.decoder.json
+            xml: false
+        templating_formats:
+            html: false
+    
 
+sensio_framework_extra:
+    view:    { annotations: false }
+    router:  { annotations: true }
+    
 escape_wsse_authentication:
     authentication_provider_class: Escape\WSSEAuthenticationBundle\Security\Core\Authentication\Provider\Provider
     authentication_listener_class: Escape\WSSEAuthenticationBundle\Security\Http\Firewall\Listener
