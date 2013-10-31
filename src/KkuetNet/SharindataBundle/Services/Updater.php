@@ -38,7 +38,7 @@ class Updater {
         
         if ($handle = opendir(__DIR__."/../XML/cache/api/")) {
             while (false !== ($entry = readdir($handle))) {
-                if ($entry != "." && $entry != "..") {
+                if ($entry != "." && $entry != ".." && $entry != ".svn") {
                     $xml = simplexml_load_file(__DIR__."/../XML/cache/api/".$entry);
                     
                     $country = $this->em->getRepository("KkuetNetSharindataBundle:Country")->findOneBy(array(
