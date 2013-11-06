@@ -5,7 +5,7 @@ kkuet_net_sharindata:
 
 _welcome:
     pattern:  /
-    defaults: { _controller: FOSUserBundle:Security:login }
+    defaults: { _controller: KkuetNetSharindataBundle:Default:index }
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

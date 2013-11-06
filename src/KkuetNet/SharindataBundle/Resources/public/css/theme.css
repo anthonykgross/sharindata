@@ -1,0 +1,17 @@
+body{
+    padding-top: 60px;
+}
+
+.form-register{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-register .form-control{
+    margin: 5px 0px 5px 0px;
+}
+
+ul.alert{
+    list-style: none;
+}

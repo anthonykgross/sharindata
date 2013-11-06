@@ -14,7 +14,7 @@ class LanguageController extends Controller
 {
     /**
      * Returns all languages
-     * @ApiDoc()
+     * @ApiDoc(section="Language")
      * @Rest\View()
      */
     public function getLanguagesAction()
@@ -32,7 +32,7 @@ class LanguageController extends Controller
     /**
      * Returns language corresponding to the iso code 639-1
      * @param string $iso_code_6391 Example => fr, de, ar
-     * @ApiDoc()
+     * @ApiDoc(section="Language")
      * @Rest\View()
      */
     public function getLanguageAction($iso_code_6391)

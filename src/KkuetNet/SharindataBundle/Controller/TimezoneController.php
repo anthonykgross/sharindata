@@ -14,7 +14,7 @@ class TimezoneController extends Controller
 {
     /**
      * Returns all timezones
-     * @ApiDoc()
+     * @ApiDoc(section="Timezone")
      * @Rest\View()
      */
     public function getTimezonesAction()
@@ -32,7 +32,7 @@ class TimezoneController extends Controller
     /**
      * Returns timezone corresponding to the code
      * @param string $code Example => europe_paris
-     * @ApiDoc()
+     * @ApiDoc(section="Timezone")
      * @Rest\View()
      */
     public function getTimezoneAction($code)

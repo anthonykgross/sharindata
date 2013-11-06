@@ -14,7 +14,7 @@ class ZoneController extends Controller
 {
     /**
      * Returns all zones
-     * @ApiDoc()
+     * @ApiDoc(section="Zone")
      * @Rest\View()
      */
     public function getZonesAction()
@@ -32,7 +32,7 @@ class ZoneController extends Controller
     /**
      * Returns zone corresponding to the code
      * @param string $code Example => europe, oceania
-     * @ApiDoc()
+     * @ApiDoc(section="Zone")
      * @Rest\View()
      */
     public function getZoneAction($code)

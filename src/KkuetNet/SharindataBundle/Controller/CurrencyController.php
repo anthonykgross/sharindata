@@ -14,7 +14,7 @@ class CurrencyController extends Controller
 {
     /**
      * Returns all currencies
-     * @ApiDoc()
+     * @ApiDoc(section="Currency")
      * @Rest\View()
      */
     public function getCurrenciesAction()
@@ -32,7 +32,7 @@ class CurrencyController extends Controller
     /**
      * Returns currency corresponding to the iso code
      * @param string $iso_code Example => eur, usd, cny
-     * @ApiDoc()
+     * @ApiDoc(section="Currency")
      * @Rest\View()
      */
     public function getCurrencyAction($iso_code)

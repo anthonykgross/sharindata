@@ -3,5 +3,7 @@ services:
     sharindata_updater:
         class: KkuetNet\SharindataBundle\Services\Updater
         arguments: [@service_container]
-    sharindata.decoder.xml:
-        class: KkuetNet\SharindataBundle\Decoder\XmlDecoder
+    sharindata.twig.alert_extension:
+        class: KkuetNet\SharindataBundle\Twig\AlertExtension
+        tags:
+            - { name: twig.extension }

@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+    
+{% block body %}
+    {% include motdTemplate %}
+    <div class="container" id="resources_container">
+        {% block content %}{% endblock %}
+    </div>
+{% endblock %}

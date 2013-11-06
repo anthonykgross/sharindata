@@ -14,7 +14,7 @@ class CountryController extends Controller
 {
     /**
      * Returns all countries
-     * @ApiDoc()
+     * @ApiDoc(section="Country")
      * @Rest\View()
      */
     public function getCountriesAction()
@@ -32,7 +32,7 @@ class CountryController extends Controller
     /**
      * Returns country corresponding to the iso
      * @param string $iso Example => fr, us, de
-     * @ApiDoc()
+     * @ApiDoc(section="Country")
      * @Rest\View()
      */
     public function getCountryAction($iso)

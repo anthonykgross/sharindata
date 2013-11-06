@@ -1,0 +1,18 @@
+{% extends "NelmioApiDocBundle::layout.html.twig" %}
+
+{% block content %}
+    {% for section, sections in resources  %}
+        {% if section != '_others' %}
+            <div id="section">
+            <h1>{{ section }}</h1>
+        {% endif %}
+        {% for resource, methods in sections %}
+            {% for data in methods %}
+                {% include 'NelmioApiDocBundle::method.html.twig' %}
+            {% endfor %}
+        {% endfor %}
+        {% if section != '_others' %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
