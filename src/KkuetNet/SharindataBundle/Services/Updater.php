@@ -127,6 +127,10 @@ class Updater {
         foreach($countryHasLanguage as $chl){
             $this->em->remove($chl);
         }
+        $taxes = $this->em->getRepository("KkuetNetSharindataBundle:Tax")->findAll();
+        foreach($taxes as $t){
+            $this->em->remove($t);
+        }
         $this->em->flush();
     }
 }

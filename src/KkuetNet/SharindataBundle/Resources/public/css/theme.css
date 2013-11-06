@@ -15,3 +15,7 @@ body{
 ul.alert{
     list-style: none;
 }
+
+.syntaxhighlighter{
+    padding: 10px;
+}

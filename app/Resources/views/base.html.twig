@@ -7,6 +7,8 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link type="text/css" rel="stylesheet" href="/css/shCoreRDark.css"/>
+    
     <link href="{{ asset("bundles/kkuetnetsharindata/css/theme.css") }}" rel="stylesheet" media="screen">
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,6 +32,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="{{ path("fos_user_registration_register") }}">{% trans %}Register{% endtrans %}</a></li>
+                <li><a href="{{ path("fos_user_security_login") }}">{% trans %}Sign In{% endtrans %}</a></li>
                 <li><a href="{{ path("nelmio_api_doc_index") }}">{% trans %}Documentation{% endtrans %}</a></li>
             </ul>
           {% block loginform %}{% endblock %}
@@ -49,6 +52,15 @@
     <script src="/js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/shCore.js"></script>
+    <script type="text/javascript" src="/js/shBrushBash.js"></script>
+    <script type="text/javascript" src="/js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="/js/shBrushPhp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.all();
+    </script>
     {% block javascripts %}{% endblock %}
   </body>
 </html>
