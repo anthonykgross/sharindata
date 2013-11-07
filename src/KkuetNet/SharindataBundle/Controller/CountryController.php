@@ -65,7 +65,16 @@ class CountryController extends Controller
                     'url'      => '/data/zones/'.$country->getZone()->getCode()
                 ),
             );
-
+            
+            $data['states'] = array();
+            foreach($country->getStates() as $s){
+                $data['states'][] = array(
+                    'name' => $s->getName(),
+                    'iso' => $s->getIso(),
+                    'tax_behavior' => $s->getTaxBehavior()
+                );
+            }
+            
             if($country->getTimezone()){
                 $data['timezone'] = array(
                     'code' => $country->getTimezone()->getCode(),

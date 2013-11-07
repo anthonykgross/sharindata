@@ -56,6 +56,28 @@ class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
             }
             $manager->flush();
         }
+        
+        if(($handle = fopen(__DIR__."/../../XML/state.xml", "r")) !== FALSE){
+            $xml = simplexml_load_file(__DIR__."/../../XML/state.xml");
+            foreach($xml->entities->children() as $e){
+                $state = $manager->getRepository("KkuetNetSharindataBundle:State")->findOneBy(array(
+                    'iso' => (string)$e['iso_code']
+                ));
+                $country = $manager->getRepository("KkuetNetSharindataBundle:Country")->findOneBy(array(
+                    'iso' => (string)$e['id_country']
+                ));
+                
+                if(!$state && $country){
+                    $state = new \KkuetNet\SharindataBundle\Entity\State();
+                    $state->setName((string)$e->name);
+                    $state->setCountry($country);
+                    $state->setIso((string)$e['iso_code']);
+                    $state->setTaxBehavior((integer)$e['tax_behavior']);
+                    $manager->persist($state);
+                }
+            }
+            $manager->flush();
+        }
     }
 
     public function getOrder() {

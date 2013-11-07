@@ -113,6 +113,10 @@ class Country
     private $taxes;
     
     /**
+     * @ORM\OneToMany(targetEntity="State", mappedBy="country", cascade={"remove", "persist"})
+     */
+    private $states;
+    /**
      * Constructor
      */
     public function __construct()
@@ -120,6 +124,7 @@ class Country
         $this->countryHasCurrencies = new \Doctrine\Common\Collections\ArrayCollection();
         $this->countryHasLanguages = new \Doctrine\Common\Collections\ArrayCollection();
         $this->taxes = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->states = new \Doctrine\Common\Collections\ArrayCollection();
     }
     
     /**
@@ -459,5 +464,38 @@ class Country
     public function getTaxes()
     {
         return $this->taxes;
+    }
+
+    /**
+     * Add states
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\State $states
+     * @return Country
+     */
+    public function addState(\KkuetNet\SharindataBundle\Entity\State $states)
+    {
+        $this->states[] = $states;
+    
+        return $this;
+    }
+
+    /**
+     * Remove states
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\State $states
+     */
+    public function removeState(\KkuetNet\SharindataBundle\Entity\State $states)
+    {
+        $this->states->removeElement($states);
+    }
+
+    /**
+     * Get states
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getStates()
+    {
+        return $this->states;
     }
 }
