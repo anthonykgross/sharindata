@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>Sharindata - {% block title %}Home{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -31,8 +31,13 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{{ path("fos_user_registration_register") }}">{% trans %}Register{% endtrans %}</a></li>
-                <li><a href="{{ path("fos_user_security_login") }}">{% trans %}Sign In{% endtrans %}</a></li>
+                {% if not app.user %}
+                    <li><a href="{{ path("fos_user_registration_register") }}">{% trans %}Register{% endtrans %}</a></li>
+                    <li><a href="{{ path("fos_user_security_login") }}">{% trans %}Sign In{% endtrans %}</a></li>
+                {% else %}
+                    <li><a href="{{ path("fos_user_profile_show") }}">{{ app.user.email}}</a></li>
+                    <li><a href="{{ path("fos_user_security_logout") }}">{% trans %}Logout{% endtrans %}</a></li>
+                {% endif %}
                 <li><a href="{{ path("nelmio_api_doc_index") }}">{% trans %}Documentation{% endtrans %}</a></li>
             </ul>
           {% block loginform %}{% endblock %}

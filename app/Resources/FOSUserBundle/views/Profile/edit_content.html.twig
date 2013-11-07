@@ -1,0 +1,11 @@
+<form  action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="form-register">
+    <h2 class="form-signin-heading">Profile</h2>
+    {{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder': "Email address"} }) }}
+    {{ form_errors(form.email)}}
+    {{ form_widget(form.current_password, { 'attr': {'class': 'form-control', 'placeholder': "Password"} }) }}
+    {{ form_errors(form.current_password)}}
+    {{ form_widget(form._token) }}
+    <hr/>
+    <input  class="btn btn-success btn-block" type="submit" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
+    <a href="{{ path('fos_user_profile_show')}}" class="btn btn-primary btn-block">{% trans %}Cancel{% endtrans %}</a>
+</form>

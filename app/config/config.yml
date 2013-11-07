@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: %locale% }
+    translator:      { fallback: %locale% }
     secret:          %secret%
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -69,7 +69,15 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: KkuetNet\SharindataBundle\Entity\User
-    
+    registration:
+        confirmation:
+            enabled:    true   
+    resetting:
+        token_ttl: 86400
+    from_email:
+        address: no-reply@sharindata.com
+        sender_name: Sharindata.com
+        
 #jms_serializer:
 #    handlers:
 #        object_based: true

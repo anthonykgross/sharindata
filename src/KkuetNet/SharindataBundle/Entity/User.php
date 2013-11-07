@@ -21,4 +21,9 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+    
+    public function setEmail($email) {
+        parent::setUsername($email);
+        parent::setEmail($email);
+    }
 }
