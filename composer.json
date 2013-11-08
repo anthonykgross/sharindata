@@ -25,7 +25,8 @@
         "jms/serializer-bundle": "dev-master",
         "friendsofsymfony/rest-bundle": "*",
         "nelmio/api-doc-bundle": "*",
-	"escapestudios/wsse-authentication-bundle": "2.2.x-dev"
+	"escapestudios/wsse-authentication-bundle": "2.3.x-dev",
+        "kkuetnet/sharindata-client-api": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
@@ -59,5 +60,11 @@
         "branch-alias": {
             "dev-master": "2.3-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kkuetnet/SharindataClientApi.git"
+        }
+    ]
 }

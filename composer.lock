@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "92e5b44ca869345994efcc679736b10b",
+    "hash": "15414d186daa81f2047e1fba5802174c",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -782,27 +782,33 @@
         },
         {
             "name": "escapestudios/wsse-authentication-bundle",
-            "version": "2.2.x-dev",
+            "version": "dev-master",
             "target-dir": "Escape/WSSEAuthenticationBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/escapestudios/EscapeWSSEAuthenticationBundle.git",
-                "reference": "980ef5cd341a855922229baca2e52ccbffc1c77d"
+                "reference": "b195c37bc2f5e7842b4bdae05352b66126626b42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/escapestudios/EscapeWSSEAuthenticationBundle/zipball/980ef5cd341a855922229baca2e52ccbffc1c77d",
-                "reference": "980ef5cd341a855922229baca2e52ccbffc1c77d",
+                "url": "https://api.github.com/repos/escapestudios/EscapeWSSEAuthenticationBundle/zipball/b195c37bc2f5e7842b4bdae05352b66126626b42",
+                "reference": "b195c37bc2f5e7842b4bdae05352b66126626b42",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "symfony/framework-bundle": "2.2.*",
-                "symfony/security-bundle": "2.2.*"
+                "symfony/finder": "2.3.*@dev",
+                "symfony/framework-bundle": "2.3.*",
+                "symfony/security-bundle": "2.3.*"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Escape\\WSSEAuthenticationBundle": ""
@@ -829,7 +835,7 @@
                 "bundle",
                 "wsse"
             ],
-            "time": "2013-07-03 15:44:33"
+            "time": "2013-10-22 17:23:05"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -1229,16 +1235,16 @@
         },
         {
             "name": "jms/metadata",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/metadata.git",
-                "reference": "246d7096801ce29b5aea30a1abf0277ccfb9f055"
+                "reference": "88ffa28bc987e4c26229fc84a2e541b6ed4e1459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/246d7096801ce29b5aea30a1abf0277ccfb9f055",
-                "reference": "246d7096801ce29b5aea30a1abf0277ccfb9f055",
+                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/88ffa28bc987e4c26229fc84a2e541b6ed4e1459",
+                "reference": "88ffa28bc987e4c26229fc84a2e541b6ed4e1459",
                 "shasum": ""
             },
             "require": {
@@ -1250,7 +1256,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -1277,7 +1283,7 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2013-09-13 09:05:44"
+            "time": "2013-11-05 23:02:36"
         },
         {
             "name": "jms/parser-lib",
@@ -1321,12 +1327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle.git",
-                "reference": "aefac81c3814bf77e6b2d8027dc2f0039e185dea"
+                "reference": "b342e02983e9cd522d9dce1c0dfeef27c8a25850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/aefac81c3814bf77e6b2d8027dc2f0039e185dea",
-                "reference": "aefac81c3814bf77e6b2d8027dc2f0039e185dea",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/b342e02983e9cd522d9dce1c0dfeef27c8a25850",
+                "reference": "b342e02983e9cd522d9dce1c0dfeef27c8a25850",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1389,7 @@
                 "secure",
                 "security"
             ],
-            "time": "2013-08-06 07:00:17"
+            "time": "2013-11-06 16:12:19"
         },
         {
             "name": "jms/serializer",
@@ -1521,6 +1527,47 @@
                 "xml"
             ],
             "time": "2013-10-16 00:35:01"
+        },
+        {
+            "name": "kkuetnet/sharindata-client-api",
+            "version": "dev-master",
+            "target-dir": "KkuetNet/SharindataClientApi",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kkuetnet/SharindataClientApi.git",
+                "reference": "f7d4f00f11ca4944f2a3f05e4c94543844a841b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kkuetnet/SharindataClientApi/zipball/f7d4f00f11ca4944f2a3f05e4c94543844a841b0",
+                "reference": "f7d4f00f11ca4944f2a3f05e4c94543844a841b0",
+                "shasum": ""
+            },
+            "type": "vendor",
+            "autoload": {
+                "psr-0": {
+                    "KkuetNet\\SharindataClientApi": ""
+                }
+            },
+            "license": [
+                "Commercial"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony GROSS",
+                    "email": "anthony_gross@kkuet.net"
+                }
+            ],
+            "description": "Sharindata WebService",
+            "keywords": [
+                "sharindata",
+                "webservice"
+            ],
+            "support": {
+                "source": "https://github.com/kkuetnet/SharindataClientApi/tree/master",
+                "issues": "https://github.com/kkuetnet/SharindataClientApi/issues"
+            },
+            "time": "2013-11-08 15:14:20"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2905,7 +2952,8 @@
         "doctrine/doctrine-fixtures-bundle": 20,
         "jms/security-extra-bundle": 20,
         "jms/serializer-bundle": 20,
-        "escapestudios/wsse-authentication-bundle": 20
+        "escapestudios/wsse-authentication-bundle": 20,
+        "kkuetnet/sharindata-client-api": 20
     },
     "platform": {
         "php": ">=5.3.3"

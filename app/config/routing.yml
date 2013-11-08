@@ -28,7 +28,7 @@ fos_user_change_password:
 
 security_rest:
     resource: KkuetNet\SharindataBundle\Controller\SecurityController
-    prefix: /api
+    prefix: /api/token
     type: rest
     
 currency_rest:
