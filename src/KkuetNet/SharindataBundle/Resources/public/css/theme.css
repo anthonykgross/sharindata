@@ -1,5 +1,5 @@
 body{
-    padding-top: 60px;
+    padding-top: 48px;
 }
 
 .form-register{
@@ -26,4 +26,8 @@ ul.alert{
     background-repeat: no-repeat;
     padding-left: 60px;
     color: white;
+}
+
+#social{
+    background-color: #eee;
 }

@@ -5,6 +5,11 @@
     <div class="container">
         <h1>Hello geeks!</h1>
         <p>You're developer and you're tired of wasting time to search basic data or to develop recurrent functionalities like random generator for your application ? This is a website for easy access to essential data and tools for developers. Create your account and call our API when you need it !</p>
+        <div id="social">
+            <a href="https://twitter.com/sharindata" target="_blank"><img src="{{ asset("img/social_tw.png") }}"/></a>
+            <a href="https://www.facebook.com/sharindata" target="_blank"><img src="{{ asset("img/social_fb.png") }}"/></a>
+            <a href="https://plus.google.com/u/0/communities/114133351705912199375" target="_blank"><img src="{{ asset("img/social_gplus.png") }}"/></a>
+        </div>
     </div>
 </div>
 {% endblock %}
@@ -12,17 +17,30 @@
 {% block body %}
 <!-- Example row of columns -->
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <h2>Register for free</h2>
         <p>Create your developer account with a login and password. When your email is confirmed, you can call our API and get data.</p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <h2>Update</h2>
         <p>Data are updated daily by trusted organizations.</p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <h2>More</h2>
         <p>We develop tools to respond to frequently problems developers which are available with our API. Random generator, date converter and more relieve you of recurring tasks.</p>
+    </div>
+    <div class="col-lg-3">
+        <!-- Place this tag where you want the widget to render. -->
+        <div class="g-page" data-width="260" data-href="//plus.google.com/104540658187231261711" data-showtagline="false" data-showcoverphoto="false" data-rel="publisher"></div>
+
+        <!-- Place this tag after the last widget tag. -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
     </div>
 </div>
 
