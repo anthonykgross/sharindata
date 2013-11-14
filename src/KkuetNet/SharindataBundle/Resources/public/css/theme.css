@@ -19,3 +19,11 @@ ul.alert{
 .syntaxhighlighter{
     padding: 10px;
 }
+
+#logo{
+    background: url('../../../Sharindata48x48.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    color: white;
+}
