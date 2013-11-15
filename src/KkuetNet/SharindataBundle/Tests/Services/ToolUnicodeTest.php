@@ -20,6 +20,14 @@ class ToolUnicodeTest extends WebTestCase {
         $this->em           = $this->container->get('doctrine')->getManager();
     }
     
+    public function testHtmlToUtf8(){
+        $this->assertTrue($this->container->get("sharindata_tool_unicode")->HtmlToUtf8("fran&#x00e7;ais")=="français");
+        $this->assertTrue($this->container->get("sharindata_tool_unicode")->HtmlToUtf8("&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;")=="العربية");
+        $this->assertTrue($this->container->get("sharindata_tool_unicode")->HtmlToUtf8("&#x65e5;&#x672c;&#x4eba;")=="日本人");
+        $this->assertTrue($this->container->get("sharindata_tool_unicode")->HtmlToUtf8("&#x8bed;&#x8a00;&#x5217;&#x8868;")=="语言列表");
+        $this->assertTrue($this->container->get("sharindata_tool_unicode")->HtmlToUtf8("fran&#x00e7;ais &#x0022; efzef ")=='français " efzef ');
+    }
+    
     public function testUtf8ToHtml(){
         $this->assertTrue($this->container->get("sharindata_tool_unicode")->Utf8ToHtml("français")=="fran&#x00e7;ais");
         $this->assertTrue($this->container->get("sharindata_tool_unicode")->Utf8ToHtml("العربية")=="&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;");
@@ -66,6 +74,5 @@ class ToolUnicodeTest extends WebTestCase {
         $this->assertTrue($this->container->get("sharindata_tool_unicode")->HexToUtf8("e697a5e69cace4baba")=="日本人");
         $this->assertTrue($this->container->get("sharindata_tool_unicode")->HexToUtf8("e8afade8a880e58897e8a1a8")=="语言列表");
     }
-    
-        
+            
 }
