@@ -24,7 +24,6 @@ class UpdaterCommand extends ContainerAwareCommand
     {
         $this->container    = $this->getContainer();
         $this->em           = $this->container->get('doctrine')->getEntityManager();
-        
         $this->container->get("sharindata_updater")->purgeCache();
         $this->container->get('sharindata_updater')->importXml();
     }

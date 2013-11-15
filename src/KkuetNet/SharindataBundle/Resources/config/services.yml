@@ -3,6 +3,9 @@ services:
     sharindata_updater:
         class: KkuetNet\SharindataBundle\Services\Updater
         arguments: [@service_container]
+    sharindata_tool_unicode:
+        class: KkuetNet\SharindataBundle\Services\ToolUnicode
+        arguments: [@service_container]
     sharindata.twig.alert_extension:
         class: KkuetNet\SharindataBundle\Twig\AlertExtension
         tags:
