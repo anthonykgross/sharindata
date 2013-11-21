@@ -6,6 +6,9 @@ services:
     sharindata_tool_unicode:
         class: KkuetNet\SharindataBundle\Services\ToolUnicode
         arguments: [@service_container]
+    sharindata_tool_image:
+        class: KkuetNet\SharindataBundle\Services\ToolImage
+        arguments: [@service_container]
     sharindata.twig.alert_extension:
         class: KkuetNet\SharindataBundle\Twig\AlertExtension
         tags:

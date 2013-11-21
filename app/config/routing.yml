@@ -55,6 +55,11 @@ zone_rest:
     resource: KkuetNet\SharindataBundle\Controller\ZoneController
     prefix: /api/data
     type: rest
+
+image_rest:
+    resource: KkuetNet\SharindataBundle\Controller\ImageController
+    prefix: /api/tool
+    type: rest
     
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
