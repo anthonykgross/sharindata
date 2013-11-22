@@ -44,12 +44,17 @@ class SecurityController extends Controller
         $created        = date('c');
         $nonce          = substr(md5(uniqid('nonce_', true)), 0, 16);
         $nonceHigh      = base64_encode($nonce);
-        $passwordDigest = base64_encode(sha1($nonce . $created . $password . "{".$user->getSalt()."}", true));
+        
+        $factory    = $this->get('security.encoder_factory');
+        $encoder    = $factory->getEncoder($user);
+        $password   = $encoder->encodePassword($password, $user->getSalt());
+
+        $passwordDigest = base64_encode(sha1($nonce . $created .$password, true));
         $header         = "UsernameToken Username=\"{$username}\", PasswordDigest=\"{$passwordDigest}\", Nonce=\"{$nonceHigh}\", Created=\"{$created}\"";
         
         $view       = new \Symfony\Component\HttpFoundation\JsonResponse(array('WSSE' => $header));
         $view->headers->set("Authorization", 'WSSE profile="UsernameToken"');
-        $view->headers->set("X-WSSE", "UsernameToken Username=\"{$username}\", PasswordDigest=\"{$passwordDigest}\", Nonce=\"{$nonceHigh}\", Created=\"{$created}\"");
+        $view->headers->set("X-WSSE", $header);
 
         return $view;
     }

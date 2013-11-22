@@ -31,3 +31,20 @@ ul.alert{
 #social{
     background-color: #eee;
 }
+
+span.color{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    vertical-align: middle;
+}
+
+.custom-liste li{
+    padding: 2px;
+}
+
+.code{
+    font-family : "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+    font-weight: normal;
+}

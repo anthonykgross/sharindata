@@ -33,7 +33,7 @@ class Country
      *
      * @ORM\ManyToOne(targetEntity="Zone", inversedBy="countries")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="zone_id", referencedColumnName="id", nullable=false)
+     *   @ORM\JoinColumn(name="zone_id", referencedColumnName="id", nullable=true)
      * })
      */
     private $zone;
@@ -116,6 +116,21 @@ class Country
      * @ORM\OneToMany(targetEntity="State", mappedBy="country", cascade={"remove", "persist"})
      */
     private $states;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="flag", type="string", length=12, nullable=true)
+     */
+    private $flag;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=55, nullable=true)
+     */
+    private $name;
+    
     /**
      * Constructor
      */
@@ -497,5 +512,51 @@ class Country
     public function getStates()
     {
         return $this->states;
+    }
+
+    /**
+     * Set flag
+     *
+     * @param string $flag
+     * @return Country
+     */
+    public function setFlag($flag)
+    {
+        $this->flag = $flag;
+    
+        return $this;
+    }
+
+    /**
+     * Get flag
+     *
+     * @return string 
+     */
+    public function getFlag()
+    {
+        return $this->flag;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Country
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 }

@@ -7,25 +7,27 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
 class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
 {
-    public function load(ObjectManager $manager) {
-         if(($handle = fopen(__DIR__."/../../XML/country.xml", "r")) !== FALSE){
-            $xml = simplexml_load_file(__DIR__."/../../XML/country.xml");
-            foreach($xml->entities->children() as $e){
-                $zone = $manager->getRepository("KkuetNetSharindataBundle:Zone")->findOneBy(array(
-                    'code' => (string)$e['id_zone']
-                ));
+    public function load(ObjectManager $manager) {       
+        if (($handle = fopen(__DIR__ . "/../CSV/Country.csv", "r")) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
+                foreach ($data as $i => $row) {
+                    if ($row == "NULL") {
+                        $data[$i] = null;
+                    }
+                }
                 $country = new \KkuetNet\SharindataBundle\Entity\Country();
-                $country->setIso((string)$e['iso_code']);
-                $country->setZone($zone);
-                $country->setCallPrefix((string)$e['call_prefix']);
-                $country->setContainsStates((int)$e['contains_states']);
-                $country->setNeedIdentificationNumber((int)$e['need_identification_number']);
-                $country->setNeedZipCode((int)$e['need_zip_code']);
-                $country->setZipCodeFormat((string)$e['zip_code_format']);
-                $country->setDisplayTaxLabel((int)$e['display_tax_label']);
+                $country->setIso($data[3]);
+                $country->setCallPrefix($data[4]);
+                $country->setContainsStates($data[5]);
+                $country->setNeedIdentificationNumber($data[6]);
+                $country->setNeedZipCode($data[7]);
+                $country->setZipCodeFormat($data[8]);
+                $country->setDisplayTaxLabel($data[9]);
+                $country->setFlag($data[11]);
+                $country->setName($data[12]);
                 $manager->persist($country);
+                $manager->flush();
             }
-            $manager->flush();
         }
         
         if(($handle = fopen(__DIR__."/../../XML/iso_to_timezone.xml", "r")) !== FALSE){
@@ -74,6 +76,23 @@ class LoadCountryData implements FixtureInterface, OrderedFixtureInterface
                     $state->setIso((string)$e['iso_code']);
                     $state->setTaxBehavior((integer)$e['tax_behavior']);
                     $manager->persist($state);
+                }
+            }
+            $manager->flush();
+        }
+
+        if(($handle = fopen(__DIR__."/../../XML/country.xml", "r")) !== FALSE){
+            $xml = simplexml_load_file(__DIR__."/../../XML/country.xml");
+            foreach($xml->entities->children() as $e){
+                $zone = $manager->getRepository("KkuetNetSharindataBundle:Zone")->findOneBy(array(
+                    'code' => (string)$e['id_zone']
+                ));
+                $country = $manager->getRepository("KkuetNetSharindataBundle:Country")->findOneBy(array(
+                    'iso' => (string)$e['iso_code']
+                ));
+                if($zone && $country){
+                    $country->setZone($zone);
+                    $manager->persist($country);
                 }
             }
             $manager->flush();

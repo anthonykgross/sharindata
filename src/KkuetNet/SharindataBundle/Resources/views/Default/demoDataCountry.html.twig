@@ -1,0 +1,295 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Request</h2>
+        <pre class="brush: php;">
+            $response = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("your_login", "your_password");
+            var_dump($response->getCountries());
+        </pre>
+        <h2>JSON Response</h2>
+        <pre class="brush: js;">
+            {{data1}}
+        </pre>
+        
+        <h2>Example of result</h2>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    Flag
+                </div>
+                <div class="col-lg-8">
+                    <img src="{{ json_data1.flag }}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Name
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Call Prefix
+                </div>
+                <div class="col-lg-8">
+                    +{{ json_data1.call_prefix }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    ISO
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.iso }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Contains states ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data1.contains_states == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Need identification number ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data1.need_identification_number == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Need zip code ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data1.need_zip_code == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Zip code format ?
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.zip_code_format }} (N = Number; L = Letter)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Display tax label ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data1.display_tax_label == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Address format
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.address_format|replace({'\n': "<br/>"})|raw }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Zone
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.zone.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    States
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data1.states %}
+                        <li>{{st.name}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Timezone
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.timezone.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Currencies
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data1.currencies %}
+                        <li>{{st.iso_code}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Languages
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data1.languages %}
+                        <li>{{st['iso639-1']}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Taxes
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data1.taxes %}
+                        <li>{{st.name}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    Flag
+                </div>
+                <div class="col-lg-8">
+                    <img src="{{ json_data2.flag }}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Name
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Call Prefix
+                </div>
+                <div class="col-lg-8">
+                    +{{ json_data2.call_prefix }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    ISO
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.iso }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Contains states ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data2.contains_states == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Need identification number ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data2.need_identification_number == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Need zip code ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data2.need_zip_code == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Zip code format ?
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.zip_code_format }} (N = Number; L = Letter)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Display tax label ?
+                </div>
+                <div class="col-lg-8">
+                    {% if json_data2.display_tax_label == false%}No{%else%}Yes{%endif%}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Address format
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.address_format|replace({'\n': "<br/>"})|raw }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Zone
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.zone.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    States
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data2.states %}
+                        <li>{{st.name}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Timezone
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.timezone.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Currencies
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data2.currencies %}
+                        <li>{{st.iso_code}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Languages
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data2.languages %}
+                        <li>{{st['iso639-1']}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Taxes
+                </div>
+                <ul class="col-lg-8">
+                    {% for st in json_data2.taxes %}
+                        <li>{{st.name}}</li>
+                    {% endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

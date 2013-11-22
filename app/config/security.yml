@@ -4,7 +4,7 @@ jms_security_extra:
 
 security:
     encoders:
-        FOS\UserBundle\Model\UserInterface: plaintext
+        FOS\UserBundle\Model\UserInterface: sha512
         
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
@@ -19,7 +19,11 @@ security:
 #           Pas de restrinctions si on souhaite aller aur la doc ou creer/supprimer le token
             pattern:   ^/api/(?!(docs|token)).*
 #            pattern:   ^/api/(?!(.*))
-            wsse:      { nonce_dir: "%kernel.cache_dir%/nonces/", lifetime: 300, realm: "Secured API", profile: "UsernameToken"}
+            wsse:      
+                nonce_dir: "%kernel.cache_dir%/nonces/"
+                lifetime: 300
+                realm: "Secured API"
+                profile: "UsernameToken"
         main:
 #           La session principal n'est pas valable dans la partie API
             pattern: ^/(?!(api)).*

@@ -85,11 +85,11 @@ class ToolImage {
         $colors         = $this->getAllColors($path);
         $data           = array();
         
-        $colorsSorted   = array_keys($colors);
+        $colorsSorted   = $colors;
 
-        foreach($colorsSorted as $k){
+        foreach($colorsSorted as $k => $v){
             if(count($data) < $nbColors){
-                $data[] = $k;
+                $data[$k] = $v;
             }
         }
         

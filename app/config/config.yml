@@ -105,6 +105,7 @@ sensio_framework_extra:
     router:  { annotations: true }
     
 escape_wsse_authentication:
-    authentication_provider_class: Escape\WSSEAuthenticationBundle\Security\Core\Authentication\Provider\Provider
+    authentication_provider_class: KkuetNet\SharindataBundle\Security\Core\Authentication\Provider\Provider
     authentication_listener_class: Escape\WSSEAuthenticationBundle\Security\Http\Firewall\Listener
     authentication_entry_point_class: Escape\WSSEAuthenticationBundle\Security\Http\EntryPoint\EntryPoint
+    authentication_encoder_class: Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder

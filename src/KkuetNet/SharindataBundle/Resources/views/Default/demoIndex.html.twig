@@ -2,9 +2,23 @@
 
 {% block body %}
 <div class="row">
+    <h2>Data</h2>
+    <div class="col-lg-3">
+        <h3>Country</h3>
+        <ul>
+            <li><a href="{{ path('demo_data_country')}}">Get country</a></li>
+            <li><a href="{{ path('demo_data_all_countries')}}">Get all countries</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <h2>Tools</h2>
     <div class="col-lg-3">
         <h3>Image</h3>
-        
+        <ul>
+            <li><a href="{{ path('demo_tool_main_colors')}}">Get main colors</a></li>
+            <li><a href="{{ path('demo_tool_all_colors')}}">Get all colors</a></li>
+        </ul>
     </div>
 </div>
 {% endblock %}
