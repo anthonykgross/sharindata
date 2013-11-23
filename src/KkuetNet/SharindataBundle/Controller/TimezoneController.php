@@ -56,15 +56,15 @@ class TimezoneController extends Controller
             $data = array(
                 'id'                => $timezone->getId(),
                 'name'              => $timezone->getName(),
-                'code'              => $timezone->getCode(),
-                'date'               => $date->format("r"),
+                'code'              => strtoupper($timezone->getCode()),
+                'date'              => $date->format("r"),
                 'location'          => $location
             );
 
             $data['countries'] = array();
             foreach($timezone->getCountries() as $c){
                 $data['countries'][] = array(
-                    'iso'       => $c->getIso(),
+                    'iso'       => strtoupper($c->getIso()),
                     'url'       => '/data/countries/'.$c->getIso()
                 );
             }

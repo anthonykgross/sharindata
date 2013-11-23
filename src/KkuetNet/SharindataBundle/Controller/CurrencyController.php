@@ -50,7 +50,7 @@ class CurrencyController extends Controller
             return array(
                 'id'                => $currency->getId(),
                 'name'              => $currency->getName(),
-                'iso_code'          => $currency->getIsoCode(),
+                'iso_code'          => strtoupper($currency->getIsoCode()),
                 'iso_code_num'      => $currency->getIsoCodeNum(),
                 'sign'              => $currency->getSign(),
                 'blank'             => $currency->getBlank(),

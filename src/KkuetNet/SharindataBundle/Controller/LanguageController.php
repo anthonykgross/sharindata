@@ -44,14 +44,14 @@ class LanguageController extends Controller
 
         return $this->getArray($entity);  
     }
-    
+        
     private function getArray($language){
         if($language){
             return array(
                 'id'                    => $language->getId(),
-                'iso_639_1'             => $language->getIso6391(),
-                'iso_639_2'             => $language->getIso6392(),
-                'iso_639_3'             => $language->getIso6393(),
+                'iso_639_1'             => strtoupper($language->getIso6391()),
+                'iso_639_2'             => strtoupper($language->getIso6392()),
+                'iso_639_3'             => strtoupper($language->getIso6393()),
                 'name_fr'               => $language->getNameFr(),
                 'name_en'               => $language->getNameEn(),
                 'natural_name'          => $language->getNaturalName(),

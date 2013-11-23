@@ -68,4 +68,94 @@ class DefaultController extends Controller
         $json_data2  = json_decode($data2->response, true);
         return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataCountry.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
     }
+    
+    /**
+     * @Route("/demo/data/all_currencies", name="demo_data_all_currencies")
+     */
+    public function demoDataAllCurrenciesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getCurrencies();
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataAllCurrencies.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/data/currency", name="demo_data_currency")
+     */
+    public function demoDataCurrencyAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getCurrency("USD");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getCurrency("EUR");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataCurrency.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/data/currency_countries", name="demo_data_currency_countries")
+     */
+    public function demoDataCurrencyCountriesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getCurrencyCountries("EUR");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getCurrencyCountries("USD");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataCurrencyCountries.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/data/all_languages", name="demo_data_all_languages")
+     */
+    public function demoDataAllLanguagesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getLanguages();
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataAllLanguages.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/data/language", name="demo_data_language")
+     */
+    public function demoDataLanguageAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getLanguage("fr");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getLanguage("de");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataLanguage.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/data/language_countries", name="demo_data_language_countries")
+     */
+    public function demoDataLanguageCountriesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getLanguageCountries("fr");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getLanguageCountries("de");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataLanguageCountries.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/data/all_timezones", name="demo_data_all_timezones")
+     */
+    public function demoDataAllTimezonesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getTimezones();
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataAllTimezones.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/data/timezone", name="demo_data_timezone")
+     */
+    public function demoDataTimezoneAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getTimezone("europe_paris");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getTimezone("America_Los_Angeles");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataTimezone.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
 }

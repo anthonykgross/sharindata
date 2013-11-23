@@ -63,7 +63,19 @@ class Language
      */
     private $naturalName;
 
-
+    /**
+     * @ORM\OneToMany(targetEntity="CountryHasLanguage", mappedBy="language", cascade={"remove", "persist"})
+     */
+    private $countryHasLanguages;
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->countryHasLanguages = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -210,5 +222,38 @@ class Language
     public function getNaturalName()
     {
         return $this->naturalName;
+    }
+
+    /**
+     * Add countryHasLanguages
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages
+     * @return Language
+     */
+    public function addCountryHasLanguage(\KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages)
+    {
+        $this->countryHasLanguages[] = $countryHasLanguages;
+    
+        return $this;
+    }
+
+    /**
+     * Remove countryHasLanguages
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages
+     */
+    public function removeCountryHasLanguage(\KkuetNet\SharindataBundle\Entity\CountryHasLanguage $countryHasLanguages)
+    {
+        $this->countryHasLanguages->removeElement($countryHasLanguages);
+    }
+
+    /**
+     * Get countryHasLanguages
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCountryHasLanguages()
+    {
+        return $this->countryHasLanguages;
     }
 }

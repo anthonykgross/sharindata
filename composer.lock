@@ -177,7 +177,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -196,7 +196,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -263,7 +263,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -317,7 +317,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -336,7 +336,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -703,7 +703,7 @@
                     "email": "roman@code-factory.org"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -1543,12 +1543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kkuetnet/SharindataClientApi.git",
-                "reference": "935054c1fc40eddbfaaded318b0d7d305754960d"
+                "reference": "9fde4740337b5ea4ae9b680556e94d51bd054122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kkuetnet/SharindataClientApi/zipball/935054c1fc40eddbfaaded318b0d7d305754960d",
-                "reference": "935054c1fc40eddbfaaded318b0d7d305754960d",
+                "url": "https://api.github.com/repos/kkuetnet/SharindataClientApi/zipball/9fde4740337b5ea4ae9b680556e94d51bd054122",
+                "reference": "9fde4740337b5ea4ae9b680556e94d51bd054122",
                 "shasum": ""
             },
             "type": "vendor",
@@ -1575,7 +1575,7 @@
                 "source": "https://github.com/kkuetnet/SharindataClientApi/tree/master",
                 "issues": "https://github.com/kkuetnet/SharindataClientApi/issues"
             },
-            "time": "2013-11-22 16:07:32"
+            "time": "2013-11-22 19:03:49"
         },
         {
             "name": "kriswallsmith/assetic",

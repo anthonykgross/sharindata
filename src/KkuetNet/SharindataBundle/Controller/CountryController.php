@@ -45,13 +45,54 @@ class CountryController extends Controller
         return $this->getArray($entity);  
     }
     
+    
+    /**
+     * Returns countries which speak the language corresponding to the iso code 639-1
+     * @param string $iso_code_6391 Example => fr, de, ar
+     * @ApiDoc(section="Language")
+     * @Rest\View()
+     */
+    public function getLanguageCountriesAction($iso_code_6391)
+    {
+        $em         = $this->getDoctrine()->getManager();
+        $entity     = $em->getRepository('KkuetNetSharindataBundle:Language')->findOneBy(array(
+            'iso639_1' => $iso_code_6391
+        ));
+
+        $data = array();
+        foreach($entity->getCountryHasLanguages() as $c){
+            $data[] = $this->getArray($c->getCountry());
+        }
+        return $data;  
+    }
+    
+    /**
+     * Returns countries which use the currency corresponding to the iso code
+     * @param string $iso_code Example => eur, usd, cny
+     * @ApiDoc(section="Currency")
+     * @Rest\View()
+     */
+    public function getCurrencyCountriesAction($iso_code)
+    {
+        $em         = $this->getDoctrine()->getManager();
+        $entity     = $em->getRepository('KkuetNetSharindataBundle:Currency')->findOneBy(array(
+            'isoCode' => $iso_code
+        ));
+        $data = array();
+        foreach($entity->getCountryHasCurrencies() as $c){
+            $data[] = $this->getArray($c->getCountry());
+        }
+        return $data;   
+    }
+    
+    
     private function getArray($country){
         $data = array();
         
         if($country){
             $data = array(
                 'id'                        => $country->getId(),
-                'iso'                       => $country->getIso(),
+                'iso'                       => strtoupper($country->getIso()),
                 'call_prefix'               => $country->getCallPrefix(),
                 'contains_states'           => $country->getContainsStates(),
                 'need_identification_number'=> $country->getNeedIdentificationNumber(),
@@ -62,7 +103,7 @@ class CountryController extends Controller
                 'flag'                      => "http://sharindata.com/bundles/kkuetnetsharindata/images/flags/64/".$country->getFlag().".png",
                 'name'                      => $country->getName(),
                 'zone'                      => array(
-                    'code' => $country->getZone()->getCode(),
+                    'code' => strtoupper($country->getZone()->getCode()),
                     'name' => $country->getZone()->getName(),
                     'url'      => '/data/zones/'.$country->getZone()->getCode()
                 ),
@@ -79,7 +120,7 @@ class CountryController extends Controller
             
             if($country->getTimezone()){
                 $data['timezone'] = array(
-                    'code' => $country->getTimezone()->getCode(),
+                    'code' => strtoupper($country->getTimezone()->getCode()),
                     'name' => $country->getTimezone()->getName(),
                     'url'      => '/data/timezones/'.$country->getTimezone()->getCode()
                 );
@@ -88,7 +129,7 @@ class CountryController extends Controller
             $data['currencies'] = array();
             foreach($country->getCountryHasCurrencies() as $chc){
                 $data['currencies'][] = array(
-                    'iso_code' => $chc->getCurrency()->getIsoCode(),
+                    'iso_code' => strtoupper($chc->getCurrency()->getIsoCode()),
                     'url'      => '/data/currencies/'.$chc->getCurrency()->getIsoCode()
                 );
             }
@@ -96,7 +137,7 @@ class CountryController extends Controller
             $data['languages'] = array();
             foreach($country->getCountryHasLanguages() as $chl){
                 $data['languages'][] = array(
-                    'iso639-1' => $chl->getLanguage()->getIso6391(),
+                    'iso639-1' => strtoupper($chl->getLanguage()->getIso6391()),
                     'url'      => '/data/languages/'.$chl->getLanguage()->getIso6391()
                 );
             }
@@ -104,7 +145,7 @@ class CountryController extends Controller
             $data['taxes'] = array();
             foreach($country->getTaxes() as $t){
                 $data['taxes'][] = array(
-                    'name' => $t->getName(),
+                    'name' => strtoupper($t->getName()),
                     'rate' => $t->getRate()
                 );
             }

@@ -51,13 +51,13 @@ class ZoneController extends Controller
             $data = array(
                 'id'                => $zone->getId(),
                 'name'              => $zone->getName(),
-                'code'              => $zone->getCode(),
+                'code'              => strtoupper($zone->getCode()),
             );
 
             $data['countries'] = array();
             foreach($zone->getCountries() as $c){
                 $data['countries'][] = array(
-                    'iso'       => $c->getIso(),
+                    'iso'       => strtoupper($c->getIso()),
                     'url'       => '/data/countries/'.$c->getIso()
                 );
             }
