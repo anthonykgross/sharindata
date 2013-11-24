@@ -15,12 +15,7 @@
         
         <h2>Example of result</h2>
         <ul class="custom-liste col-lg-6">
-            {% for k, j in json_data1|slice(0, json_data1|length/2) %}
-                <li><img src="{{ j.flag }}"/> <b><i class="code">{{j.name}}</i></b> (&#9742; <i class="code">+{{ j.call_prefix }}</i>)</li>
-            {% endfor %}
-        </ul>
-        <ul class="custom-liste col-lg-6">
-            {% for k, j in json_data1|slice(json_data1|length/2, json_data1|length-json_data1|length/2) %}
+            {% for k, j in json_data1 %}
                 <li><img src="{{ j.flag }}"/> <b><i class="code">{{j.name}}</i></b> (&#9742; <i class="code">+{{ j.call_prefix }}</i>)</li>
             {% endfor %}
         </ul>

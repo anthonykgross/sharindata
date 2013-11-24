@@ -154,8 +154,30 @@ class DefaultController extends Controller
         $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
         $data1       = $sca->getTimezone("europe_paris");
         $json_data1  = json_decode($data1->response, true);
-        $data2       = $sca->getTimezone("America_Los_Angeles");
+        $data2       = $sca->getTimezone("Europe_Madrid");
         $json_data2  = json_decode($data2->response, true);
         return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataTimezone.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/data/all_zones", name="demo_data_all_zones")
+     */
+    public function demoDataAllZonesAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getZones();
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataAllZones.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/data/zone", name="demo_data_zone")
+     */
+    public function demoDataZoneAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("kkuet12@live.fr", "050688");
+        $data1       = $sca->getZone("Europe");
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getZone("North_America");
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataZone.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
     }
 }

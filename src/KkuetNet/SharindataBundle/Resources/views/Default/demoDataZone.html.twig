@@ -6,7 +6,7 @@
         <h2>Request</h2>
         <pre class="brush: php;">
             $response = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("your_login", "your_password");
-            var_dump($response->getTimezone('europe_paris'));
+            var_dump($response->getZone('europe'));
         </pre>
         <h2>JSON Response</h2>
         <pre class="brush: js;">
@@ -21,22 +21,6 @@
                 </div>
                 <div class="col-lg-8">
                     {{ json_data1.name }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    Date now
-                </div>
-                <div class="col-lg-8">
-                    {{ json_data1.date|date('Y-m-d H:i') }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    Location
-                </div>
-                <div class="col-lg-8">
-                    Latitude: {{ json_data1.location.latitude }} ; Longitude: {{ json_data1.location.longitude }}
                 </div>
             </div>
             <div class="row">
@@ -57,22 +41,6 @@
                 </div>
                 <div class="col-lg-8">
                     {{ json_data2.name }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    Date now
-                </div>
-                <div class="col-lg-8">
-                    {{ json_data2.date|date('Y-m-d H:i') }}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    Location
-                </div>
-                <div class="col-lg-8">
-                    Latitude: {{ json_data2.location.latitude }} ; Longitude: {{ json_data2.location.longitude }}
                 </div>
             </div>
             <div class="row">
