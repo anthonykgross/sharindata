@@ -11,6 +11,16 @@ class ToolRandomize {
         $this->em           = $container->get('doctrine')->getManager();
     }
     
+    /**
+     * Return random string
+     * @param int $length = length of random string
+     * @param type $option = 
+     * 0: Alpha Lower
+     * 1: Alpha Lower+Alpha Upper
+     * 2: Alpha Lower+Alpha Upper+Numeric
+     * 3: Alpha Lower+Alpha Upper+Numeric+Special Char
+     * @return string
+     */
     public function getRandom($length = 55, $option = 3){
         $alpha_lower = "abcdefghijklmnopqrstuvwxyz";
         $alpha_upper = strtoupper($alpha_lower);

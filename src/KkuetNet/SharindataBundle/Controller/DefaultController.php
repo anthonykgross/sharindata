@@ -28,28 +28,6 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/demo/tool/main_colors", name="demo_tool_main_colors")
-     */
-    public function demoToolMainColorAction(){
-        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
-        $data1       = $sca->getMainsColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"));
-        $json_data1  = json_decode($data1->response, true);
-        $data2       = $sca->getMainsColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"),4);
-        $json_data2  = json_decode($data2->response, true);
-        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolMainColor.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
-    }
-    
-    /**
-     * @Route("/demo/tool/all_colors", name="demo_tool_all_colors")
-     */
-    public function demoToolAllColorAction(){
-        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
-        $data1       = $sca->getAllColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"));
-        $json_data1  = json_decode($data1->response, true);
-        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolAllColor.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
-    }
-    
-    /**
      * @Route("/demo/data/all_countries", name="demo_data_all_countries")
      */
     public function demoDataAllCountriesAction(){
@@ -181,5 +159,43 @@ class DefaultController extends Controller
         $data2       = $sca->getZone("North_America");
         $json_data2  = json_decode($data2->response, true);
         return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoDataZone.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * 
+     * TOOLS
+     * 
+     */
+    
+    /**
+     * @Route("/demo/tool/main_colors", name="demo_tool_main_colors")
+     */
+    public function demoToolMainColorAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getMainsColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"));
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getMainsColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"),4);
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolMainColor.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
+    
+    /**
+     * @Route("/demo/tool/all_colors", name="demo_tool_all_colors")
+     */
+    public function demoToolAllColorAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getAllColors(realpath(__DIR__."/../Resources/public/images/Sharindata.png"));
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolAllColor.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/tool/random_string", name="demo_tool_random_string")
+     */
+    public function demoToolRandomStringAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getRandomString(12,3);
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolRandomString.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
     }
 }

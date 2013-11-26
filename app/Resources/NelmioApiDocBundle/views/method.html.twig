@@ -2,7 +2,7 @@
         <div class="panel-heading">
             <h3 class="panel-title">
                 <span class="http_method">
-                    <b>{{ data.method|upper }}</b>
+                    <b>{{ data.method|upper }} <a id="{{data.id}}"></a></b>
                 </span>
 
                 {% if data.deprecated %}
@@ -53,7 +53,7 @@
                                         <td>{{ name }}</td>
                                         <td>{{ infos.requirement }}</td>
                                         <td>{{ infos.dataType }}</td>
-                                        <td>{{ infos.description }}</td>
+                                        <td>{{ infos.description|raw }}</td>
                                     </tr>
                                 {% endfor %}
                             </tbody>
@@ -78,7 +78,7 @@
                                         {% for key, value in infos %}
                                             <tr>
                                                 <td>{{ key|title }}</td>
-                                                <td>{{ value|json_encode|replace({'\\\\': '\\'})|trim('"') }}</td>
+                                                <td>{{ value|raw }}</td>
                                             </tr>
                                         {% endfor %}
                                         </table>
@@ -107,7 +107,7 @@
                                             <td>{{ name }}</td>
                                             <td>{{ infos.dataType }}</td>
                                             <td>{{ infos.required ? 'true' : 'false' }}</td>
-                                            <td>{{ infos.description }}</td>
+                                            <td>{{ infos.description|raw }}</td>
                                         </tr>
                                     {% endif %}
                                 {% endfor %}
@@ -132,7 +132,7 @@
                                         <td>{{ name }}</td>
                                         <td>{{ infos.dataType }}</td>
                                         <td>{% include 'NelmioApiDocBundle:Components:version.html.twig' with {'sinceVersion': infos.sinceVersion, 'untilVersion': infos.untilVersion} only %}</td>
-                                        <td>{{ infos.description }}</td>
+                                        <td>{{ infos.description|raw }}</td>
                                     </tr>
                                 {% endfor %}
                             </tbody>
@@ -155,7 +155,7 @@
                                     <td>
                                         <ul>
                                             {% for description in descriptions %}
-                                                <li>{{ description }}</li>
+                                                <li>{{ description|raw }}</li>
                                             {%  endfor %}
                                         </ul>
                                     </td>
@@ -167,7 +167,7 @@
 
                     {% if data.cache is defined and data.cache is not empty %}
                         <h4>Cache</h4>
-                        <div>{{ data.cache }}s</div>
+                        <div>{{ data.cache }}</div>
                     {% endif %}
 
                     </div>

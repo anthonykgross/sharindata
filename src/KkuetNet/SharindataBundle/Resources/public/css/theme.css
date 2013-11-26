@@ -48,3 +48,12 @@ span.color{
     font-family : "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
     font-weight: normal;
 }
+
+table.container td{
+    padding: 5px;
+}
+
+table.container ul{
+    padding: 0px;
+    margin: 10px;
+}
