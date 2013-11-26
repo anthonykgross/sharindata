@@ -69,11 +69,17 @@ class Language
     private $countryHasLanguages;
     
     /**
+     * @ORM\OneToMany(targetEntity="LanguageHasDirection", mappedBy="language", cascade={"remove", "persist"})
+     */
+    private $languageHasDirections;
+    
+    /**
      * Constructor
      */
     public function __construct()
     {
         $this->countryHasLanguages = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->languageHasDirections = new \Doctrine\Common\Collections\ArrayCollection();
     }
     
     /**
@@ -255,5 +261,38 @@ class Language
     public function getCountryHasLanguages()
     {
         return $this->countryHasLanguages;
+    }
+
+    /**
+     * Add languageHasDirections
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\LanguageHasDirection $languageHasDirections
+     * @return Language
+     */
+    public function addLanguageHasDirection(\KkuetNet\SharindataBundle\Entity\LanguageHasDirection $languageHasDirections)
+    {
+        $this->languageHasDirections[] = $languageHasDirections;
+    
+        return $this;
+    }
+
+    /**
+     * Remove languageHasDirections
+     *
+     * @param \KkuetNet\SharindataBundle\Entity\LanguageHasDirection $languageHasDirections
+     */
+    public function removeLanguageHasDirection(\KkuetNet\SharindataBundle\Entity\LanguageHasDirection $languageHasDirections)
+    {
+        $this->languageHasDirections->removeElement($languageHasDirections);
+    }
+
+    /**
+     * Get languageHasDirections
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getLanguageHasDirections()
+    {
+        return $this->languageHasDirections;
     }
 }

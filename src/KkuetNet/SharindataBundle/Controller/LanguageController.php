@@ -46,8 +46,10 @@ class LanguageController extends Controller
     }
         
     private function getArray($language){
+        $data = array();
+        
         if($language){
-            return array(
+            $data = array(
                 'id'                    => $language->getId(),
                 'iso_639_1'             => strtoupper($language->getIso6391()),
                 'iso_639_2'             => strtoupper($language->getIso6392()),
@@ -57,9 +59,16 @@ class LanguageController extends Controller
                 'natural_name'          => $language->getNaturalName(),
                 'url'                   => '/data/languages/'.$language->getIso6391()
             );
+            
+            $data['directions'] = array();
+            foreach($language->getLanguageHasDirections() as $s){
+                $data['directions'][] = array(
+                    'name' => $s->getDirection()->getLabel(),
+                    'code' => $s->getDirection()->getCode()
+                );
+            }
         }
-        else{
-            return array();
-        }
+        
+        return $data;
     }
 }

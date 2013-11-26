@@ -26,31 +26,39 @@ class SecurityController extends Controller
 
     /**
      * Create a WSSE token
-     * @QueryParam(name="_username", requirements="(.*)", strict=true, description="Your Sharindata email")
-     * @QueryParam(name="_password", requirements="(.*)", strict=true, description="Your Sharindata password")
+     * @QueryParam(name="_apikey", requirements="(.*)", strict=true, description="Your Sharindata API Key")
+     * @QueryParam(name="_apisecret", requirements="(.*)", strict=true, description="Your Sharindata API Secret")
      * @ApiDoc(section="API")
      */
     public function postAction(ParamFetcher $paramFetcher)
     {
-        $username       = $paramFetcher->get('_username');
-        $password       = $paramFetcher->get('_password');
-        $um             = $this->get('fos_user.user_manager');
-        $user           = $um->findUserByUsernameOrEmail($username);
+        $apikey         = $paramFetcher->get('_apikey');
+        $apisecret      = $paramFetcher->get('_apisecret');
+        $user           = $this->container->get('doctrine')->getEntityManager()->getRepository("KkuetNetSharindataBundle:User")->findOneBy(array(
+            'api_key' => $apikey
+        ));
 
         if (!$user instanceof User) {
-            throw new AccessDeniedException("Wrong user");
+            return array(
+                'code' => 500,
+                'message' => 'Wrong API Key'
+            );
         }
-
+        
+        if ($user->getApiSecret() !== $apisecret) {
+            return array(
+                'code' => 500,
+                'message' => 'Wrong API Secret'
+            );
+        }
+        
         $created        = date('c');
         $nonce          = substr(md5(uniqid('nonce_', true)), 0, 16);
         $nonceHigh      = base64_encode($nonce);
-        
-        $factory    = $this->get('security.encoder_factory');
-        $encoder    = $factory->getEncoder($user);
-        $password   = $encoder->encodePassword($password, $user->getSalt());
 
+        $password       = hash_hmac('sha512', $user->getApiSecret() , $user->getHashKey());
         $passwordDigest = base64_encode(sha1($nonce . $created .$password, true));
-        $header         = "UsernameToken Username=\"{$username}\", PasswordDigest=\"{$passwordDigest}\", Nonce=\"{$nonceHigh}\", Created=\"{$created}\"";
+        $header         = "UsernameToken Username=\"{$user->getEmail()}\", PasswordDigest=\"{$passwordDigest}\", Nonce=\"{$nonceHigh}\", Created=\"{$created}\"";
         
         $view       = new \Symfony\Component\HttpFoundation\JsonResponse(array('WSSE' => $header));
         $view->headers->set("Authorization", 'WSSE profile="UsernameToken"');

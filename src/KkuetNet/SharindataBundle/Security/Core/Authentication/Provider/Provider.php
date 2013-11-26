@@ -34,7 +34,7 @@ class Provider extends \Escape\WSSEAuthenticationBundle\Security\Core\Authentica
     
     protected function getSecret($user)
     {
-        return $user->getPassword();
+        return hash_hmac('sha512', $user->getApiSecret() , $user->getHashKey());
     }
     
     protected function validateDigest($user, $digest, $nonce, $created, $secret)

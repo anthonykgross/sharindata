@@ -7,7 +7,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class WsseCommand extends ContainerAwareCommand
+class TestCommand extends ContainerAwareCommand
 {
     private $em;
     private $container;
@@ -15,8 +15,7 @@ class WsseCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('kkuetnet:sharindata:wsse')
-            ->setDescription('Met a jour les données')
+            ->setName('kkuetnet:sharindata:test')
         ;
     }
 
@@ -24,11 +23,8 @@ class WsseCommand extends ContainerAwareCommand
     {
         $this->container    = $this->getContainer();
         $this->em           = $this->container->get('doctrine')->getEntityManager();
-        
-        $test = new \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi("kkuet12@live.fr", "050688");
-        var_dump($test->getCountry("fr"));
-        var_dump($test->getCountry("us"));
-        var_dump($test->getCountry("be"));
-        var_dump($test->getCountries());
+
+        $test = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("dPMf3YTKM0QMunYRwqKI", "H9mibm4rLuYCQSz8AzfL");
+        var_dump($test->getLanguage("zh"));
     }
 }

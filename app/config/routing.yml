@@ -64,3 +64,7 @@ image_rest:
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/docs
+    
+fos_user_registration_register:
+    pattern: /register
+    defaults: { _controller: KkuetNetSharindataBundle:User:register }
