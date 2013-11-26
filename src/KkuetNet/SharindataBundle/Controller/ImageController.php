@@ -22,7 +22,7 @@ class ImageController extends Controller
      * @RequestParam(name="nbColor", requirements="[0-9]{1,}", default="2", description="Max number of colors to return (default : 2). Ex : 5")
      * @Rest\View()
      */
-    public function postImageMaincolorAction(ParamFetcher $paramFetcher)
+    public function postImageMaincolorsAction(ParamFetcher $paramFetcher)
     {
         $em         = $this->getDoctrine()->getManager();
         $request    = $this->get('request');
@@ -47,7 +47,7 @@ class ImageController extends Controller
      * @RequestParam(name="image", requirements="[a-z]{1,}", description="Image file path with '@' before. Ex : @/home/sharindata/image.png")
      * @Rest\View()
      */
-    public function postImageAllcolorAction(ParamFetcher $paramFetcher)
+    public function postImageAllcolorsAction(ParamFetcher $paramFetcher)
     {
         $em         = $this->getDoctrine()->getManager();
         $request    = $this->get('request');

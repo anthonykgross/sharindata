@@ -25,6 +25,6 @@ class TestCommand extends ContainerAwareCommand
         $this->em           = $this->container->get('doctrine')->getEntityManager();
 
         $test = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("dPMf3YTKM0QMunYRwqKI", "H9mibm4rLuYCQSz8AzfL");
-
+        var_dump($test->getCountry('Fr'));
     }
 }

@@ -105,7 +105,7 @@ class CountryController extends Controller
                 'zone'                      => array(
                     'code' => strtoupper($country->getZone()->getCode()),
                     'name' => $country->getZone()->getName(),
-                    'url'      => '/data/zones/'.$country->getZone()->getCode()
+                    'url'      => '/data/zone/'.$country->getZone()->getCode()
                 ),
             );
             
@@ -122,7 +122,7 @@ class CountryController extends Controller
                 $data['timezone'] = array(
                     'code' => strtoupper($country->getTimezone()->getCode()),
                     'name' => $country->getTimezone()->getName(),
-                    'url'      => '/data/timezones/'.$country->getTimezone()->getCode()
+                    'url'      => '/data/timezone/'.$country->getTimezone()->getCode()
                 );
             }
 
@@ -130,7 +130,7 @@ class CountryController extends Controller
             foreach($country->getCountryHasCurrencies() as $chc){
                 $data['currencies'][] = array(
                     'iso_code' => strtoupper($chc->getCurrency()->getIsoCode()),
-                    'url'      => '/data/currencies/'.$chc->getCurrency()->getIsoCode()
+                    'url'      => '/data/currency/'.$chc->getCurrency()->getIsoCode()
                 );
             }
 
@@ -138,7 +138,7 @@ class CountryController extends Controller
             foreach($country->getCountryHasLanguages() as $chl){
                 $data['languages'][] = array(
                     'iso639-1' => strtoupper($chl->getLanguage()->getIso6391()),
-                    'url'      => '/data/languages/'.$chl->getLanguage()->getIso6391()
+                    'url'      => '/data/language/'.$chl->getLanguage()->getIso6391()
                 );
             }
 

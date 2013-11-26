@@ -57,7 +57,7 @@ class CurrencyController extends Controller
                 'conversion_rate'   => $currency->getConversionRate(),
                 'decimals'          => $currency->getDecimals(),
                 'format'            => $currency->getCurrencyFormat()->getFormat(),
-                'url'               => '/data/currencies/'.$currency->getIsoCode()
+                'url'               => '/data/currency/'.$currency->getIsoCode()
             );
         }
         else{

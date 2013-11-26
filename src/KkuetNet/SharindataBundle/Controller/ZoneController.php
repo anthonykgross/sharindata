@@ -58,11 +58,11 @@ class ZoneController extends Controller
             foreach($zone->getCountries() as $c){
                 $data['countries'][] = array(
                     'iso'       => strtoupper($c->getIso()),
-                    'url'       => '/data/countries/'.$c->getIso()
+                    'url'       => '/data/country/'.$c->getIso()
                 );
             }
 
-            $data['url']            = '/data/zones/'.$zone->getCode();
+            $data['url']            = '/data/zone/'.$zone->getCode();
         }
         return $data;
     }

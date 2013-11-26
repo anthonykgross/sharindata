@@ -57,7 +57,7 @@ class LanguageController extends Controller
                 'name_fr'               => $language->getNameFr(),
                 'name_en'               => $language->getNameEn(),
                 'natural_name'          => $language->getNaturalName(),
-                'url'                   => '/data/languages/'.$language->getIso6391()
+                'url'                   => '/data/language/'.$language->getIso6391()
             );
             
             $data['directions'] = array();

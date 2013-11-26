@@ -65,7 +65,12 @@ randomize_rest:
     resource: KkuetNet\SharindataBundle\Controller\RandomizeController
     prefix: /api/tool
     type: rest
-    
+
+randomize_rest:
+    resource: KkuetNet\SharindataBundle\Controller\ConverterController
+    prefix: /api/tool
+    type: rest
+
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/docs

@@ -109,3 +109,6 @@ escape_wsse_authentication:
     authentication_listener_class: Escape\WSSEAuthenticationBundle\Security\Http\Firewall\Listener
     authentication_entry_point_class: Escape\WSSEAuthenticationBundle\Security\Http\EntryPoint\EntryPoint
     authentication_encoder_class: Symfony\Component\Security\Core\Encoder\MessageDigestPasswordEncoder
+
+parameters:
+    fos_rest.routing.loader.reader.action.class: KkuetNet\SharindataBundle\Routing\Loader\Reader\RestActionReader

@@ -65,11 +65,11 @@ class TimezoneController extends Controller
             foreach($timezone->getCountries() as $c){
                 $data['countries'][] = array(
                     'iso'       => strtoupper($c->getIso()),
-                    'url'       => '/data/countries/'.$c->getIso()
+                    'url'       => '/data/country/'.$c->getIso()
                 );
             }
 
-            $data['url']            = '/data/timezones/'.$timezone->getCode();
+            $data['url']            = '/data/timezone/'.$timezone->getCode();
         }
         return $data;
     }
