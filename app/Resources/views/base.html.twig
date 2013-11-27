@@ -98,6 +98,46 @@
         })();
 
     </script>
+    <script type="text/javascript" src="/js/jquery.snow.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+            var combo = new Array(38,38,40,40,37,37,39,39);
+            var keys  = new Array();
+            $('body').on('keyup', function(e){
+                if(combo[keys.length] === e.keyCode){
+                    keys.push(e.keyCode);
+                }
+                else{
+                    keys = new Array();
+                }                
+                if(keys.length === combo.length){
+                    $('body').css('backgroundColor','#101010');
+                    $('.jumbotron, .marketing').css({
+                        'opacity': 0.5
+                    });
+                    $.fn.snow({ minSize: 5, maxSize: 50, newOn: 100});
+                    setTimeout(function(){
+                        var d = $('<div/>');
+                        d.css({
+                            'position' : 'absolute',
+                            'width': '50%',
+                            'height': '30%',
+                            'top': '30%',
+                            'left': '25%',
+                            'color': 'black',
+                            'fontSize': '32px',
+                            'text-align': 'center',
+                            'display': 'none',
+                            'z-index': 10000
+                        });
+                        d.html('<object width="640" height="360"><param name="movie" value="//www.youtube.com/v/jeSe6CKs0HQ?autohide=1&autoplay=1&version=3&amp;hl=fr_FR"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/jeSe6CKs0HQ?autohide=1&autoplay=1&version=3&amp;hl=fr_FR" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+                        $('body').append(d);
+                        d.fadeIn(3000);
+                    }, 2000);
+                }
+            });
+        });
+    </script>
     {% block javascripts %}{% endblock %}
   </body>
 </html>
