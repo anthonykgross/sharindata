@@ -66,7 +66,7 @@ randomize_rest:
     prefix: /api/tool
     type: rest
 
-randomize_rest:
+converter_rest:
     resource: KkuetNet\SharindataBundle\Controller\ConverterController
     prefix: /api/tool
     type: rest
