@@ -198,4 +198,24 @@ class DefaultController extends Controller
         $json_data1  = json_decode($data1->response, true);
         return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolRandomString.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
     }
+    
+    /**
+     * @Route("/demo/tool/converter/rgbtohex", name="demo_tool_converter_rgbtohex")
+     */
+    public function demoToolConverterRgbtohexAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getHexByRgb(112,189,2);
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolConverterRgbtohex.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
+    
+    /**
+     * @Route("/demo/tool/converter/hextorgb", name="demo_tool_converter_hextorgb")
+     */
+    public function demoToolConverterHextorgbAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getRgbByHex("#70BD02");
+        $json_data1  = json_decode($data1->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolConverterHextorgb.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
+    }
 }

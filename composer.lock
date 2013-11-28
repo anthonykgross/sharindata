@@ -795,12 +795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/escapestudios/EscapeWSSEAuthenticationBundle.git",
-                "reference": "b195c37bc2f5e7842b4bdae05352b66126626b42"
+                "reference": "0167aa5fa2b2c3a20b64f5c6e05905272e54e414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/escapestudios/EscapeWSSEAuthenticationBundle/zipball/b195c37bc2f5e7842b4bdae05352b66126626b42",
-                "reference": "b195c37bc2f5e7842b4bdae05352b66126626b42",
+                "url": "https://api.github.com/repos/escapestudios/EscapeWSSEAuthenticationBundle/zipball/0167aa5fa2b2c3a20b64f5c6e05905272e54e414",
+                "reference": "0167aa5fa2b2c3a20b64f5c6e05905272e54e414",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 },
                 {
                     "name": "Community contributors",
-                    "homepage": "https://github.com/frieser/FrieserWSSEAuthenticationBundle/graphs/contributors"
+                    "homepage": "https://github.com/escapestudios/EscapeWSSEAuthenticationBundle/graphs/contributors"
                 }
             ],
             "description": "Symfony2 bundle to implement WSSE authentication",
@@ -843,21 +843,21 @@
                 "bundle",
                 "wsse"
             ],
-            "time": "2013-10-22 17:23:05"
+            "time": "2013-11-27 17:04:29"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "target-dir": "FOS/RestBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "8e0b02a3ea9cbb76b2043868796659c8f61af29b"
+                "reference": "e0def4f4f3699f9629f46ca4ed3dbde250d78d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/8e0b02a3ea9cbb76b2043868796659c8f61af29b",
-                "reference": "8e0b02a3ea9cbb76b2043868796659c8f61af29b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e0def4f4f3699f9629f46ca4ed3dbde250d78d96",
+                "reference": "e0def4f4f3699f9629f46ca4ed3dbde250d78d96",
                 "shasum": ""
             },
             "require": {
@@ -887,7 +887,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -919,7 +919,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-10-11 14:23:24"
+            "time": "2013-11-28 09:03:02"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1335,12 +1335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle.git",
-                "reference": "b342e02983e9cd522d9dce1c0dfeef27c8a25850"
+                "reference": "60dfc92443a6b3e093c961e5d85920384670834c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/b342e02983e9cd522d9dce1c0dfeef27c8a25850",
-                "reference": "b342e02983e9cd522d9dce1c0dfeef27c8a25850",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/60dfc92443a6b3e093c961e5d85920384670834c",
+                "reference": "60dfc92443a6b3e093c961e5d85920384670834c",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "secure",
                 "security"
             ],
-            "time": "2013-11-06 16:12:19"
+            "time": "2013-11-27 11:37:02"
         },
         {
             "name": "jms/serializer",
@@ -1543,12 +1543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kkuetnet/SharindataClientApi.git",
-                "reference": "793a7e6b5c0d79386e39e1f03ef2806020270ffa"
+                "reference": "3ce353bd7e8a9afda0cb3f08bfa061f73f0e20d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kkuetnet/SharindataClientApi/zipball/793a7e6b5c0d79386e39e1f03ef2806020270ffa",
-                "reference": "793a7e6b5c0d79386e39e1f03ef2806020270ffa",
+                "url": "https://api.github.com/repos/kkuetnet/SharindataClientApi/zipball/3ce353bd7e8a9afda0cb3f08bfa061f73f0e20d0",
+                "reference": "3ce353bd7e8a9afda0cb3f08bfa061f73f0e20d0",
                 "shasum": ""
             },
             "type": "vendor",
@@ -1575,7 +1575,7 @@
                 "source": "https://github.com/kkuetnet/SharindataClientApi/tree/master",
                 "issues": "https://github.com/kkuetnet/SharindataClientApi/issues"
             },
-            "time": "2013-11-26 16:07:52"
+            "time": "2013-11-27 08:31:08"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2182,21 +2182,20 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.2.0",
+            "version": "v1.0.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
+                "reference": "cac3fdfb111adbe590155f491594636d45129783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
+                "reference": "cac3fdfb111adbe590155f491594636d45129783",
                 "shasum": ""
             },
             "require": {
-                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -2226,7 +2225,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:58"
+            "time": "2013-06-03 18:32:07"
         },
         {
             "name": "symfony/monolog-bundle",

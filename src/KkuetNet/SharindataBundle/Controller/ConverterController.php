@@ -17,7 +17,7 @@ class ConverterController extends Controller
 {
     /**
      * Return random string
-     * @RequestParam(name="red", requirements="[0-9]{1,3}", description="Length of random string")
+     * @RequestParam(name="red", requirements="[0-9]{1,3}", default="0", description="Length of random string")
      * @RequestParam(name="green", requirements="[0-9]{1,3}", default="0", description="") 
      * @RequestParam(name="blue", requirements="[0-9]{1,3}", default="0", description="") 
      * @ApiDoc(section="Converter")
@@ -26,7 +26,18 @@ class ConverterController extends Controller
     public function postColorRgbtohexAction(ParamFetcher $paramFetcher)
     {
         return array(
-            'random' => $this->container->get('sharindata_tool_randomize')->getRandom($paramFetcher->get('length'),$paramFetcher->get('option'))
+            'hex' => $this->container->get('sharindata_tool_color')->RGBToHex($paramFetcher->get('red'),$paramFetcher->get('green'), $paramFetcher->get('blue'))
         );
+    }
+    
+    /**
+     * Return random string
+     * @RequestParam(name="hex", strict=true, requirements="^\#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$", default="0", description="Length of random string")
+     * @ApiDoc(section="Converter")
+     * @Rest\View()
+     */
+    public function postColorHextorgbAction(ParamFetcher $paramFetcher)
+    {
+        return $this->container->get('sharindata_tool_color')->HexToRGB($paramFetcher->get('hex'));
     }
 }

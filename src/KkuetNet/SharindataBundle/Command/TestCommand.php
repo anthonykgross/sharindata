@@ -25,6 +25,13 @@ class TestCommand extends ContainerAwareCommand
         $this->em           = $this->container->get('doctrine')->getEntityManager();
 
         $test = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("dPMf3YTKM0QMunYRwqKI", "H9mibm4rLuYCQSz8AzfL");
-        var_dump($test->getRandomString(8));
+        
+        var_dump($test->getHexByRGB(51,51,51));
+        var_dump($test->getRgbByHex("#333"));
+        var_dump($test->getRgbByHex("#333333"));
+        
+        var_dump($test->getHexByRGB(245,236,51));
+        var_dump($test->getRgbByHex("#333"));
+        var_dump($test->getRgbByHex("#333333"));
     }
 }

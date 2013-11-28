@@ -27,10 +27,32 @@ class ToolColor {
         return strtoupper($hex_RGB);
     }
     
+    /**
+     * Converti une couleur Hexa en RGB
+     * @param type $hex
+     * @return type
+     */
+    public function HexToRGB($hex){
+        $hex        = $this->getFullHex($hex);
+        
+        return array(
+            'r' => $this->HexToR($hex),
+            'g' => $this->HexToG($hex),
+            'b' => $this->HexToB($hex)
+        );
+    }
+    
     public function HexToR($h){return hexdec(substr($this->cutHex($h),0,2));}
     public function HexToG($h){return hexdec(substr($this->cutHex($h),2,2));}
     public function HexToB($h){return hexdec(substr($this->cutHex($h),4,2));}
     private function cutHex($h){return (substr($h, 0, 1)=="#") ? substr($h,1,7):$h;}
+    private function getFullHex($h){
+        $h = $this->cutHex($h);
+        if(strlen($h)==3){
+            $h = substr($h, 0, 1).substr($h, 0, 1).substr($h, 1, 1).substr($h, 1, 1).substr($h, 2, 1).substr($h, 2, 1);
+        }
+        return $h;
+    }
 }
 
 ?>
