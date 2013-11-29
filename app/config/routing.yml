@@ -71,6 +71,11 @@ converter_rest:
     prefix: /api/tool
     type: rest
 
+unclassifiable_rest:
+    resource: KkuetNet\SharindataBundle\Controller\UnclassifiableController
+    prefix: /api/tool
+    type: rest
+    
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/docs

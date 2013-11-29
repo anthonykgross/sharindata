@@ -26,12 +26,9 @@ class TestCommand extends ContainerAwareCommand
 
         $test = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("dPMf3YTKM0QMunYRwqKI", "H9mibm4rLuYCQSz8AzfL");
         
-        var_dump($test->getHexByRGB(51,51,51));
-        var_dump($test->getRgbByHex("#333"));
-        var_dump($test->getRgbByHex("#333333"));
-        
-        var_dump($test->getHexByRGB(245,236,51));
-        var_dump($test->getRgbByHex("#333"));
-        var_dump($test->getRgbByHex("#333333"));
+        var_dump($test->getUserAgentDetails(
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36",
+                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        ));
     }
 }
