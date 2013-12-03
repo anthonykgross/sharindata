@@ -18,10 +18,10 @@ class UnclassifiableController extends Controller
     /**
      * Returns user agent details
      * @ApiDoc(section="Unclassifiable")
-     * @RequestParam(name="user_agent", description="User agent information Ex: ")
-     * @RequestParam(name="accept", description="User agent information Ex: ")
-     * @RequestParam(name="wap_profile", nullable=true, default=null, description="User agent information Ex: ")
-     * @RequestParam(name="profile", nullable=true, default=null, description="User agent information Ex: ")
+     * @RequestParam(name="user_agent", description="User agent header information; Ex: $_SERVER['HTTP_USER_AGENT']")
+     * @RequestParam(name="accept", description="Accept header information; Ex: $_SERVER['HTTP_ACCEPT']")
+     * @RequestParam(name="wap_profile", nullable=true, default="null", description="WAP Profile header information; Ex: $_SERVER['HTTP_X_WAP_PROFILE']")
+     * @RequestParam(name="profile", nullable=true, default="null", description="Profile header information; Ex: $_SERVER['HTTP_PROFILE']")
      * @Rest\View()
      */
     public function postUseragentDetailsAction(ParamFetcher $paramFetcher)

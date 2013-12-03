@@ -218,4 +218,22 @@ class DefaultController extends Controller
         $json_data1  = json_decode($data1->response, true);
         return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolConverterHextorgb.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1));
     }
+    
+    /**
+     * @Route("/demo/tool/user_agent", name="demo_tool_user_agent")
+     */
+    public function demoToolUserAgentAction(){
+        $sca        = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance(self::$apiKey, self::$apiSecret);
+        $data1       = $sca->getUserAgentDetails(
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36",
+                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        );
+        $json_data1  = json_decode($data1->response, true);
+        $data2       = $sca->getUserAgentDetails(
+                "Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10",
+                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        );
+        $json_data2  = json_decode($data2->response, true);
+        return $this->container->get('templating')->renderResponse('KkuetNetSharindataBundle:Default:demoToolUserAgent.html.twig', array('data1' => $data1->response, 'json_data1' => $json_data1, 'data2' => $data2->response, 'json_data2' => $json_data2));
+    }
 }

@@ -16,10 +16,10 @@ use FOS\RestBundle\Request\ParamFetcher;
 class ConverterController extends Controller
 {
     /**
-     * Return random string
-     * @RequestParam(name="red", requirements="[0-9]{1,3}", default="0", description="Length of random string")
-     * @RequestParam(name="green", requirements="[0-9]{1,3}", default="0", description="") 
-     * @RequestParam(name="blue", requirements="[0-9]{1,3}", default="0", description="") 
+     * Return Hex color code
+     * @RequestParam(name="red", requirements="[0-9]{1,3}", default="0", description="red value (0-255)")
+     * @RequestParam(name="green", requirements="[0-9]{1,3}", default="0", description="green value (0-255)") 
+     * @RequestParam(name="blue", requirements="[0-9]{1,3}", default="0", description="blue value (0-255)") 
      * @ApiDoc(section="Converter")
      * @Rest\View()
      */
@@ -31,8 +31,8 @@ class ConverterController extends Controller
     }
     
     /**
-     * Return random string
-     * @RequestParam(name="hex", strict=true, requirements="^\#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$", default="0", description="Length of random string")
+     * Return Rgb color code
+     * @RequestParam(name="hex", strict=true, requirements="^\#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$", default="0", description="Hex color code prefixed by #")
      * @ApiDoc(section="Converter")
      * @Rest\View()
      */
