@@ -34,7 +34,7 @@ class UserController extends \FOS\UserBundle\Controller\RegistrationController
             $u          = true;
             while(!is_null($u)){
                 $apikey     = $this->container->get('sharindata_tool_randomize')->getRandom(20, 2);
-                $u          = $this->container->get('doctrine')->getEntityManager()->getRepository("KkuetNetSharindataBundle:User")->findOneBy(array(
+                $u          = $this->container->get('doctrine')->getManager()->getRepository("KkuetNetSharindataBundle:User")->findOneBy(array(
                     'api_key' => $apikey
                 ));
             }
@@ -43,7 +43,7 @@ class UserController extends \FOS\UserBundle\Controller\RegistrationController
             $user->setApiSecret($this->container->get('sharindata_tool_randomize')->getRandom(20, 2));
             $user->setHashKey($this->container->get('sharindata_tool_randomize')->getRandom(20, 2));
             
-            $em         = $this->container->get('doctrine')->getEntityManager();
+            $em         = $this->container->get('doctrine')->getManager();
             $em->persist($user);
             $em->flush();
             

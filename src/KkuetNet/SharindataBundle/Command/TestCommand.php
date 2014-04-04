@@ -22,7 +22,7 @@ class TestCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->container    = $this->getContainer();
-        $this->em           = $this->container->get('doctrine')->getEntityManager();
+        $this->em           = $this->container->get('doctrine')->getManager();
 
         $test = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("dPMf3YTKM0QMunYRwqKI", "H9mibm4rLuYCQSz8AzfL");
         

@@ -34,7 +34,7 @@ class SecurityController extends Controller
     {
         $apikey         = $paramFetcher->get('_apikey');
         $apisecret      = $paramFetcher->get('_apisecret');
-        $user           = $this->container->get('doctrine')->getEntityManager()->getRepository("KkuetNetSharindataBundle:User")->findOneBy(array(
+        $user           = $this->container->get('doctrine')->getManager()->getRepository("KkuetNetSharindataBundle:User")->findOneBy(array(
             'api_key' => $apikey
         ));
 
