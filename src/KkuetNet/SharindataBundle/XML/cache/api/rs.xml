@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
-<localizationPack name="United Arab Emirates">
+<localizationPack name="Serbia">
   <currencies>
-    <currency name="United Arab Emirates dirham" iso_code="AED" iso_code_num="784" sign="AED" blank="1" conversion_rate="1.000000" format="1" decimals="0"/>
+    <currency name="Dinar" iso_code="RSD" iso_code_num="941" sign="RSD" blank="1" conversion_rate="115.680000" format="2" decimals="1"/>
   </currencies>
   <languages>
-    <language iso_code="en"/>
-    <language iso_code="ar"/>
+    <language iso_code="sr"/>
   </languages>
   <taxes/>
   <units>
