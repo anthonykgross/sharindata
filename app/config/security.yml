@@ -20,7 +20,7 @@ security:
             pattern:   ^/api/(?!(docs|token)).*
 #            pattern:   ^/api/(?!(.*))
             wsse:      
-                nonce_dir: "%kernel.cache_dir%/nonces/"
+#                nonce_dir: "%kernel.cache_dir%/nonces/"
                 lifetime: 300
                 realm: "Secured API"
                 profile: "UsernameToken"

@@ -20,6 +20,8 @@ framework:
     session:         ~
     fragments:       ~
     http_method_override: true
+    serializer:
+        enabled: true
 
 # Twig Configuration
 twig:
@@ -78,9 +80,10 @@ fos_user:
         address: no-reply@sharindata.com
         sender_name: Sharindata.com
         
-#jms_serializer:
-#    handlers:
-#        object_based: true
+# JMS SECURITY EXTRA
+jms_security_extra:
+    secure_all_services: true
+    expressions: false
         
 nelmio_api_doc: ~
 

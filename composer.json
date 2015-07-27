@@ -9,7 +9,7 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.3.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
+        "doctrine/orm": "~2.2,>=2.2.3,<2.5",
         "doctrine/doctrine-bundle": "1.2.*",
         "twig/extensions": "1.0.*",
         "symfony/assetic-bundle": "2.3.*",
@@ -19,13 +19,12 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
+        "jms/security-extra-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
 	"friendsofsymfony/user-bundle": "*",
-        "jms/security-extra-bundle": "dev-master",
-        "jms/serializer-bundle": "dev-master",
         "friendsofsymfony/rest-bundle": "*",
         "nelmio/api-doc-bundle": "*",
-	"escapestudios/wsse-authentication-bundle": "2.3.x-dev",
+	"escapestudios/wsse-authentication-bundle": "~2.0",
         "kkuetnet/sharindata-client-api": "dev-master"
     },
     "require-dev": {
