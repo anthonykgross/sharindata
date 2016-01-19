@@ -1,12 +1,6 @@
 sharindata:
-  image: akg-sharindata:latest
-  volumes:
-    - ./conf/php5:/etc/php5
-    - ./conf/supervisor:/etc/supervisor/conf.d
-    - ./conf/nginx:/etc/nginx
-    - ./src:/src
-    - ./logs:/logs
+  extends:
+    file: docker-compose.prod.yml
+    service: sharindata
   ports:
     - 80:80
-  environment:
-    VIRTUAL_HOST: "sharindata.com,sharindata.local"
