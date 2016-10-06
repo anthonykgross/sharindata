@@ -7,4 +7,4 @@ sharindata:
     - ./src:/src
     - ./logs:/logs
   environment:
-    VIRTUAL_HOST: "sharindata.com,sharindata.local"
+    VIRTUAL_HOST: "sharindata.anthonykgross.fr,sharindata.anthonykgross.local"
