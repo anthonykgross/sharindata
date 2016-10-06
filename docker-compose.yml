@@ -2,5 +2,7 @@ sharindata:
   extends:
     file: docker-compose.prod.yml
     service: sharindata
+  external_links:
+    - mysql:mysql
   ports:
     - 80:80
