@@ -1,5 +1,5 @@
 sharindata:
-  image: akg-sharindata:latest
+  image: registry.gitlab.com/anthonykgross/sharindata:master
   volumes:
     - ./conf/php5:/etc/php5
     - ./conf/supervisor:/etc/supervisor/conf.d

@@ -1,2 +1,2 @@
 #/bin/bash
-docker build --file="images/sharindata/Dockerfile" --tag="akg-sharindata:latest" images/sharindata/.
+docker build --file="Dockerfile" --tag="registry.gitlab.com/anthonykgross/sharindata:master" .
