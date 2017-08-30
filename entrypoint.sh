@@ -4,19 +4,22 @@ set -e
 install() {
     rm -Rf app/cache/*
     rm -Rf node_modules/
-    npm install
-    gulp
-    composer install
-    php app/console assets:install
+    gosu docker npm install
+    gosu docker gulp
+    gosu docker composer install
+    gosu docker php app/console assets:install
 }
 
 tests() {
-    php bin/phpunit -c app/
+    gosu docker php bin/phpunit -c app/
 }
 
 run() {
-    chmod 777 * -Rf
     supervisord
+}
+
+permission() {
+    chown -Rf docker:docker .
 }
 
 case "$1" in
@@ -31,6 +34,10 @@ case "$1" in
 "run")
     echo "Run"
     run
+    ;;
+"permission")
+    echo "Permission"
+    permission
     ;;
 *)
     echo "Custom command : $@"
