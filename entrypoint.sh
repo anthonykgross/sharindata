@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+source ~/.bash_profile
+
 install() {
     rm -Rf app/cache/*
     rm -Rf node_modules/
