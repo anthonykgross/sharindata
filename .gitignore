@@ -13,3 +13,4 @@
 /src/node_modules
 .idea
 /src/app/config/parameters.yml
+/lib
