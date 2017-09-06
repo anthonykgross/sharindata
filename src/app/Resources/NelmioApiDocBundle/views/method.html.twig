@@ -1,0 +1,177 @@
+<div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="http_method">
+                    <b>{{ data.method|upper }} <a id="{{data.id}}"></a></b>
+                </span>
+
+                {% if data.deprecated %}
+                <span class="deprecated">
+                    <a>DEPRECATED</a>
+                </span>
+                {% endif %}
+
+                {% if data.https %}
+                    <span class="icon lock" title="HTTPS"></span>
+                {% endif %}
+                {% if data.authentication %}
+                    <span class="icon keys" title="Needs authentication"></span>
+                {% endif %}
+
+                <span class="path">
+                    {% if data.host is defined -%}
+                        {{ data.https ? 'https://' : 'http://' -}}
+                        {{ data.host -}}
+                    {% endif -%}
+                    {{ data.uri }}
+                </span>
+            </h3>
+        </div>
+        <div class="panel-body">
+            <ul class="options">
+                {% if data.description is defined %}
+                    <li>{{ data.description }}</li>
+                {% endif %}
+            </ul>
+            <div class="content">
+                <div class="panes">
+                    <div class="pane content selected">
+                    {% if data.requirements is defined  and data.requirements is not empty %}
+                        <h4>Requirements</h4>
+                        <table class="container">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Requirement</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for name, infos in data.requirements %}
+                                    <tr>
+                                        <td>{{ name }}</td>
+                                        <td>{{ infos.requirement }}</td>
+                                        <td>{{ infos.dataType }}</td>
+                                        <td>{{ infos.description|raw }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if data.filters is defined and data.filters is not empty %}
+                        <h4>Filters</h4>
+                        <table class="container">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Information</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for name, infos in data.filters %}
+                                <tr>
+                                    <td>{{ name }}</td>
+                                    <td>
+                                        <table>
+                                        {% for key, value in infos %}
+                                            <tr>
+                                                <td>{{ key|title }}</td>
+                                                <td>{{ value|raw }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </table>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if data.parameters is defined and data.parameters is not empty %}
+                        <h4>Parameters</h4>
+                        <table class='container'>
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Type</th>
+                                    <th>Required?</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for name, infos in data.parameters %}
+                                    {% if not infos.readonly %}
+                                        <tr>
+                                            <td>{{ name }}</td>
+                                            <td>{{ infos.dataType }}</td>
+                                            <td>{{ infos.required ? 'true' : 'false' }}</td>
+                                            <td>{{ infos.description|raw }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if data.response is defined and data.response is not empty %}
+                        <h4>Return</h4>
+                        <table class='container'>
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Type</th>
+                                    <th>Versions</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for name, infos in data.response %}
+                                    <tr>
+                                        <td>{{ name }}</td>
+                                        <td>{{ infos.dataType }}</td>
+                                        <td>{% include 'NelmioApiDocBundle:Components:version.html.twig' with {'sinceVersion': infos.sinceVersion, 'untilVersion': infos.untilVersion} only %}</td>
+                                        <td>{{ infos.description|raw }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if data.statusCodes is defined and data.statusCodes is not empty %}
+                        <h4>Status Codes</h4>
+                        <table class="container">
+                            <thead>
+                            <tr>
+                                <th>Status Code</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for status_code, descriptions in data.statusCodes %}
+                                <tr>
+                                    <td><a href="http://en.wikipedia.org/wiki/HTTP_{{ status_code }}" target="_blank">{{ status_code }}<a/></td>
+                                    <td>
+                                        <ul>
+                                            {% for description in descriptions %}
+                                                <li>{{ description|raw }}</li>
+                                            {%  endfor %}
+                                        </ul>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+
+                    {% if data.cache is defined and data.cache is not empty %}
+                        <h4>Cache</h4>
+                        <div>{{ data.cache }}</div>
+                    {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

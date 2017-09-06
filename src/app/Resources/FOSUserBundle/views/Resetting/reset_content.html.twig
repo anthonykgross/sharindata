@@ -1,0 +1,9 @@
+<form action="{{ path('fos_user_resetting_reset', {'token': token}) }}" {{ form_enctype(form) }} method="POST" class="form-register">
+    <h2 class="form-signin-heading">Resetting password</h2>
+    {{ form_widget(form.new.first, { 'attr': {'class': 'form-control', 'placeholder': "Password"} }) }}
+    {{ form_errors(form.new.first)}}
+    {{ form_widget(form.new.second, { 'attr': {'class': 'form-control', 'placeholder': "Confirmation Password"} }) }}
+    {{ form_errors(form.new.second)}}
+    {{ form_widget(form._token) }}
+    <input class="btn btn-primary btn-block" type="submit" value="{{ 'resetting.reset.submit'|trans({}, 'FOSUserBundle') }}" />
+</form>

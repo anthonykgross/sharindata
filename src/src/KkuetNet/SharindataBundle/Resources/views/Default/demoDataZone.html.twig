@@ -1,0 +1,59 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Request</h2>
+        <pre class="brush: php;">
+            $response = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("your_api_key", "your_api_secret");
+            var_dump($response->getZone('europe'));
+        </pre>
+        <h2>JSON Response</h2>
+        <pre class="brush: js;">
+            {{data1}}
+        </pre>
+        
+        <h2>Example of result</h2>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    Name
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data1.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Countries
+                </div>
+                <ul class="col-lg-8">
+                    {% for c in json_data1.countries %}
+                        <li><img src="/bundles/kkuetnetsharindata/images/flags/64/{{ c.iso }}.png"/></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    Name
+                </div>
+                <div class="col-lg-8">
+                    {{ json_data2.name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    Countries
+                </div>
+                <ul class="col-lg-8">
+                    {% for c in json_data2.countries %}
+                        <li><img src="/bundles/kkuetnetsharindata/images/flags/64/{{ c.iso }}.png"/></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1954 @@
+"1";"1";"346";"DE";"49";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DE";"GERMANY"
+"2";"1";"392";"AT";"43";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AT";"AUSTRIA"
+"3";"1";"348";"BE";"32";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BE";"BELGIUM"
+"4";"2";"200";"CA";"1";"1";"0";"1";"LNL NLN";"0";"firstname lastname
+company
+address1
+address2
+city State:name postcode
+Country:name
+phone";"CA";"CANADA"
+"5";"3";"287";"CN";"86";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CN";"CHINA"
+"6";"1";"366";"ES";"34";"0";"1";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ES";"SPAIN"
+"7";"1";"356";"FI";"358";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FI";"FINLAND"
+"8";"1";"374";"FR";"33";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FR";"FRANCE"
+"9";"1";"343";"GR";"30";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GR";"GREECE"
+"10";"1";"378";"IT";"39";"1";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+State:name
+Country:name
+phone";"IT";"ITALY"
+"11";"3";"296";"JP";"81";"1";"0";"1";"NNN-NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+State:name
+Country:name
+phone";"JP";"JAPAN"
+"12";"1";"365";"LU";"352";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LU";"LUXEMBOURG"
+"13";"1";"341";"NL";"31";"0";"0";"1";"NNNN LL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NL";"NETHERLANDS"
+"14";"1";"395";"PL";"48";"0";"0";"1";"NN-NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PL";"POLAND"
+"15";"1";"362";"PT";"351";"0";"0";"1";"NNNN NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PT";"PORTUGAL"
+"16";"1";"376";"CZ";"420";"0";"0";"1";"NNN NN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CZ";"CZECH REPUBLIC"
+"17";"1";"364";"GB";"44";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GB";"UNITED KINGDOM"
+"18";"1";"385";"SE";"46";"0";"0";"1";"NNN NN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SE";"SWEDEN"
+"19";"7";"398";"CH";"41";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CH";"SWITZERLAND"
+"20";"1";"352";"DK";"45";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DK";"DENMARK"
+"21";"2";"549";"US";"1";"1";"0";"1";"NNNNN";"0";"firstname lastname
+company
+address1 address2
+city, State:name postcode
+Country:name
+phone";"US";"UNITED STATES"
+"22";"3";"248";"HK";"852";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"HK";"HONG KONG"
+"23";"7";"373";"NO";"47";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NO";"NORWAY"
+"24";"5";"329";"AU";"61";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AU";"AUSTRALIA"
+"25";"3";"288";"SG";"65";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SG";"SINGAPORE"
+"26";"1";"353";"IE";"353";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IE";"IRELAND"
+"27";"5";"411";"NZ";"64";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NZ";"NEW ZEALAND"
+"28";"3";"286";"KR";"82";"0";"0";"1";"NNN-NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KR";"KOREA, REPUBLIC OF"
+"29";"3";"254";"IL";"972";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IL";"ISRAEL"
+"30";"4";"26";"ZA";"27";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ZA";"SOUTH AFRICA"
+"31";"4";"31";"NG";"234";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NG";"NIGERIA"
+"32";"4";"1";"CI";"225";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CI";"CÔTE D'IVOIRE"
+"33";"4";"33";"TG";"228";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TG";"TOGO"
+"34";"6";"140";"BO";"591";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BO";"BOLIVIA, PLURINATIONAL STATE OF"
+"35";"4";"407";"MU";"230";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MU";"MAURITIUS"
+"36";"1";"349";"RO";"40";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"RO";"ROMANIA"
+"37";"1";"347";"SK";"421";"0";"0";"1";"NNN NN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SK";"SLOVAKIA"
+"38";"4";"4";"DZ";"213";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DZ";"ALGERIA"
+"39";"2";"435";"AS";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AS";"AMERICAN SAMOA"
+"40";"7";"342";"AD";"376";"0";"0";"1";"CNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AD";"ANDORRA"
+"41";"4";"34";"AO";"244";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AO";"ANGOLA"
+"42";"8";"56";"AI";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AI";"ANGUILLA"
+"43";"2";"57";"AG";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AG";"ANTIGUA AND BARBUDA"
+"44";"6";"59";"AR";"54";"1";"0";"1";"LNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+State:name
+Country:name
+phone";"AR";"ARGENTINA"
+"45";"3";"305";"AM";"374";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AM";"ARMENIA"
+"46";"8";"72";"AW";"297";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AW";"ARUBA"
+"47";"3";"229";"AZ";"994";"0";"0";"1";"CNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AZ";"AZERBAIJAN"
+"48";"2";"160";"BS";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BS";"BAHAMAS"
+"49";"3";"228";"BH";"973";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BH";"BAHRAIN"
+"50";"3";"241";"BD";"880";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BD";"BANGLADESH"
+"51";"2";"77";"BB";"0";"0";"0";"1";"CNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BB";"BARBADOS"
+"52";"7";"369";"BY";"0";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BY";"BELARUS"
+"53";"8";"79";"BZ";"501";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BZ";"BELIZE"
+"54";"4";"48";"BJ";"229";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BJ";"BENIN"
+"55";"2";"307";"BM";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BM";"BERMUDA"
+"56";"3";"295";"BT";"975";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BT";"BHUTAN"
+"57";"4";"24";"BW";"267";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BW";"BOTSWANA"
+"58";"6";"164";"BR";"55";"0";"0";"1";"NNNNN-NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BR";"BRAZIL"
+"59";"3";"233";"BN";"673";"0";"0";"1";"LLNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BN";"BRUNEI DARUSSALAM"
+"60";"4";"47";"BF";"226";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BF";"BURKINA FASO"
+"61";"3";"281";"MM";"95";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MM";"MYANMAR"
+"62";"4";"13";"BI";"257";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BI";"BURUNDI"
+"63";"3";"276";"KH";"855";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KH";"CAMBODIA"
+"64";"4";"21";"CM";"237";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CM";"CAMEROON"
+"65";"4";"309";"CV";"238";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CV";"CAPE VERDE"
+"66";"4";"8";"CF";"236";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CF";"CENTRAL AFRICAN REPUBLIC"
+"67";"4";"44";"TD";"235";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TD";"CHAD"
+"68";"6";"184";"CL";"56";"0";"0";"1";"NNN-NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CL";"CHILE"
+"69";"6";"82";"CO";"57";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CO";"COLOMBIA"
+"70";"4";"403";"KM";"269";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KM";"COMOROS"
+"71";"4";"30";"CD";"242";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CD";"CONGO, THE DEMOCRATIC REPUBLIC OF THE"
+"72";"4";"12";"CG";"243";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CG";"CONGO"
+"73";"8";"96";"CR";"506";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CR";"COSTA RICA"
+"74";"7";"396";"HR";"385";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"HR";"CROATIA"
+"75";"8";"121";"CU";"53";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CU";"CUBA"
+"76";"1";"272";"CY";"357";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CY";"CYPRUS"
+"77";"4";"20";"DJ";"253";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DJ";"DJIBOUTI"
+"78";"8";"104";"DM";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DM";"DOMINICA"
+"79";"8";"185";"DO";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"DO";"DOMINICAN REPUBLIC"
+"80";"3";"242";"TL";"670";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TL";"TIMOR-LESTE"
+"81";"6";"118";"EC";"593";"0";"0";"1";"CNNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"EC";"ECUADOR"
+"82";"4";"14";"EG";"20";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"EG";"EGYPT"
+"83";"8";"107";"SV";"503";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SV";"EL SALVADOR"
+"84";"4";"37";"GQ";"240";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GQ";"EQUATORIAL GUINEA"
+"85";"4";"5";"ER";"291";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ER";"ERITREA"
+"86";"1";"386";"EE";"372";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"EE";"ESTONIA"
+"87";"4";"3";"ET";"251";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ET";"ETHIOPIA"
+"88";"8";"317";"FK";"0";"0";"0";"1";"LLLL NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FK";"FALKLAND ISLANDS (MALVINAS)"
+"89";"7";"311";"FO";"298";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FO";"FAROE ISLANDS"
+"90";"5";"417";"FJ";"679";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FJ";"FIJI"
+"91";"4";"32";"GA";"241";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GA";"GABON"
+"92";"4";"9";"GM";"220";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GM";"GAMBIA"
+"93";"3";"291";"GE";"995";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GE";"GEORGIA"
+"94";"4";"2";"GH";"233";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GH";"GHANA"
+"95";"8";"115";"GD";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GD";"GRENADA"
+"96";"7";"112";"GL";"299";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GL";"GREENLAND"
+"97";"7";"354";"GI";"350";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GI";"GIBRALTAR"
+"98";"8";"116";"GP";"590";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FR";"GUADELOUPE"
+"99";"5";"422";"GU";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GU";"GUAM"
+"100";"8";"117";"GT";"502";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GT";"GUATEMALA"
+"101";"7";"355";"GG";"0";"0";"0";"1";"LLN NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GG";"GUERNSEY"
+"102";"4";"17";"GN";"224";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GN";"GUINEA"
+"103";"4";"10";"GW";"245";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GW";"GUINEA-BISSAU"
+"104";"6";"119";"GY";"592";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GY";"GUYANA"
+"105";"8";"171";"HT";"509";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"HT";"HAITI"
+"106";"5";NULL;"HM";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AU";"HEARD ISLAND AND MCDONALD ISLANDS"
+"107";"7";"391";"VA";"379";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VA";"HOLY SEE (VATICAN CITY STATE)"
+"108";"8";"196";"HN";"504";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"HN";"HONDURAS"
+"109";"7";"314";"IS";"354";"0";"0";"1";"NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IS";"ICELAND"
+"110";"3";"261";"IN";"91";"0";"0";"1";"NNN NNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IN";"INDIA"
+"111";"3";"252";"ID";"62";"1";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+State:name
+Country:name
+phone";"ID";"INDONESIA"
+"112";"3";"292";"IR";"98";"0";"0";"1";"NNNNN-NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IR";"IRAN, ISLAMIC REPUBLIC OF"
+"113";"3";"227";"IQ";"964";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IQ";"IRAQ"
+"114";"7";"357";"IM";"0";"0";"0";"1";"CN NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IM";"ISLE OF MAN"
+"115";"8";"134";"JM";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"JM";"JAMAICA"
+"116";"7";"359";"JE";"0";"0";"0";"1";"CN NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"JE";"JERSEY"
+"117";"3";"221";"JO";"962";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"JO";"JORDAN"
+"118";"3";"220";"KZ";"7";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KZ";"KAZAKHSTAN"
+"119";"4";"43";"KE";"254";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KE";"KENYA"
+"120";"5";"444";"KI";"686";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KI";"KIRIBATI"
+"121";"3";"278";"KP";"850";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KP";"KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF"
+"122";"3";"265";"KW";"965";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KW";"KUWAIT"
+"123";"3";"232";"KG";"996";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KG";"KYRGYZSTAN"
+"124";"3";"301";"LA";"856";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LA";"LAO PEOPLE'S DEMOCRATIC REPUBLIC"
+"125";"1";"377";"LV";"371";"0";"0";"1";"C-NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LV";"LATVIA"
+"126";"3";"231";"LB";"961";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LB";"LEBANON"
+"127";"4";"39";"LS";"266";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LS";"LESOTHO"
+"128";"4";"42";"LR";"231";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LR";"LIBERIA"
+"129";"4";"51";"LY";"218";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LY";"LIBYA"
+"130";"1";"390";"LI";"423";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LI";"LIECHTENSTEIN"
+"131";"1";"393";"LT";"370";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LT";"LITHUANIA"
+"132";"3";"267";"MO";"853";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MO";"MACAO"
+"133";"7";"383";"MK";"389";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MK";"MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF"
+"134";"4";"399";"MG";"261";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MG";"MADAGASCAR"
+"135";"4";"11";"MW";"265";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MW";"MALAWI"
+"136";"3";"263";"MY";"60";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MY";"MALAYSIA"
+"137";"3";"406";"MV";"960";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MV";"MALDIVES"
+"138";"4";"7";"ML";"223";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ML";"MALI"
+"139";"1";"367";"MT";"356";"0";"0";"1";"LLL NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MT";"MALTA"
+"140";"5";"428";"MH";"692";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MH";"MARSHALL ISLANDS"
+"141";"8";"148";"MQ";"596";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MQ";"MARTINIQUE"
+"142";"4";"46";"MR";"222";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MR";"MAURITANIA"
+"143";"1";"350";"HU";"36";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"HU";"HUNGARY"
+"144";"4";"408";"YT";"262";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"YT";"MAYOTTE"
+"145";"2";"153";"MX";"52";"1";"1";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+State:name
+Country:name
+phone";"MX";"MEXICO"
+"146";"5";NULL;"FM";"691";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FM";"MICRONESIA, FEDERATED STATES OF"
+"147";"7";"351";"MD";"373";"0";"0";"1";"C-NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MD";"MOLDOVA, REPUBLIC OF"
+"148";"7";"370";"MC";"377";"0";"0";"1";"980NN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MC";"MONACO"
+"149";"3";"298";"MN";"976";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MN";"MONGOLIA"
+"150";"7";"375";"ME";"382";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ME";"MONTENEGRO"
+"151";"8";"159";"MS";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MS";"MONTSERRAT"
+"152";"4";"15";"MA";"212";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MA";"MOROCCO"
+"153";"4";"38";"MZ";"258";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MZ";"MOZAMBIQUE"
+"154";"4";"53";"NA";"264";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NA";"NAMIBIA"
+"155";"5";"431";"NR";"674";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NR";"NAURU"
+"156";"3";"259";"NP";"977";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NP";"NEPAL"
+"157";"8";"98";"AN";"599";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AN";"NETHERLANDS ANTILLES"
+"158";"5";"434";"NC";"687";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NC";"NEW CALEDONIA"
+"159";"8";"145";"NI";"505";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NI";"NICARAGUA"
+"160";"4";"45";"NE";"227";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NE";"NIGER"
+"161";"5";"432";"NU";"683";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NU";"NIUE"
+"162";"5";"433";"NF";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NF";"NORFOLK ISLAND"
+"163";"5";"441";"MP";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MP";"NORTHERN MARIANA ISLANDS"
+"164";"3";"271";"OM";"968";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"OM";"OMAN"
+"165";"3";"257";"PK";"92";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PK";"PAKISTAN"
+"166";"5";"436";"PW";"680";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PW";"PALAU"
+"167";"3";"245";"PS";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PS";"PALESTINE, STATE OF"
+"168";"8";"167";"PA";"507";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PA";"PANAMA"
+"169";"5";"439";"PG";"675";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PG";"PAPUA NEW GUINEA"
+"170";"6";"73";"PY";"595";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PY";"PARAGUAY"
+"171";"6";"141";"PE";"51";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PE";"PERU"
+"172";"3";"270";"PH";"63";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PH";"PHILIPPINES"
+"173";"5";"437";"PN";"0";"0";"0";"1";"LLLL NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PN";"PITCAIRN"
+"174";"8";"175";"PR";"0";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PR";"PUERTO RICO"
+"175";"3";"279";"QA";"974";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"QA";"QATAR"
+"176";"4";"409";"RE";"262";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FR";"RÉUNION"
+"177";"7";"371";"RU";"7";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"RU";"RUSSIAN FEDERATION"
+"178";"4";"29";"RW";"250";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"RW";"RWANDA"
+"179";"8";"189";"BL";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BL";"SAINT BARTHÉLEMY"
+"180";"8";"191";"KN";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KN";"SAINT KITTS AND NEVIS"
+"181";"8";"192";"LC";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LC";"SAINT LUCIA"
+"182";"8";"147";"MF";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"MF";"SAINT MARTIN (FRENCH PART)"
+"183";"8";"154";"PM";"508";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FR";"SAINT PIERRE AND MIQUELON"
+"184";"8";"194";"VC";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VC";"SAINT VINCENT AND THE GRENADINES"
+"185";"5";"410";"WS";"685";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"WS";"SAMOA"
+"186";"7";"380";"SM";"378";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SM";"SAN MARINO"
+"187";"4";"49";"ST";"239";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ST";"SAO TOME AND PRINCIPE"
+"188";"3";"282";"SA";"966";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SA";"SAUDI ARABIA"
+"189";"4";"18";"SN";"221";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SN";"SENEGAL"
+"190";"7";"345";"RS";"381";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"RS";"SERBIA"
+"191";"4";"405";"SC";"248";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SC";"SEYCHELLES"
+"192";"4";"23";"SL";"232";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SL";"SIERRA LEONE"
+"193";"1";"363";"SI";"386";"0";"0";"1";"C-NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SI";"SLOVENIA"
+"194";"5";"421";"SB";"677";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SB";"SOLOMON ISLANDS"
+"195";"4";"41";"SO";"252";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SO";"SOMALIA"
+"196";"8";"315";"GS";"0";"0";"0";"1";"LLLL NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"GS";"SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+"197";"3";"238";"LK";"94";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"LK";"SRI LANKA"
+"198";"4";"28";"SD";"249";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SD";"SUDAN"
+"199";"8";"169";"SR";"597";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SR";"SURINAME"
+"200";"7";"218";"SJ";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NO";"SVALBARD AND JAN MAYEN"
+"201";"4";"40";"SZ";"268";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SZ";"SWAZILAND"
+"202";"3";"240";"SY";"963";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"SY";"SYRIAN ARAB REPUBLIC"
+"203";"3";"289";"TW";"886";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TW";"TAIWAN, PROVINCE OF CHINA"
+"204";"3";"244";"TJ";"992";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TJ";"TAJIKISTAN"
+"205";"4";"19";"TZ";"255";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TZ";"TANZANIA, UNITED REPUBLIC OF"
+"206";"3";"230";"TH";"66";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TH";"THAILAND"
+"207";"5";"416";"TK";"690";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TK";"TOKELAU"
+"208";"5";"445";"TO";"676";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TO";"TONGA"
+"209";"6";"172";"TT";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TT";"TRINIDAD AND TOBAGO"
+"210";"4";"52";"TN";"216";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TN";"TUNISIA"
+"211";"7";"358";"TR";"90";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TR";"TURKEY"
+"212";"3";"225";"TM";"993";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TM";"TURKMENISTAN"
+"213";"8";"114";"TC";"0";"0";"0";"1";"LLLL NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TC";"TURKS AND CAICOS ISLANDS"
+"214";"5";"418";"TV";"688";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TV";"TUVALU"
+"215";"4";"27";"UG";"256";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"UG";"UGANDA"
+"216";"1";"361";"UA";"380";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"UA";"UKRAINE"
+"217";"3";"243";"AE";"971";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AE";"UNITED ARAB EMIRATES"
+"218";"6";"157";"UY";"598";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"UY";"URUGUAY"
+"219";"3";"285";"UZ";"998";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"UZ";"UZBEKISTAN"
+"220";"5";"414";"VU";"678";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VU";"VANUATU"
+"221";"6";"88";"VE";"58";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VE";"VENEZUELA, BOLIVARIAN REPUBLIC OF"
+"222";"3";"247";"VN";"84";"0";"0";"1";"NNNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VN";"VIET NAM"
+"223";"2";"201";"VG";"0";"0";"0";"1";"CNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VG";"VIRGIN ISLANDS, BRITISH"
+"224";"2";"193";"VI";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"VI";"VIRGIN ISLANDS, U.S."
+"225";"5";"448";"WF";"681";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"WF";"WALLIS AND FUTUNA"
+"226";"4";"22";"EH";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"EH";"WESTERN SAHARA"
+"227";"3";"219";"YE";"967";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"YE";"YEMEN"
+"228";"4";"36";"ZM";"260";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ZM";"ZAMBIA"
+"229";"4";"25";"ZW";"263";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"ZW";"ZIMBABWE"
+"230";"7";"387";"AL";"355";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AL";"ALBANIA"
+"231";"3";"255";"AF";"93";"0";"0";"0";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AF";"AFGHANISTAN"
+"232";"5";"212";"AQ";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AQ";"ANTARCTICA"
+"233";"1";"381";"BA";"387";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BA";"BOSNIA AND HERZEGOVINA"
+"234";"5";NULL;"BV";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"NO";"BOUVET ISLAND"
+"235";"5";"400";"IO";"0";"0";"0";"1";"LLLL NLL";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"IO";"BRITISH INDIAN OCEAN TERRITORY"
+"236";"1";"384";"BG";"359";"0";"0";"1";"NNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"BG";"BULGARIA"
+"237";"8";"91";"KY";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"KY";"CAYMAN ISLANDS"
+"238";"3";"401";"CX";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CX";"CHRISTMAS ISLAND"
+"239";"3";"402";"CC";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CC";"COCOS (KEELING) ISLANDS"
+"240";"5";"440";"CK";"682";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"CK";"COOK ISLANDS"
+"241";"6";"90";"GF";"594";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"FR";"FRENCH GUIANA"
+"242";"5";"443";"PF";"689";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"PF";"FRENCH POLYNESIA"
+"243";"5";"404";"TF";"0";"0";"0";"1";;"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"TF";"FRENCH SOUTHERN TERRITORIES"
+"244";"7";"368";"AX";"0";"0";"0";"1";"NNNNN";"1";"firstname lastname
+company
+vat_number
+address1
+address2
+postcode city
+Country:name
+phone";"AX";"ÅLAND ISLANDS"

@@ -1,0 +1,22 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block body %}
+<form  action="{{ path("fos_user_security_check") }}" method="post" class="form-register">
+    <h2 class="form-signin-heading">Sign In</h2>
+    <input class="form-control" placeholder="Login" type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+    <input class="form-control"  placeholder="Mot de passe" type="password" id="password" name="_password" required="required" />
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+    <hr/>
+    <a href="{{ path('fos_user_registration_register')}}">Register</a> - <a href="{{ path('fos_user_resetting_request')}}">Forget your password</a>
+</form>
+
+{% endblock %}
+
+{% if error %}
+    {% block alert %}
+            {{ error|trans({}, 'FOSUserBundle')|alert('danger')|raw }}
+    {% endblock %}
+{% endif %}

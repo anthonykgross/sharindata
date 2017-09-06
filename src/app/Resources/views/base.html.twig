@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sharindata - {% block title %}Home{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link type="text/css" rel="stylesheet" href="/css/shCoreRDark.css"/>
+    
+    <link href="{{ asset("bundles/kkuetnetsharindata/css/theme.css") }}" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="http://{{ app.request.host ~ asset('favicon.ico') }}">
+    <meta property='og:locale' content='fr_FR'/>
+    <meta property='og:title' content='Sharindata.com'/>
+    <meta property='og:description' content=''/>
+    <meta property='og:url' content='http://{{ app.request.host }}'/>
+    <meta property='og:site_name' content='Sharindata.com'/>
+    <meta property='og:type' content='website'/>
+    <meta property="og:image" content="http://{{ app.request.host ~ asset('Sharindata.png') }}">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="logo" href="{{ path("_welcome") }}">Sharindata</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% if not app.user %}
+                    <li><a href="{{ path("fos_user_registration_register") }}">{% trans %}Register{% endtrans %}</a></li>
+                    <li><a href="{{ path("fos_user_security_login") }}">{% trans %}Sign In{% endtrans %}</a></li>
+                {% else %}
+                    <li><a href="{{ path("fos_user_profile_show") }}">{{ app.user.email}}</a></li>
+                    <li><a href="{{ path("fos_user_security_logout") }}">{% trans %}Logout{% endtrans %}</a></li>
+                {% endif %}
+                <li><a href="{{ path("nelmio_api_doc_index") }}">{% trans %}Documentation{% endtrans %}</a></li>
+                <li><a href="{{ path("demo_index") }}">{% trans %}Demo{% endtrans %}</a></li>
+            </ul>
+          {% block loginform %}{% endblock %}
+        </div>
+      </div>
+    </div>
+        {% block alert %}{% endblock %}
+        {% block jumbotron %}{% endblock %}
+        <div class="container marketing">
+            {% block body %}{% endblock %}
+            <hr>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sharindata.com" data-via="sharindata">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>©Sharindata 2013 by <a href="http://kkuet.net" target="_blank">Kkuet.net</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/shCore.js"></script>
+    <script type="text/javascript" src="/js/shBrushBash.js"></script>
+    <script type="text/javascript" src="/js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="/js/shBrushPhp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20778728-7']);
+        _gaq.push(['_setDomainName', 'sharindata.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <script type="text/javascript" src="/js/jquery.snow.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+            var combo = new Array(38,38,40,40,37,37,39,39);
+            var keys  = new Array();
+            $('body').on('keyup', function(e){
+                if(combo[keys.length] === e.keyCode){
+                    keys.push(e.keyCode);
+                }
+                else{
+                    keys = new Array();
+                }                
+                if(keys.length === combo.length){
+                    $('body').css('backgroundColor','#101010');
+                    $('.jumbotron, .marketing').css({
+                        'opacity': 0.5
+                    });
+                    $.fn.snow({ minSize: 5, maxSize: 50, newOn: 100});
+                    setTimeout(function(){
+                        var d = $('<div/>');
+                        d.css({
+                            'position' : 'absolute',
+                            'width': '50%',
+                            'height': '30%',
+                            'top': '30%',
+                            'left': '25%',
+                            'color': 'black',
+                            'fontSize': '32px',
+                            'text-align': 'center',
+                            'display': 'none',
+                            'z-index': 10000
+                        });
+                        d.html('<object width="640" height="360"><param name="movie" value="//www.youtube.com/v/HHAPNg6dey4?autohide=1&autoplay=1&version=3&amp;hl=fr_FR"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/HHAPNg6dey4?autohide=1&autoplay=1&version=3&amp;hl=fr_FR" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+                        $('body').append(d);
+                        d.fadeIn(3000);
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+    {% block javascripts %}{% endblock %}
+  </body>
+</html>

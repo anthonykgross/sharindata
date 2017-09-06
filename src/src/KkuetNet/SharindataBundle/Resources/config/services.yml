@@ -1,0 +1,21 @@
+## YAML Template.
+services:
+    sharindata_updater:
+        class: KkuetNet\SharindataBundle\Services\Updater
+        arguments: [@service_container]
+    sharindata_tool_unicode:
+        class: KkuetNet\SharindataBundle\Services\ToolUnicode
+        arguments: [@service_container]
+    sharindata_tool_image:
+        class: KkuetNet\SharindataBundle\Services\ToolImage
+        arguments: [@service_container]
+    sharindata_tool_color:
+        class: KkuetNet\SharindataBundle\Services\ToolColor
+        arguments: [@service_container]
+    sharindata_tool_randomize:
+        class: KkuetNet\SharindataBundle\Services\ToolRandomize
+        arguments: [@service_container]
+    sharindata.twig.alert_extension:
+        class: KkuetNet\SharindataBundle\Twig\AlertExtension
+        tags:
+            - { name: twig.extension }
