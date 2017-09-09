@@ -7,7 +7,7 @@ install:
 	docker-compose run sharindata install
 
 debug:
-	docker run -it --rm --entrypoint=/bin/bash $(NAME):master
+	docker-compose run sharindata bash
 
 run:
 	docker-compose up
