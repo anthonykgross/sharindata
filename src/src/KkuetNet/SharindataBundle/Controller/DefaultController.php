@@ -11,8 +11,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
  */
 class DefaultController extends Controller
 {
-    private static $apiKey      = "dPMf3YTKM0QMunYRwqKI";
-    private static $apiSecret   = "H9mibm4rLuYCQSz8AzfL";
+    private static $apiKey      = "0eeRIg3p9mDQJVAxIXpV";
+    private static $apiSecret   = "lRnRLBgAyZZUS26dKS43";
     /**
      * @Route("/", name="_welcome")
      */

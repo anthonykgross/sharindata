@@ -100,7 +100,7 @@ class CountryController extends Controller
                 'zip_code_format'           => $country->getZipCodeFormat(),
                 'display_tax_label'         => $country->getDisplayTaxLabel(),
                 'address_format'            => $country->getAddressFormat(),
-                'flag'                      => "http://sharindata.com/bundles/kkuetnetsharindata/images/flags/64/".$country->getFlag().".png",
+                'flag'                      => "http://sharindata.anthonykgross.fr/bundles/kkuetnetsharindata/images/flags/64/".$country->getFlag().".png",
                 'name'                      => $country->getName(),
                 'zone'                      => array(
                     'code' => strtoupper($country->getZone()->getCode()),
