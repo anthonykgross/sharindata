@@ -1536,12 +1536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anthonykgross/SharindataClientApi.git",
-                "reference": "29b57aa7c8840baf375eefb8c0e6af1584b46065"
+                "reference": "955aee75c7c8b76cba3d217b0cb306669035b865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anthonykgross/SharindataClientApi/zipball/29b57aa7c8840baf375eefb8c0e6af1584b46065",
-                "reference": "29b57aa7c8840baf375eefb8c0e6af1584b46065",
+                "url": "https://api.github.com/repos/anthonykgross/SharindataClientApi/zipball/955aee75c7c8b76cba3d217b0cb306669035b865",
+                "reference": "955aee75c7c8b76cba3d217b0cb306669035b865",
                 "shasum": ""
             },
             "require": {
@@ -1571,7 +1571,7 @@
                 "source": "https://github.com/anthonykgross/SharindataClientApi/tree/master",
                 "issues": "https://github.com/anthonykgross/SharindataClientApi/issues"
             },
-            "time": "2017-09-25T07:19:23+00:00"
+            "time": "2017-09-25T07:58:42+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
