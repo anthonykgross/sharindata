@@ -1,171 +1,52 @@
-Symfony Standard Edition
-========================
+<p align="center"><img src="https://api-platform.com/logo-250x250.png" alt="API Platform"></p>
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new applications.
+API Platform is a next-generation web framework designed to easily create API-first projects without
+compromising extensibility and flexibility:
 
-This document contains information on how to download, install, and start
-using Symfony. For a more detailed explanation, see the [Installation][1]
-chapter of the Symfony Documentation.
+* Design your own data model as plain old PHP classes or [**import an existing one**](https://api-platform.com/docs/schema-generator/) from the [Schema.org](https://schema.org/) vocabulary
+* **Expose in minutes a hypermedia REST API** with pagination, data validation, access control, relation embedding, filters and error handling...
+* Benefit from Content Negotiation: [JSON-LD](http://json-ld.org), [Hydra](http://hydra-cg.com), [HAL](http://stateless.co/hal_specification.html), [YAML](http://yaml.org/), [JSON](http://www.json.org/), [XML](https://www.w3.org/XML/) and [CSV](https://www.ietf.org/rfc/rfc4180.txt) are supported out of the box
+* Enjoy the **beautiful automatically generated API documentation** (Swagger/OpenAPI)
+* Add [**a convenient Material Design administration interface**](https://github.com/api-platform/admin) built with [React](https://facebook.github.io/react/) without writing a line of code
+* **Scaffold a fully functional Single-Page-Application** built with [React](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [React Router](https://reacttraining.com/react-router/) and [Bootstrap](https://getbootstrap.com/) thanks to [the client generator](https://api-platform.com/docs/client-generator/)
+* Install a development environment and deploy your project in production using **[Docker](https://docker.com)**
+* Easily add **[JSON Web Token](https://jwt.io/) or [OAuth](https://oauth.net/) authentication**
+* Create specs and tests with a **developer friendly API testing tool** on top
+  of [Behat](http://behat.org/)
 
-1) Installing the Standard Edition
-----------------------------------
+[![Build Status](https://travis-ci.org/api-platform/core.svg?branch=master)](https://travis-ci.org/api-platform/core)
+[![Build status](https://ci.appveyor.com/api/projects/status/grwuyprts3wdqx5l?svg=true)](https://ci.appveyor.com/project/dunglas/dunglasapibundle)
+[![Coverage Status](https://coveralls.io/repos/github/api-platform/core/badge.svg)](https://coveralls.io/github/api-platform/core)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/92d78899-946c-4282-89a3-ac92344f9a93/mini.png)](https://insight.sensiolabs.com/projects/92d78899-946c-4282-89a3-ac92344f9a93)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/api-platform/core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/api-platform/core/?branch=master)
 
-When it comes to installing the Symfony Standard Edition, you have the
-following options.
+The official project documentation is available **[on the API Platform website](https://api-platform.com)**.
 
-### Use Composer (*recommended*)
+API Platform embraces open web standards (Swagger, JSON-LD, Hydra, HAL, JWT, OAuth,
+HTTP...) and the [Linked Data](https://www.w3.org/standards/semanticweb/data) movement. Your API will automatically
+expose structured data in Schema.org/JSON-LD. It means that your API Platform application
+is usable **out of the box** with technologies of the semantic
+web.
 
-As Symfony uses [Composer][2] to manage its dependencies, the recommended way
-to create a new project is to use it.
+It also means that **your SEO will be improved** because **[Google leverages these
+formats](https://developers.google.com/structured-data/)**.
 
-If you don't have Composer yet, download it following the instructions on
-http://getcomposer.org/ or just run the following command:
+Last but not least, API Platform is built on top of the [Symfony](https://symfony.com) framework.
+It means than you can:
 
-    curl -s http://getcomposer.org/installer | php
+* use **thousands of Symfony bundles** with API Platform
+* integrate API Platform in **any existing Symfony application**
+* reuse **all your Symfony skills** and benefit of the incredible
+  amount of Symfony documentation
+* enjoy the popular [Doctrine ORM](http://www.doctrine-project.org/projects/orm.html) (used by default, but fully optional: you can
+  use the data provider you want, including but not limited to MongoDB ODM and ElasticSearch)
 
-Then, use the `create-project` command to generate a new Symfony application:
+Install
+-------
 
-    php composer.phar create-project symfony/framework-standard-edition path/to/install
+[Read the official "Getting Started" guide](https://api-platform.com/docs/core/getting-started).
 
-Composer will install Symfony and all its dependencies under the
-`path/to/install` directory.
+Credits
+-------
 
-### Download an Archive File
-
-To quickly test Symfony, you can also download an [archive][3] of the Standard
-Edition and unpack it somewhere under your web server root directory.
-
-If you downloaded an archive "without vendors", you also need to install all
-the necessary dependencies. Download composer (see above) and run the
-following command:
-
-    php composer.phar install
-
-2) Checking your System Configuration
--------------------------------------
-
-Before starting coding, make sure that your local system is properly
-configured for Symfony.
-
-Execute the `check.php` script from the command line:
-
-    php app/check.php
-
-The script returns a status code of `0` if all mandatory requirements are met,
-`1` otherwise.
-
-Access the `config.php` script from a browser:
-
-    http://localhost/path/to/symfony/app/web/config.php
-
-If you get any warnings or recommendations, fix them before moving on.
-
-3) Browsing the Demo Application
---------------------------------
-
-Congratulations! You're now ready to use Symfony.
-
-From the `config.php` page, click the "Bypass configuration and go to the
-Welcome page" link to load up your first Symfony page.
-
-You can also use a web-based configurator by clicking on the "Configure your
-Symfony Application online" link of the `config.php` page.
-
-To see a real-live Symfony page in action, access the following page:
-
-    web/app_dev.php/demo/hello/Fabien
-
-4) Getting started with Symfony
--------------------------------
-
-This distribution is meant to be the starting point for your Symfony
-applications, but it also contains some sample code that you can learn from
-and play with.
-
-A great way to start learning Symfony is via the [Quick Tour][4], which will
-take you through all the basic features of Symfony2.
-
-Once you're feeling good, you can move onto reading the official
-[Symfony2 book][5].
-
-A default bundle, `AcmeDemoBundle`, shows you Symfony2 in action. After
-playing with it, you can remove it by following these steps:
-
-  * delete the `src/Acme` directory;
-
-  * remove the routing entry referencing AcmeDemoBundle in `app/config/routing_dev.yml`;
-
-  * remove the AcmeDemoBundle from the registered bundles in `app/AppKernel.php`;
-
-  * remove the `web/bundles/acmedemo` directory;
-
-  * remove the `security.providers`, `security.firewalls.login` and
-    `security.firewalls.secured_area` entries in the `security.yml` file or
-    tweak the security configuration to fit your needs.
-
-What's inside?
----------------
-
-The Symfony Standard Edition is configured with the following defaults:
-
-  * Twig is the only configured template engine;
-
-  * Doctrine ORM/DBAL is configured;
-
-  * Swiftmailer is configured;
-
-  * Annotations for everything are enabled.
-
-It comes pre-configured with the following bundles:
-
-  * **FrameworkBundle** - The core Symfony framework bundle
-
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
-
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
-
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * [**AsseticBundle**][12] - Adds support for Assetic, an asset processing
-    library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **AcmeDemoBundle** (in dev/test env) - A demo bundle with some example
-    code
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  http://symfony.com/doc/2.3/book/installation.html
-[2]:  http://getcomposer.org/
-[3]:  http://symfony.com/download
-[4]:  http://symfony.com/doc/2.3/quick_tour/the_big_picture.html
-[5]:  http://symfony.com/doc/2.3/index.html
-[6]:  http://symfony.com/doc/2.3/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  http://symfony.com/doc/2.3/book/doctrine.html
-[8]:  http://symfony.com/doc/2.3/book/templating.html
-[9]:  http://symfony.com/doc/2.3/book/security.html
-[10]: http://symfony.com/doc/2.3/cookbook/email.html
-[11]: http://symfony.com/doc/2.3/cookbook/logging/monolog.html
-[12]: http://symfony.com/doc/2.3/cookbook/assetic/asset_management.html
-[13]: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/index.html
+Created by [Kévin Dunglas](https://dunglas.fr). Commercial support available at [Les-Tilleuls.coop](https://les-tilleuls.coop).
