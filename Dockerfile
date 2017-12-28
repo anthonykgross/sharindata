@@ -1,56 +1,68 @@
-FROM anthonykgross/docker-fullstack-web:php5
+FROM php:7.1-fpm-alpine
 
-MAINTAINER Anthony K GROSS
+RUN apk add --no-cache --virtual .persistent-deps \
+		git \
+		icu-libs \
+		zlib
 
-WORKDIR /src
+ENV APCU_VERSION 5.1.8
 
-ARG APPLICATION_ENV='dev'
-ARG MAILER_USER='MAILER_USER'
-ARG MAILER_PASSWORD='MAILER_PASSWORD'
-ARG DATABASE_HOST='DATABASE_HOST'
-ARG DATABASE_NAME='DATABASE_NAME'
-ARG DATABASE_USER='DATABASE_USER'
-ARG DATABASE_PASSWORD='DATABASE_PASSWORD'
-ARG DATABASE_VERSION='DATABASE_VERSION'
-ENV APPLICATION_ENV $APPLICATION_ENV
+RUN set -xe \
+	&& apk add --no-cache --virtual .build-deps \
+		$PHPIZE_DEPS \
+		icu-dev \
+		zlib-dev \
+	&& docker-php-ext-install \
+		intl \
+		pdo_mysql \
+		zip \
+	&& pecl install \
+		apcu-${APCU_VERSION} \
+	&& docker-php-ext-enable --ini-name 20-apcu.ini apcu \
+	&& docker-php-ext-enable --ini-name 05-opcache.ini opcache \
+	&& apk del .build-deps
 
-RUN apt-get update -y && \
-	apt-get upgrade -y && \
-	apt-get install -y supervisor nginx && \
-    rm -rf /var/lib/apt/lists/* && \
-    apt-get autoremove -y --purge
-    
-RUN rm -Rf /etc/php5/* && \
-    rm -Rf /etc/supervisor/conf.d/* && \
-    rm -Rf /etc/nginx/* && \
-    rm -Rf /src/* && \
-    rm -Rf /logs/*
-    
-COPY entrypoint.sh /entrypoint.sh
-COPY conf/php5 /etc/php5
-COPY conf/supervisor /etc/supervisor/conf.d
-COPY conf/nginx /etc/nginx
-COPY src /src
-COPY logs /logs
+COPY docker/app/php.ini /usr/local/etc/php/php.ini
 
-RUN if [ "$APPLICATION_ENV" = "prod" ]; then \
-        cp -f /src/app/config/parameters.yml.prod /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{MAILER_USER}},$MAILER_USER,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{MAILER_PASSWORD}},$MAILER_PASSWORD,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{DATABASE_HOST}},$DATABASE_HOST,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{DATABASE_NAME}},$DATABASE_NAME,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{DATABASE_USER}},$DATABASE_USER,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{DATABASE_PASSWORD}},$DATABASE_PASSWORD,g" /src/app/config/parameters.yml && \
-        sed -i -e "s,\${{DATABASE_VERSION}},$DATABASE_VERSION,g" /src/app/config/parameters.yml \
-    ; fi
+COPY docker/app/install-composer.sh /usr/local/bin/docker-app-install-composer
+RUN chmod +x /usr/local/bin/docker-app-install-composer
 
-RUN chmod +x /entrypoint.sh && \
-    bash --rcfile "/root/.bash_profile" -ic "/entrypoint.sh permission" && \
-    bash --rcfile "/root/.bash_profile" -ic "/entrypoint.sh install" && \
-    rm web/app_dev.php
+RUN set -xe \
+	&& apk add --no-cache --virtual .fetch-deps \
+		openssl \
+	&& docker-app-install-composer \
+	&& mv composer.phar /usr/local/bin/composer \
+	&& apk del .fetch-deps
 
-EXPOSE 80
-EXPOSE 443
+# https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["run"]
+RUN composer global require "hirak/prestissimo:^0.3" --prefer-dist --no-progress --no-suggest --optimize-autoloader --classmap-authoritative \
+	&& composer clear-cache
+
+WORKDIR /srv/api-platform
+
+COPY composer.json ./
+COPY composer.lock ./
+
+RUN mkdir -p \
+		var/cache \
+		var/logs \
+		var/sessions \
+	&& composer install --prefer-dist --no-dev --no-autoloader --no-scripts --no-progress --no-suggest \
+	&& composer clear-cache \
+# Permissions hack because setfacl does not work on Mac and Windows
+	&& chown -R www-data var
+
+COPY app app/
+COPY bin bin/
+COPY src src/
+COPY web web/
+
+RUN composer dump-autoload --optimize --classmap-authoritative --no-dev
+
+COPY docker/app/docker-entrypoint.sh /usr/local/bin/docker-app-entrypoint
+RUN chmod +x /usr/local/bin/docker-app-entrypoint
+
+ENTRYPOINT ["docker-app-entrypoint"]
+CMD ["php-fpm"]
