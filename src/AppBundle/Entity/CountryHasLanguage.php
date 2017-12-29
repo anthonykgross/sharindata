@@ -42,11 +42,11 @@ class CountryHasLanguage
      * })
      */
     private $language;
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ class CountryHasLanguage
     public function setCountry(Country $country)
     {
         $this->country = $country;
-    
+
         return $this;
     }
 
@@ -85,7 +85,7 @@ class CountryHasLanguage
     public function setLanguage(Language $language)
     {
         $this->language = $language;
-    
+
         return $this;
     }
 

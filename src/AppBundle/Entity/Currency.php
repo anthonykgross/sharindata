@@ -70,7 +70,7 @@ class Currency
      * @ORM\Column(name="decimals", type="boolean")
      */
     private $decimals;
-    
+
     /**
      * @var float
      *
@@ -83,7 +83,7 @@ class Currency
      * @ORM\OneToMany(targetEntity="CountryHasCurrency", mappedBy="currency", cascade={"remove", "persist"})
      */
     private $countryHasCurrencies;
-    
+
     /**
      * @var CurrencyFormat
      *
@@ -93,7 +93,7 @@ class Currency
      * })
      */
     private $currencyFormat;
-    
+
     /**
      * Constructor
      */
@@ -101,11 +101,11 @@ class Currency
     {
         $this->countryHasCurrencies = new ArrayCollection();
     }
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -121,14 +121,14 @@ class Currency
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -144,14 +144,14 @@ class Currency
     public function setIsoCode($isoCode)
     {
         $this->isoCode = $isoCode;
-    
+
         return $this;
     }
 
     /**
      * Get isoCode
      *
-     * @return string 
+     * @return string
      */
     public function getIsoCode()
     {
@@ -167,14 +167,14 @@ class Currency
     public function setIsoCodeNum($isoCodeNum)
     {
         $this->isoCodeNum = $isoCodeNum;
-    
+
         return $this;
     }
 
     /**
      * Get isoCodeNum
      *
-     * @return string 
+     * @return string
      */
     public function getIsoCodeNum()
     {
@@ -190,14 +190,14 @@ class Currency
     public function setSign($sign)
     {
         $this->sign = $sign;
-    
+
         return $this;
     }
 
     /**
      * Get sign
      *
-     * @return string 
+     * @return string
      */
     public function getSign()
     {
@@ -213,14 +213,14 @@ class Currency
     public function setBlank($blank)
     {
         $this->blank = $blank;
-    
+
         return $this;
     }
 
     /**
      * Get blank
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getBlank()
     {
@@ -236,14 +236,14 @@ class Currency
     public function setConversionRate($conversionRate)
     {
         $this->conversionRate = $conversionRate;
-    
+
         return $this;
     }
 
     /**
      * Get conversionRate
      *
-     * @return float 
+     * @return float
      */
     public function getConversionRate()
     {
@@ -259,7 +259,7 @@ class Currency
     public function addCountryHasCurrencie(CountryHasCurrency $countryHasCurrencies)
     {
         $this->countryHasCurrencies[] = $countryHasCurrencies;
-    
+
         return $this;
     }
 
@@ -292,7 +292,7 @@ class Currency
     public function setCurrencyFormat(CurrencyFormat $currencyFormat)
     {
         $this->currencyFormat = $currencyFormat;
-    
+
         return $this;
     }
 
@@ -315,14 +315,14 @@ class Currency
     public function setDecimals($decimals)
     {
         $this->decimals = $decimals;
-    
+
         return $this;
     }
 
     /**
      * Get decimals
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getDecimals()
     {

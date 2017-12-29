@@ -1,0 +1,27 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Request</h2>
+            <pre class="brush: php;">
+            $response = \KkuetNet\SharindataClientApi\Vendor\SharindataClientApi::getInstance("your_api_key", "your_api_secret");
+            var_dump($response->getHexByRgb(112,189,2));
+        </pre>
+            <h2>JSON Response</h2>
+            <pre class="brush: js;">
+            {{ data1 }}
+        </pre>
+
+            <h2>Example of result</h2>
+            <div class="col-lg-6">
+                <img src="{{ asset("bundles/kkuetnetsharindata/images/Sharindata.png") }}"/>
+            </div>
+            <ul class="custom-liste col-lg-6">
+                <li><b>Color <i class="code">rgb(112,189,2)</i> : </b> <span class="color"
+                                                                             style="background-color: {{ json_data1.hex }};"></span>
+                    <i>Hex: {{ json_data1.hex }}</i></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

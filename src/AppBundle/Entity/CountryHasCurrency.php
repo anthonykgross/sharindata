@@ -42,11 +42,11 @@ class CountryHasCurrency
      * })
      */
     private $currency;
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ class CountryHasCurrency
     public function setCountry(Country $country)
     {
         $this->country = $country;
-    
+
         return $this;
     }
 
@@ -85,7 +85,7 @@ class CountryHasCurrency
     public function setCurrency(Currency $currency)
     {
         $this->currency = $currency;
-    
+
         return $this;
     }
 

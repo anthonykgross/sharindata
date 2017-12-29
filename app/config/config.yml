@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: api_filters.yml }
+    - { resource: sharindata.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -82,9 +83,11 @@ nelmio_cors:
         '^/': ~
 
 api_platform:
+    title: 'Sharindata'
+    version: '2.0.0'
     http_cache:
         invalidation:
-            enabled: true
+            enabled: false
             varnish_urls: '%varnish_urls%'
         max_age: 0
         shared_max_age: 3600

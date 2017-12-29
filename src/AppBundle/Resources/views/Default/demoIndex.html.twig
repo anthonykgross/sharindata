@@ -1,0 +1,75 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <div class="row">
+        <h2>Data</h2>
+        <div class="col-lg-3">
+            <h3>Country</h3>
+            <ul>
+                <li><a href="{{ path('demo_data_country') }}">Get country</a></li>
+                <li><a href="{{ path('demo_data_all_countries') }}">Get all countries</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h3>Currency</h3>
+            <ul>
+                <li><a href="{{ path('demo_data_currency') }}">Get currency</a></li>
+                <li><a href="{{ path('demo_data_all_currencies') }}">Get all currencies</a></li>
+                <li><a href="{{ path('demo_data_currency_countries') }}">Get all countries by currency</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h3>Language</h3>
+            <ul>
+                <li><a href="{{ path('demo_data_language') }}">Get language</a></li>
+                <li><a href="{{ path('demo_data_all_languages') }}">Get all languages</a></li>
+                <li><a href="{{ path('demo_data_language_countries') }}">Get all countries by language</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h3>Timezone</h3>
+            <ul>
+                <li><a href="{{ path('demo_data_timezone') }}">Get timezone</a></li>
+                <li><a href="{{ path('demo_data_all_timezones') }}">Get all timezones</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <h3>Zone</h3>
+            <ul>
+                <li><a href="{{ path('demo_data_zone') }}">Get zone</a></li>
+                <li><a href="{{ path('demo_data_all_zones') }}">Get all zones</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Tools</h2>
+        <div class="col-lg-3">
+            <h3>Image</h3>
+            <ul>
+                <li><a href="{{ path('demo_tool_main_colors') }}">Get main colors</a></li>
+                <li><a href="{{ path('demo_tool_all_colors') }}">Get all colors</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h3>Randomize</h3>
+            <ul>
+                <li><a href="{{ path('demo_tool_random_string') }}">Get random string</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h3>Converter</h3>
+            <ul>
+                <li><a href="{{ path('demo_tool_converter_hextorgb') }}">Convert Hex color to RGB</a></li>
+                <li><a href="{{ path('demo_tool_converter_rgbtohex') }}">Convert RGB color to Hex</a></li>
+            </ul>
+        </div>
+        {# <div class="col-lg-3">
+            <h3>User Agent</h3>
+            <ul>
+                <li><a href="{{ path('demo_tool_user_agent')}}">Get details from user agent</a></li>
+            </ul>
+        </div> #}
+    </div>
+{% endblock %}

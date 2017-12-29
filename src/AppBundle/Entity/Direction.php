@@ -41,11 +41,12 @@ class Direction
      * @ORM\Column(name="label", type="string", length=55)
      */
     private $label;
-    
+
     /**
      * @ORM\OneToMany(targetEntity="LanguageHasDirection", mappedBy="direction", cascade={"remove", "persist"})
      */
     private $languageHasDirections;
+
     /**
      * Constructor
      */
@@ -53,11 +54,11 @@ class Direction
     {
         $this->languageHasDirections = new ArrayCollection();
     }
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -73,14 +74,14 @@ class Direction
     public function setCode($code)
     {
         $this->code = $code;
-    
+
         return $this;
     }
 
     /**
      * Get code
      *
-     * @return string 
+     * @return string
      */
     public function getCode()
     {
@@ -96,14 +97,14 @@ class Direction
     public function setLabel($label)
     {
         $this->label = $label;
-    
+
         return $this;
     }
 
     /**
      * Get label
      *
-     * @return string 
+     * @return string
      */
     public function getLabel()
     {
@@ -119,7 +120,7 @@ class Direction
     public function addLanguageHasDirection(LanguageHasDirection $languageHasDirections)
     {
         $this->languageHasDirections[] = $languageHasDirections;
-    
+
         return $this;
     }
 

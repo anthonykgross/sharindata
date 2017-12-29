@@ -45,7 +45,7 @@ class CurrencyFormat
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -61,10 +61,10 @@ class CurrencyFormat
     public function setId($id)
     {
         $this->id = $id;
-    
+
         return $this;
     }
-    
+
     /**
      * Set name
      *
@@ -74,14 +74,14 @@ class CurrencyFormat
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -97,19 +97,20 @@ class CurrencyFormat
     public function setFormat($format)
     {
         $this->format = $format;
-    
+
         return $this;
     }
 
     /**
      * Get format
      *
-     * @return string 
+     * @return string
      */
     public function getFormat()
     {
         return $this->format;
     }
+
     /**
      * Constructor
      */
@@ -117,7 +118,7 @@ class CurrencyFormat
     {
         $this->currencies = new ArrayCollection();
     }
-    
+
     /**
      * Add currencies
      *
@@ -127,7 +128,7 @@ class CurrencyFormat
     public function addCurrency(Currency $currency)
     {
         $this->currencies[] = $currency;
-    
+
         return $this;
     }
 

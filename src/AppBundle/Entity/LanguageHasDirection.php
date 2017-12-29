@@ -42,12 +42,12 @@ class LanguageHasDirection
      * })
      */
     private $language;
-    
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -63,7 +63,7 @@ class LanguageHasDirection
     public function setDirection(Direction $direction)
     {
         $this->direction = $direction;
-    
+
         return $this;
     }
 
@@ -86,7 +86,7 @@ class LanguageHasDirection
     public function setLanguage(Language $language)
     {
         $this->language = $language;
-    
+
         return $this;
     }
 

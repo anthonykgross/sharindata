@@ -75,12 +75,12 @@ class Language
      * @ORM\OneToMany(targetEntity="CountryHasLanguage", mappedBy="language", cascade={"remove", "persist"})
      */
     private $countryHasLanguages;
-    
+
     /**
      * @ORM\OneToMany(targetEntity="LanguageHasDirection", mappedBy="language", cascade={"remove", "persist"})
      */
     private $languageHasDirections;
-    
+
     /**
      * Constructor
      */
@@ -89,11 +89,11 @@ class Language
         $this->countryHasLanguages = new ArrayCollection();
         $this->languageHasDirections = new ArrayCollection();
     }
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -109,14 +109,14 @@ class Language
     public function setIso6391($iso6391)
     {
         $this->iso639_1 = $iso6391;
-    
+
         return $this;
     }
 
     /**
      * Get iso639_1
      *
-     * @return string 
+     * @return string
      */
     public function getIso6391()
     {
@@ -132,14 +132,14 @@ class Language
     public function setIso6392($iso6392)
     {
         $this->iso639_2 = $iso6392;
-    
+
         return $this;
     }
 
     /**
      * Get iso639_2
      *
-     * @return string 
+     * @return string
      */
     public function getIso6392()
     {
@@ -155,14 +155,14 @@ class Language
     public function setIso6393($iso6393)
     {
         $this->iso639_3 = $iso6393;
-    
+
         return $this;
     }
 
     /**
      * Get iso639_3
      *
-     * @return string 
+     * @return string
      */
     public function getIso6393()
     {
@@ -178,14 +178,14 @@ class Language
     public function setNameFr($nameFr)
     {
         $this->nameFr = $nameFr;
-    
+
         return $this;
     }
 
     /**
      * Get nameFr
      *
-     * @return string 
+     * @return string
      */
     public function getNameFr()
     {
@@ -201,14 +201,14 @@ class Language
     public function setNameEn($nameEn)
     {
         $this->nameEn = $nameEn;
-    
+
         return $this;
     }
 
     /**
      * Get nameEn
      *
-     * @return string 
+     * @return string
      */
     public function getNameEn()
     {
@@ -224,14 +224,14 @@ class Language
     public function setNaturalName($naturalName)
     {
         $this->naturalName = $naturalName;
-    
+
         return $this;
     }
 
     /**
      * Get naturalName
      *
-     * @return string 
+     * @return string
      */
     public function getNaturalName()
     {
@@ -247,7 +247,7 @@ class Language
     public function addCountryHasLanguage(CountryHasLanguage $countryHasLanguages)
     {
         $this->countryHasLanguages[] = $countryHasLanguages;
-    
+
         return $this;
     }
 
@@ -280,7 +280,7 @@ class Language
     public function addLanguageHasDirection(LanguageHasDirection $languageHasDirections)
     {
         $this->languageHasDirections[] = $languageHasDirections;
-    
+
         return $this;
     }
 

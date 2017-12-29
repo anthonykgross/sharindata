@@ -50,7 +50,7 @@ class Zone
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -66,14 +66,14 @@ class Zone
     public function setCode($code)
     {
         $this->code = $code;
-    
+
         return $this;
     }
 
     /**
      * Get code
      *
-     * @return string 
+     * @return string
      */
     public function getCode()
     {
@@ -89,19 +89,20 @@ class Zone
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
         return $this->name;
     }
+
     /**
      * Constructor
      */
@@ -109,7 +110,7 @@ class Zone
     {
         $this->countries = new ArrayCollection();
     }
-    
+
     /**
      * Add countries
      *
@@ -119,7 +120,7 @@ class Zone
     public function addCountry(Country $country)
     {
         $this->countries[] = $country;
-    
+
         return $this;
     }
 

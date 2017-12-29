@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity_currency_format>
+    <fields id="name">
+        <field name="name"/>
+    </fields>
+    <entities>
+        <format id="1" format="X0,000.00" name="as with Dollars"/>
+        <format id="2" format="0 000,00X" name="as with Euros"/>
+        <format id="3" format="X0.000,00" name=""/>
+        <format id="4" format="0,000.00X" name=""/>
+        <format id="5" format="0'000.00X" name="Switzerland"/>
+    </entities>
+</entity_currency_format>

@@ -51,11 +51,11 @@ class Tax
      * })
      */
     private $country;
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -71,14 +71,14 @@ class Tax
     public function setRate($rate)
     {
         $this->rate = $rate;
-    
+
         return $this;
     }
 
     /**
      * Get rate
      *
-     * @return float 
+     * @return float
      */
     public function getRate()
     {
@@ -94,14 +94,14 @@ class Tax
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -117,7 +117,7 @@ class Tax
     public function setCountry(Country $country)
     {
         $this->country = $country;
-    
+
         return $this;
     }
 

@@ -1,0 +1,12 @@
+## YAML Template.
+services:
+    sharindata.updater:
+        class: AppBundle\Services\Updater
+        arguments:
+          - '@doctrine.orm.entity_manager'
+    sharindata.image:
+        class: AppBundle\Services\Image
+        arguments:
+          - '@sharindata.color'
+    sharindata.color:
+        class: AppBundle\Services\Color

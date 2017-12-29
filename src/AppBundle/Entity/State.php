@@ -48,7 +48,7 @@ class State
      * @ORM\Column(name="iso", type="string", length=7)
      */
     private $iso;
-    
+
     /**
      * @var Country
      *
@@ -58,12 +58,12 @@ class State
      * })
      */
     private $country;
-    
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -79,14 +79,14 @@ class State
     public function setTaxBehavior($taxBehavior)
     {
         $this->tax_behavior = $taxBehavior;
-    
+
         return $this;
     }
 
     /**
      * Get tax_behavior
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getTaxBehavior()
     {
@@ -102,14 +102,14 @@ class State
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -125,14 +125,14 @@ class State
     public function setIso($iso)
     {
         $this->iso = $iso;
-    
+
         return $this;
     }
 
     /**
      * Get iso
      *
-     * @return string 
+     * @return string
      */
     public function getIso()
     {
@@ -148,7 +148,7 @@ class State
     public function setCountry(Country $country)
     {
         $this->country = $country;
-    
+
         return $this;
     }
 

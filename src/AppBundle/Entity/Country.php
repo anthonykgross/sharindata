@@ -48,7 +48,7 @@ class Country
      * })
      */
     private $zone;
-    
+
     /**
      * @var Timezone
      *
@@ -112,36 +112,36 @@ class Country
      * @ORM\OneToMany(targetEntity="CountryHasCurrency", mappedBy="country", cascade={"remove", "persist"})
      */
     private $countryHasCurrencies;
-    
+
     /**
      * @ORM\OneToMany(targetEntity="CountryHasLanguage", mappedBy="country", cascade={"remove", "persist"})
      */
     private $countryHasLanguages;
-    
+
     /**
      * @ORM\OneToMany(targetEntity="Tax", mappedBy="country", cascade={"remove", "persist"})
      */
     private $taxes;
-    
+
     /**
      * @ORM\OneToMany(targetEntity="State", mappedBy="country", cascade={"remove", "persist"})
      */
     private $states;
-    
+
     /**
      * @var string
      *
      * @ORM\Column(name="flag", type="string", length=12, nullable=true)
      */
     private $flag;
-    
+
     /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=55, nullable=true)
      */
     private $name;
-    
+
     /**
      * Constructor
      */
@@ -152,11 +152,11 @@ class Country
         $this->taxes = new ArrayCollection();
         $this->states = new ArrayCollection();
     }
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -172,14 +172,14 @@ class Country
     public function setIso($iso)
     {
         $this->iso = $iso;
-    
+
         return $this;
     }
 
     /**
      * Get iso
      *
-     * @return string 
+     * @return string
      */
     public function getIso()
     {
@@ -195,14 +195,14 @@ class Country
     public function setCallPrefix($callPrefix)
     {
         $this->callPrefix = $callPrefix;
-    
+
         return $this;
     }
 
     /**
      * Get callPrefix
      *
-     * @return string 
+     * @return string
      */
     public function getCallPrefix()
     {
@@ -218,14 +218,14 @@ class Country
     public function setContainsStates($containsStates)
     {
         $this->containsStates = $containsStates;
-    
+
         return $this;
     }
 
     /**
      * Get containsStates
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getContainsStates()
     {
@@ -241,14 +241,14 @@ class Country
     public function setNeedIdentificationNumber($needIdentificationNumber)
     {
         $this->needIdentificationNumber = $needIdentificationNumber;
-    
+
         return $this;
     }
 
     /**
      * Get needIdentificationNumber
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getNeedIdentificationNumber()
     {
@@ -264,14 +264,14 @@ class Country
     public function setNeedZipCode($needZipCode)
     {
         $this->needZipCode = $needZipCode;
-    
+
         return $this;
     }
 
     /**
      * Get needZipCode
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getNeedZipCode()
     {
@@ -287,14 +287,14 @@ class Country
     public function setZipCodeFormat($zipCodeFormat)
     {
         $this->zipCodeFormat = $zipCodeFormat;
-    
+
         return $this;
     }
 
     /**
      * Get zipCodeFormat
      *
-     * @return string 
+     * @return string
      */
     public function getZipCodeFormat()
     {
@@ -310,14 +310,14 @@ class Country
     public function setDisplayTaxLabel($displayTaxLabel)
     {
         $this->displayTaxLabel = $displayTaxLabel;
-    
+
         return $this;
     }
 
     /**
      * Get displayTaxLabel
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getDisplayTaxLabel()
     {
@@ -333,14 +333,14 @@ class Country
     public function setAddressFormat($addressFormat)
     {
         $this->addressFormat = $addressFormat;
-    
+
         return $this;
     }
 
     /**
      * Get addressFormat
      *
-     * @return string 
+     * @return string
      */
     public function getAddressFormat()
     {
@@ -356,7 +356,7 @@ class Country
     public function setZone(Zone $zone)
     {
         $this->zone = $zone;
-    
+
         return $this;
     }
 
@@ -379,7 +379,7 @@ class Country
     public function setTimezone(Timezone $timezone = null)
     {
         $this->timezone = $timezone;
-    
+
         return $this;
     }
 
@@ -402,7 +402,7 @@ class Country
     public function addCountryHasCurrencie(CountryHasCurrency $countryHasCurrencies)
     {
         $this->countryHasCurrencies[] = $countryHasCurrencies;
-    
+
         return $this;
     }
 
@@ -435,7 +435,7 @@ class Country
     public function addCountryHasLanguage(CountryHasLanguage $countryHasLanguages)
     {
         $this->countryHasLanguages[] = $countryHasLanguages;
-    
+
         return $this;
     }
 
@@ -468,7 +468,7 @@ class Country
     public function addTaxe(\AppBundle\Entity\Tax $taxes)
     {
         $this->taxes[] = $taxes;
-    
+
         return $this;
     }
 
@@ -501,7 +501,7 @@ class Country
     public function addState(\AppBundle\Entity\State $states)
     {
         $this->states[] = $states;
-    
+
         return $this;
     }
 
@@ -534,14 +534,14 @@ class Country
     public function setFlag($flag)
     {
         $this->flag = $flag;
-    
+
         return $this;
     }
 
     /**
      * Get flag
      *
-     * @return string 
+     * @return string
      */
     public function getFlag()
     {
@@ -557,14 +557,14 @@ class Country
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {

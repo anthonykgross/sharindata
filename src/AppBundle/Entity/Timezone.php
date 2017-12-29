@@ -46,11 +46,11 @@ class Timezone
      * @ORM\OneToMany(targetEntity="Country", mappedBy="timezone", cascade={"remove", "persist"})
      */
     private $countries;
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -66,14 +66,14 @@ class Timezone
     public function setCode($code)
     {
         $this->code = $code;
-    
+
         return $this;
     }
 
     /**
      * Get code
      *
-     * @return string 
+     * @return string
      */
     public function getCode()
     {
@@ -89,19 +89,20 @@ class Timezone
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
         return $this->name;
     }
+
     /**
      * Constructor
      */
@@ -109,7 +110,7 @@ class Timezone
     {
         $this->countries = new ArrayCollection();
     }
-    
+
     /**
      * Add countries
      *
@@ -119,7 +120,7 @@ class Timezone
     public function addCountry(Country $country)
     {
         $this->countries[] = $country;
-    
+
         return $this;
     }
 
