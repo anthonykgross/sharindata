@@ -2,678 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="329aa439-3d03-4ff1-b89a-f2e90b9195ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/nginx/fastcgi_params" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/nginx/mime.types" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/nginx/nginx.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/nginx/sites-enabled/web.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/05-opcache.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/10-pdo.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-apcu.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-curl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-gd.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-imagick.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-intl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-json.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-mcrypt.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-mysqli.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-pdo_mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/20-readline.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/conf.d/web.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/cli/php.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/05-opcache.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/10-pdo.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-apcu.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-curl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-gd.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-imagick.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-intl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-json.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-mcrypt.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-mysqli.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-pdo_mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/20-readline.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/conf.d/web.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/php-fpm.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/php.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/fpm/pool.d/www.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/apcu.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/curl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/gd.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/imagick.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/intl.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/json.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/mcrypt.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/mysqli.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/opcache.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/pdo.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/pdo_mysql.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/php5/mods-available/readline.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/supervisor/supervisor.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/entrypoint.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logs/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/.dockerignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/.editorconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/.gitattributes" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/AppCache.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/AppKernel.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/api_filters.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/config.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/config_dev.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/config_prod.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/config_test.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/parameters.yml.dist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/routing.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/routing_dev.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/security.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/services.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/behat.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/bin/console" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/bin/symfony_requirements" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/codefresh.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/composer.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/app/docker-entrypoint.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/app/install-composer.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/app/php.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/db/.dockerignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/db/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/db/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/db/docker-healthcheck.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/nginx/.dockerignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/nginx/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/nginx/conf.d/default.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/varnish/Dockerfile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/varnish/conf/default.vcl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/docker/varnish/start.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/features/bootstrap/FeatureContext.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/UPGRADE-2.2.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/UPGRADE-2.3.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/UPGRADE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/AppCache.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/AppKernel.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/ChangePassword/changePassword.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Profile/show.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Registration/checkEmail.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/NelmioApiDocBundle/views/layout.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/NelmioApiDocBundle/views/method.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/NelmioApiDocBundle/views/resource.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/NelmioApiDocBundle/views/resources.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/Resources/views/base.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/SymfonyRequirements.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/autoload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/bootstrap.php.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/check.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/config.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/config_dev.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/config_prod.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/config_test.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/parameters.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/parameters.yml.dist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/parameters.yml.prod" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/phpunit.xml.dist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/routing.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/routing_dev.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/config/security.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/console" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/app/phpunit.xml.dist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/bin/doctrine" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/bin/doctrine.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/bin/phpunit" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/composer.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/deploy/setup.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/gulpfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Command/TestCommand.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Command/UpdaterCommand.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/ConverterController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/CountryController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/CurrencyController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/DefaultController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/ImageController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/LanguageController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/RandomizeController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/SecurityController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/TimezoneController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/UnclassifiableController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/UserController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Controller/ZoneController.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/CSV/Country.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/CSV/Direction.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/CSV/LanguageHasDirection.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadApiData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadCountryData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadCurrencyFormatData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadDirectionData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadLanguageData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadLanguageHasDirectionData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadTimezoneData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadUnicodeData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DataFixtures/ORM/LoadZoneData.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DependencyInjection/Configuration.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/DependencyInjection/KkuetNetSharindataExtension.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Country.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/CountryHasCurrency.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/CountryHasLanguage.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Currency.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/CurrencyFormat.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Direction.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Language.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/LanguageHasDirection.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/State.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Tax.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Timezone.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/User.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Entity/Zone.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/KkuetNetSharindataBundle.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/config/services.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/doc/index.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/css/theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/Sharindata.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/Sharingame.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AQ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AX.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/AZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BB.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BJ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/BZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CV.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CX.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/CZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DJ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/DZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/EC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/EE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/EG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/EH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ER.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ES.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ET.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FJ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/FR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GB.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GQ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/GY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/HK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/HN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/HR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/HT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/HU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ID.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IQ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/IT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/JE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/JM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/JO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/JP.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KP.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/KZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LB.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LV.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/LY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ME.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ML.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MP.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MQ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MV.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MX.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/MZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NP.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/NZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/OM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/PY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/QA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/RO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/RS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/RU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/RW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SB.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ST.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SV.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/SZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TD.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TJ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TK.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TL.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TO.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TR.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TV.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/TZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/UA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/UG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/US.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/UY.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/UZ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VC.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VG.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VI.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VN.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/VU.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/WF.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/WS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/YE.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/YT.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ZA.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ZM.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/public/images/flags/64/ZW.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/translations/messages.fr.xlf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataAllCountries.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataAllCurrencies.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataAllLanguages.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataAllTimezones.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataAllZones.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataCountry.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataCurrency.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataCurrencyCountries.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataLanguage.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataLanguageCountries.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataTimezone.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoDataZone.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoIndex.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolAllColor.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolConverterHextorgb.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolConverterRgbtohex.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolMainColor.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolRandomString.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/demoToolUserAgent.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Resources/views/Default/index.html.twig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Routing/Loader/Reader/RestActionReader.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Security/Core/Authentication/Provider/Provider.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Services/ToolColor.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Services/ToolImage.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Services/ToolRandomize.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Services/ToolUnicode.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Services/Updater.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Temp/test.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Tests/Services/ToolUnicodeTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Twig/AlertExtension.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/UAParser.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/json/JSON.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/json/jsonwrapper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/COPYING" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/README" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/examples/yaml-dump.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/examples/yaml-load.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/php4/5to4.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/php4/spyc.php4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/php4/test.php4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/spyc.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/spyc.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/DumpTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/IndentTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/ParseTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/RoundTripTest.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/failing1.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/indent_1.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/lib/spyc-0.5/tests/quotes.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/resources/user_agents_regex.default.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/Vendor/resources/user_agents_regex.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/address_format.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ae.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/at.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/au.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/az.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/be.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/bg.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/bo.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/br.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/by.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ca.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ch.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/cl.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/cn.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/co.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/cy.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/cz.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/de.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/dk.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/do.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ec.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ee.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/eg.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/es.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/fi.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/fj.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/fr.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/gb.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ge.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/gr.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/gt.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/gy.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/hk.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/hr.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/hu.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/id.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ie.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/il.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/in.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ir.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/it.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/je.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/jp.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ke.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/li.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/lt.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/lu.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/lv.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/md.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/mt.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/mx.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/my.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ng.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/nl.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/no.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/nz.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/pa.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/pe.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ph.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/pk.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/pl.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/pt.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/py.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ro.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/rs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ru.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/sa.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/se.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/sg.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/si.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/sk.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/sv.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/th.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/tn.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/tr.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/tw.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ua.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/us.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/uy.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/ve.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/cache/api/vn.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/country.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/currency_format.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/iso_to_timezone.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/language.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/state.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/timezone.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/src/KkuetNet/SharindataBundle/XML/zone.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/Sharindata.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/Sharindata.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/Sharindata48x48.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/app.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/app_dev.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/apple-touch-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/config.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCore.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreDefault.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreDjango.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreEclipse.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreEmacs.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreFadeToGrey.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreMDUltra.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreMidnight.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shCoreRDark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeDefault.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeDjango.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeEclipse.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeEmacs.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeFadeToGrey.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeMDUltra.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeMidnight.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/css/shThemeRDark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/img/social_fb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/img/social_gplus.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/img/social_tw.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/jquery.snow.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shAutoloader.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushAS3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushAppleScript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushBash.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushCSharp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushColdFusion.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushCpp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushCss.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushDelphi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushDiff.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushErlang.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushGroovy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushJScript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushJava.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushJavaFX.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushPerl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushPhp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushPlain.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushPowerShell.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushPython.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushRuby.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushSass.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushScala.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushSql.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushVb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shBrushXml.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shCore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/js/shLegacy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/legacy/web/robots.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/phpunit.xml.dist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/src/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/src/AppBundle/Action/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/src/AppBundle/AppBundle.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/src/AppBundle/Entity/Foo.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AppBundle/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/var/SymfonyRequirements.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/var/cache/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/var/logs/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/var/sessions/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/app.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/app_dev.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/apple-touch-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/config.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/web/robots.txt" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Country.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CountryHasCurrency.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CountryHasLanguage.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Currency.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CurrencyFormat.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Direction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Language.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/LanguageHasDirection.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/State.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Tax.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Timezone.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Zone.php" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Foo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -687,20 +31,144 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="495">
-                <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="Country.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Country.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="21" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Currency.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Currency.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurrencyFormat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CurrencyFormat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1980">
+              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+              <folding>
+                <element signature="e#36#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Direction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Direction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Language.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Language.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="State.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/State.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tax.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Tax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timezone.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Timezone.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding>
+                <element signature="e#36#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Zone.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Zone.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding>
+                <element signature="e#36#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>vendor</find>
+      <find>varnish</find>
+      <find>Entity</find>
+      <find>KkuetNet\SharindataBundle</find>
+      <find>foo</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>AppBundle</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/AppBundle/Entity</dir>
+      <dir>$PROJECT_DIR$/app/config</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -708,9 +176,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/conf/php5/fpm/pool.d/www.conf" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/app/config/config.yml" />
@@ -720,6 +186,22 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/entrypoint.sh" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CountryHasCurrency.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CountryHasLanguage.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/LanguageHasDirection.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CurrencyFormat.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Country.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Currency.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Direction.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Language.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/State.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Tax.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Timezone.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Zone.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -759,6 +241,35 @@
               <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
               <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sharindata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sharindata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -775,6 +286,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AppBundle" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/config" />
     </key>
@@ -887,21 +399,23 @@
       <workItem from="1504138235814" duration="1575000" />
       <workItem from="1504140774063" duration="58000" />
       <workItem from="1514501871611" duration="880000" />
-      <workItem from="1514504801666" duration="424000" />
+      <workItem from="1514504801666" duration="4094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4883000" />
+    <option name="totallyTimeSpent" value="8553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="613" y="-1057" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416666" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416666" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -913,7 +427,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -928,165 +441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/codefresh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml" />
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.prod" />
-    <entry file="file://$PROJECT_DIR$/src/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/codefresh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.prod" />
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml" />
-    <entry file="file://$PROJECT_DIR$/src/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/codefresh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml" />
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.prod" />
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml" />
-    <entry file="file://$PROJECT_DIR$/create-images.sh" />
-    <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.prod" />
-    <entry file="file://$PROJECT_DIR$/src/codefresh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/php5/fpm/pool.d/www.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="411" column="0" lean-forward="false" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml" />
     <entry file="file://$PROJECT_DIR$/src/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
@@ -1131,22 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1163,6 +501,278 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/app/docker-entrypoint.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/app/install-composer.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1786">
+          <caret line="124" column="14" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/varnish/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/varnish/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/varnish/conf/default.vcl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dockerignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CountryHasLanguage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="87" column="12" lean-forward="false" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/api_filters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CountryHasCurrency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="91" column="7" lean-forward="true" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/LanguageHasDirection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="93" column="19" lean-forward="true" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding>
+            <element signature="e#36#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CurrencyFormat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Country.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Currency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Direction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/State.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Tax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Timezone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Foo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
