@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Entity\Country;
-use AppBundle\Entity\Language;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -26,7 +24,7 @@ class CountryHasLanguage
     /**
      * @var Country
      *
-     * @ORM\ManyToOne(targetEntity="Country", inversedBy="countryHasCurrencies")
+     * @ORM\ManyToOne(targetEntity="Country", inversedBy="countryHasLanguages")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="country_id", referencedColumnName="id", nullable=false)
      * })

@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Entity\Country;
-use AppBundle\Entity\Currency;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

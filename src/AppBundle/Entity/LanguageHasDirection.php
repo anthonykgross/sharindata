@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Entity\Direction;
-use AppBundle\Entity\Language;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

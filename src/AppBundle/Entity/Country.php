@@ -2,14 +2,11 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Entity\CountryHasCurrency;
-use AppBundle\Entity\CountryHasLanguage;
-use AppBundle\Entity\Timezone;
-use AppBundle\Entity\Zone;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
+use ApiPlatform\Core\Annotation\ApiProperty;
 
 /**
  * Country
