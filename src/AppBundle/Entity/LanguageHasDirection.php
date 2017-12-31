@@ -3,12 +3,17 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * LanguageHasDirection
  *
  * @ORM\Table(name="Language_has_Direction" ,uniqueConstraints={@ORM\UniqueConstraint(name="idxUnique", columns={"language_id", "direction_id"})})
  * @ORM\Entity
+ * @ApiResource(
+ *     collectionOperations={"get"={"method"="GET"}},
+ *     itemOperations={"get"={"method"="GET"}}
+ * )
  */
 class LanguageHasDirection
 {

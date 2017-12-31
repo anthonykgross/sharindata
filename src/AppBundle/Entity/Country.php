@@ -15,7 +15,17 @@ use ApiPlatform\Core\Annotation\ApiProperty;
  * @ORM\Entity
  * @ApiResource(
  *     collectionOperations={"get"={"method"="GET"}},
- *     itemOperations={"get"={"method"="GET"}}
+ *     itemOperations={"get"={"method"="GET"}},
+ *     subresourceOperations={
+ *          "country_has_currencies_get_subresource"= {
+ *              "method"="GET",
+ *              "path"="/countries/{id}/currencies"
+ *          },
+ *          "country_has_languages_get_subresource"= {
+ *              "method"="GET",
+ *              "path"="/countries/{id}/languages",
+ *          },
+ *      },
  * )
  */
 class Country
@@ -107,21 +117,25 @@ class Country
 
     /**
      * @ORM\OneToMany(targetEntity="CountryHasCurrency", mappedBy="country", cascade={"remove", "persist"})
+     * @ApiSubresource()
      */
     private $countryHasCurrencies;
 
     /**
      * @ORM\OneToMany(targetEntity="CountryHasLanguage", mappedBy="country", cascade={"remove", "persist"})
+     * @ApiSubresource()
      */
     private $countryHasLanguages;
 
     /**
      * @ORM\OneToMany(targetEntity="Tax", mappedBy="country", cascade={"remove", "persist"})
+     * @ApiSubresource()
      */
     private $taxes;
 
     /**
      * @ORM\OneToMany(targetEntity="State", mappedBy="country", cascade={"remove", "persist"})
+     * @ApiSubresource()
      */
     private $states;
 

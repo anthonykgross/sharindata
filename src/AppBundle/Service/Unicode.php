@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\Services;
+namespace AppBundle\Service;
 
 class Unicode
 {

@@ -3,12 +3,17 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * CountryHasCurrency
  *
  * @ORM\Table(name="Country_has_Language" ,uniqueConstraints={@ORM\UniqueConstraint(name="idxUnique", columns={"country_id", "language_id"})})
  * @ORM\Entity
+ * @ApiResource(
+ *     collectionOperations={"get"={"method"="GET"}},
+ *     itemOperations={"get"={"method"="GET"}}
+ * )
  */
 class CountryHasLanguage
 {

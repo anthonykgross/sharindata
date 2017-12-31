@@ -2,6 +2,7 @@
 
 namespace AppBundle\Command;
 
+use AppBundle\Service\Updater;
 use Doctrine\ORM\EntityManager;
 use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
@@ -26,12 +27,19 @@ class UpdaterCommand extends ContainerAwareCommand
             ->setDescription('Update database');
     }
 
+    /**
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return int|null|void
+     * @throws \Doctrine\DBAL\ConnectionException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->container = $this->getContainer();
         $this->em = $this->container->get('doctrine')->getManager();
 
-        $this->container->get("sharindata.updater")->purgeCache();
-        $this->container->get('sharindata.updater')->importXml();
+        $this->container->get(Updater::class)->purgeCache();
+        $this->container->get(Updater::class)->importXml();
     }
 }
